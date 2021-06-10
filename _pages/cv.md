@@ -11,9 +11,10 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* 2019 - Present : Ph.D in Applied Mathematics at at the Centre de Mathématiques Appliquées (CMAP), École Polytechnique and TotalEnergies.
+* 2018 - 2019 M.S. in Applied Mathematics "Mathematical Models and Methods of Economics and Finance - MMMEF", Paris 1 University.
+* 2016 - 2019 : MEng. in Applied Mathematics and Data Science, École des Mines de Saint-Etienne.
+* 2016 - 2017 : B.S. in Mathematics, University Jean-Monnet Saint-Etienne.
 
 Work experience
 ======
@@ -27,33 +28,14 @@ Work experience
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
   
-Skills
+  
+Summer schools 
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* January 2020 : Winter School - Data Science, Optimization and Operations Research - École polytechnique fédérale de Lausanne. 
+* September 2020 : Gaussian Process and Uncertainty Quantification Summer School. The University of Sheffield.
 
-Publications
+Awards and Scholarships
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* 2020 - 2022 : Study abroad scholarship, Moroccan Ministry of Higher Education and Scientific Research.
+* 2016 - 2019 : Merit scholarship, Moroccan Ministry of Higher Education and Scientific Research.
+
