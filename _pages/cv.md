@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Resume"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -26,3 +26,6 @@ Awards and Scholarships
 * 2020 - 2022 : *Study abroad* scholarship, Moroccan Ministry of Higher Education and Scientific Research.
 * 2016 - 2019 : *Merit* scholarship, Moroccan Ministry of Higher Education and Scientific Research.
 
+Miscellanous 
+======
+I participated and have been declared Winner of the IMT-Total data science challenge in February 2018.
