@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Naoufal ACHARKI / Personal Website"
+title                    : "Naoufal ACHARKI"
 title_separator          : "-"
 name                     : &name "N. Acharki"
 description              : &description "Personal website about me and my work"
