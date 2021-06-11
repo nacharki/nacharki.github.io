@@ -5,10 +5,12 @@ permalink: /talks/
 author_profile: true
 ---
 
-- Potential Outcomes with continuous treatments : Introduction, challenges and perspectives. Causality workshop, October 2020.\
+{% if site.talkmap_link == true %}
 
-- Robust Prediction Intervals estimation for Gaussian Processes by Cross-Validation method. CSE AI/ML workshop, September 2020.\
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 
-- Uncertainty Quantification and Sensitivity Analysis : Modelling with Gaussian Processes. MATHIAS Days, October 2019.\
+{% endif %}
 
-- Exploring unconventional wells with Topological Data Analysis. MATHIAS Days, October 2018.\
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}
