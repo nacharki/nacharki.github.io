@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2021-06-14-statistical-learning
 excerpt: ''
 date: 2021-06-09
-venue: 'submitted to Computational Statistics and Data Analysis'
+venue: 'Arxiv'
 paperurl: 'https://arxiv.org/pdf/2106.05396'
 citation: 'Acharki, N. Bertoncello, A. and Garnier, J. (2021). &quot;Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method.&quot;  <i>submitted to Computational Statistics and Data Analysis</i>. <i> Available at arXiv: 2106.05396.</i>'
 ---
