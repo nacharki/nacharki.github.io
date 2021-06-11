@@ -15,4 +15,4 @@ This work was under the supervision of [Josselin Garnier](https://josselin-garni
 
 [Download paper here](https://arxiv.org/pdf/2106.05396)
 
-Recommended citation: Acharki, N. (2021). "Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method" <i>ArXiv</i>. 1(1).
+Recommended citation: Acharki, N. Bertoncello, A. and Garnier, J. (2021). "Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method" <i>ArXiv</i>. 1(1), *submitted to CSDA Journal*.
