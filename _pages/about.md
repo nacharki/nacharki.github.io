@@ -11,7 +11,7 @@ redirect_from:
 About Me
 ============
 
-I am a 2nd year PhD student in Statistics & Machine Learning at CMAP, Ecole Polytechnique and TotalEnergies (ex Total) in a CIFRE Contract. I am supervised by Josselin Garnier, professor at the CMAP laboratory, Ecole Polytechnique and Antoine Bertoncello, senior research engineer at TotalEnergies R&D.
+I am a 2nd year PhD student in Statistics & Machine Learning at CMAP, Ecole Polytechnique and TotalEnergies (ex Total) in a CIFRE Contract. I am supervised by [Josselin Garnier](https://josselin-garnier.org/), professor at the CMAP laboratory, Ecole Polytechnique and Antoine Bertoncello, senior research engineer at TotalEnergies R&D.
 
 I am particulary interested in the statistics, Machine Learning, Uncertainty Quantification and Causal Inferencer.
 
