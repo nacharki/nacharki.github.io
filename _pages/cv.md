@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* 2019 - Present : Ph.D in Applied Mathematics at at the Centre de Mathématiques Appliquées (CMAP), École Polytechnique and TotalEnergies.
+* 2019 - Present : Ph.D in Applied Mathematics at the Centre de Mathématiques Appliquées (CMAP), École Polytechnique and TotalEnergies.
 * 2018 - 2019 : M.S. in Applied Mathematics, "Mathematical Models and Methods of Economics and Finance - MMMEF", Paris 1 University.
 * 2016 - 2019 : Engineer's degree, specialization in Data Science and Operations research, École des Mines de Saint-Etienne.
 * 2016 - 2017 : B.S. in Mathematics, University Jean-Monnet Saint-Etienne.
