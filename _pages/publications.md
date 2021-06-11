@@ -11,10 +11,8 @@ author_profile: true
 
 {% include base_path %}
 
+_(Please click on the paper titles for more detailed information on the paper)_
+
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
-
-Ongoing work : 
-
-Unpublished work :
