@@ -13,4 +13,4 @@ Probabilistic regression models typically use the Maximum Likelihood Estimation 
 
 [Download paper here](https://arxiv.org/pdf/2106.05396)
 
-Recommended citation: Acharki, N. Bertoncello, A. and Garnier, J. Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method. 2021 submitted to Computational Statistics and Data Analysis. Available at arXiv: 2106.05396.
+Recommended citation: Acharki, N. Bertoncello, A. and Garnier, J. Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method. 2021 submitted to *Computational Statistics and Data Analysis*. Available at arXiv: 2106.05396.
