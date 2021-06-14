@@ -181,6 +181,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  ongoing:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -189,6 +192,13 @@ defaults:
   - scope:
       path: ""
       type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _ongoing
+  - scope:
+      path: ""
+      type: ongoing
     values:
       layout: single
       author_profile: true
