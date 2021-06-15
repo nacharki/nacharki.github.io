@@ -15,6 +15,6 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
-## Ongoing work
+###### Ongoing work
 
 "Heterogeneous Treatment Effects : When Machine Learning meets multiple treatments regime"
