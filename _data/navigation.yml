@@ -5,9 +5,6 @@ main:
 
   - title: "Talks"
     url: /talks/  
-  
-  - title: "Ongoing Work"
-    url: /ongoing/
 
   - title: "CV"
     url: /cv/
