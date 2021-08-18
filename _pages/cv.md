@@ -18,8 +18,10 @@ Education
   
 Summer schools 
 ======
-* January 2020 : Data Science, Optimization and Operations Research Winter School. École polytechnique fédérale de Lausanne. 
+* January 2020 : Data Science, Optimization and Operations Research Winter School. École Polytechnique Fédérale de Lausanne. 
 * September 2020 : Gaussian Process and Uncertainty Quantification Summer School. The University of Sheffield.
+* July 2021 : Hi! PARIS Summer School 2021 on AI & Data for Science, Business and Society. Institut Polytechnique de Paris and HEC.
+* August 2021 : Machine Learning Summer School (MLSS) 2021 Taipei, Taiwan.
 
 Awards and Scholarships
 ======
