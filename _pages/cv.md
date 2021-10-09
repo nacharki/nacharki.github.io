@@ -31,3 +31,6 @@ Awards and Scholarships
 Miscellanous 
 ======
 I participated and have been declared Winner of the IMT-Total data science challenge in February 2018.
+
+
+You can download a PDF copy of my CV here.
