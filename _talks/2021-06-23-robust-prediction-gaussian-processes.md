@@ -3,5 +3,5 @@ title: "Robust Prediction Interval estimationfor Gaussian Processes by Cross-Val
 collection: talks
 type: "Talk"
 permalink: /talks/2021-06-CIRM
-venue: "Recent advanced in machine learning and uncertainty workshop"
+venue: "Recent advances in machine learning and uncertainty workshop"
 date: 2021-06-23
