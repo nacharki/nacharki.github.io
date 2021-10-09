@@ -80,8 +80,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Naoufal ACHARKI"
-  avatar           : "profile.png"
+  name             : "Naoufal ACHARKI" 
+  avatar           : "profil_pic.jpg"
   bio              : "PhD student @ Ecole Polytechnique - CMAP & TotalEnergies"
   location         : "Palaiseau, France"
   employer         :
