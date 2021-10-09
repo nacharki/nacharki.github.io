@@ -9,8 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-<iframe src="/files/Naoufal CV.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
-
 Education
 ======
 * 2019 - Present : Ph.D in Applied Mathematics at the Centre de Mathématiques Appliquées (CMAP), École Polytechnique and TotalEnergies.
