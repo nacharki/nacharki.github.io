@@ -5,15 +5,12 @@ permalink: /talks/
 author_profile: true
 ---
 
-{% include base_path %}
+{% if site.talkmap_link == true %}
 
-### Conference Committees
-Oct 2021: talk, Young Statisticians and Probabilists 2021, Société de mathématiques appliquées et industrielles.
-Oct 2021: talk, Analysis of Stochastic Cooperative Intelligent Interactions ASCII seminar, Inria.
-Oct 2021: poster, MATHIAS-2021 annual TotalEnergies conference on applied mathematics, scientific computing, data science and Artificial Intelligence.
-Sept 2021: talk, European Network for Business and Industrial Statistics ENBIS 2021.
-Aug 2021: poster, Machine Learning Summer School MLSS 2021, National Taiwan University.
-Jun 2021: talk, Recent advances in machine learning and uncertainty workshop, Centre International de Rencontres Mathématiques.
-Oct 2020: talk, Causal Inference workshop, Total R&D.
-Oct 2019: talk, MATHIAS-2019 annual TOTAL conference on applied mathematics, scientific computing, data science and Artificial Intelligence.
-Oct 2018: talk, MATHIAS-2018 annual TOTAL conference on applied mathematics, scientific computing, data science and Artificial Intelligence.
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+
+{% endif %}
+
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}
