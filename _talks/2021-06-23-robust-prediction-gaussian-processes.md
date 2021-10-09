@@ -1,8 +1,8 @@
 ---
-title: "Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method"
+title: "Recent advances in machine learning and uncertainty workshop"
 collection: talks
 type: "Talk"
 permalink: /talks/2021-09-14-robust-prediction-gaussian-processes
-venue: "Recent advances in machine learning and uncertainty workshop"
+venue: ""
 date: 2021-06-23
 ---
