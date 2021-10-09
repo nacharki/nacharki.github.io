@@ -1,9 +1,9 @@
 ---
-title: "Potential Outcomes with continuous treatments : Introduction, challenges and perspectives"
+title: "Causal Inference workshop"
 collection: talks
 type: "Talk"
 permalink: /talks/2020-10-01-continuous-treatment
-venue: "Causal Inference workshop"
+venue: ""
 date: 2020-10-08
 
 ---
