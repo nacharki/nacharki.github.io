@@ -11,9 +11,8 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+
+**Acharki, N.** Bertoncello, A. and Garnier, J. (2021). “[Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method](https://arxiv.org/abs/2106.05396)”. Submitted to _Computational Statistics and Data Analysis_. Available at arXiv: 2106.05396. https://arxiv.org/abs/2106.05396
 
 # Ongoing work
 
