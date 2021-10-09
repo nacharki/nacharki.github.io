@@ -3,6 +3,7 @@ title: "MATHIAS-2019 : the annual TOTAL conference on applied mathematics, scien
 collection: talks
 type: "Talk"
 permalink: /talks/2019-10-01-uncertainty-quantification
-venue: " "
 date: 2019-10-15
+venue: "Total R&D"
+location: Serris, France.
 ---
