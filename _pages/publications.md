@@ -17,4 +17,4 @@ author_profile: true
 
 # Ongoing work
 
-"Heterogeneous Treatment Effects : When Machine Learning meets multiple treatments regime"
+"Machine Learning for causal inference: Estimating Heterogeneous Treatment Effects under multiple treatments regime"
