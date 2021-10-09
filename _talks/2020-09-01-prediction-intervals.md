@@ -1,8 +1,8 @@
 ---
-title: "Robust Prediction Intervals estimation for Gaussian Processes by Cross-Validation method"
+title: "Young Statisticians and Probabilists 2021"
 collection: talks
 type: "Talk"
 permalink: /talks/2020-09-01-prediction-intervals
-venue: "CSE AI/ML workshop"
-date: 2020-09-02
+venue: ""
+date: 2021-10-25
 ---
