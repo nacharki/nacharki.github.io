@@ -13,7 +13,3 @@ author_profile: true
 
 
 **Acharki Naoufal**, Bertoncello Antoine and Garnier Josselin (2021). “[Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method](https://arxiv.org/abs/2106.05396)”. Submitted. Available at arXiv: 2106.05396. https://arxiv.org/abs/2106.05396
-
-# Ongoing work
-
-"Machine Learning for causal inference: Estimating Heterogeneous Treatment Effects under multiple treatments regime"
