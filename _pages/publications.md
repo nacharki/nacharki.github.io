@@ -11,5 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
+**Naoufal Acharki**, Antoine Bertoncello and Josselin Garnier (2021). “[Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method](https://arxiv.org/abs/2106.05396)”. Submitted. Available at arXiv: 2106.05396. https://arxiv.org/abs/2106.05396.
 
-**Naoufal Acharki**, Antoine Bertoncello and Josselin Garnier (2021). “[Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method](https://arxiv.org/abs/2106.05396)”. Submitted. Available at arXiv: 2106.05396. https://arxiv.org/abs/2106.05396
+**Naoufal Acharki** [Statistical learning and sensitivity analysis - Application to Oil and Gas production](/files/MMMEF_Thesis_Naoufal.pdf). MSc thesis, prepared under the supervision of Prof. Josselin Garnier.
+
