@@ -4,6 +4,6 @@ collection: talks
 type: "talk"
 permalink: /talks/2022-12-04-SIAMUQ
 venue: "Talk"
-date: 2022-12-04
+date: 2022-04-12
 location: Atlanta, Georgia, U.S.
 ---
