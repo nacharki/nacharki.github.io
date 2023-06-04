@@ -21,9 +21,9 @@ Have a good day !
 News
 ============
 
--- Mai 2023: Excited to announce that my paper work with Ramiro Lugo, Antoine Bertoncello and Josselin Garnier about Meta-Learners for Multi-Valued Heterogeneous Effects was accepted to ICML 2023!
--- Mai 2023: I started a new position at [namR](https://namr.com/en/) as Data Scientist. I am working on developing, improving and validating the quality of buildings attributes produced by Machine Learning models.
--- February 2023: I gave at talk at "séminaire ONERA sur les incertitudes" organized by Jérôme Morio, ONERA.
--- November 2022: I was very honored to defended my PhD thesis. Many thanks to my jury members: Rémi Flamary, Josselin Garnier, Tim Sullivan, Marianne Clausel, Michèle Sebag, Olivier Roustant and Antoine Bertoncello.
+* Mai 2023: Excited to announce that my paper work with Ramiro Lugo, Antoine Bertoncello and Josselin Garnier about Meta-Learners for Multi-Valued Heterogeneous Effects was accepted to ICML 2023!
+* Mai 2023: I started a new position at [namR](https://namr.com/en/) as Data Scientist. I am working on developing, improving and validating the quality of buildings attributes produced by Machine Learning models.
+* February 2023: I gave at talk at "séminaire ONERA sur les incertitudes" organized by Jérôme Morio, ONERA.
+* November 2022: I was very honored to defended my PhD thesis. Many thanks to my jury members: Rémi Flamary, Josselin Garnier, Tim Sullivan, Marianne Clausel, Michèle Sebag, Olivier Roustant and Antoine Bertoncello.
 
 
