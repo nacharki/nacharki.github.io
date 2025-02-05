@@ -79,7 +79,7 @@ My work focuses on developing innovative approaches that merge **causality** wit
 ## 📊 GitLab Analytics
 
 <div align="center">
-  <img src="contribution-graph.png" alt="GitLab Contributions" width="100%"/>
+  <img src="_pages/contribution-graph.png" alt="GitLab Contributions" width="100%"/>
   <p><i>Tickets, merge requests, pushes and comments from February 2024 to February 2025</i></p>
 </div>
 
@@ -113,16 +113,16 @@ My work focuses on developing innovative approaches that merge **causality** wit
   - Presented "Robust Prediction Interval Estimation for Gaussian Processes"
 
 **Invited Talks**
-- **University of Bern**, Switzerland
+- **University of Bern**, Bern, Switzerland
   - Seminar on Gaussian Processes for Optimization
 
 - **Ionian University**, Corfu, Greece
   - Greek Stochastics μ': Causal Learning
 
-- **INRIA Saclay & LISN**, France
+- **INRIA Saclay & LISN**, Gif-Sur-Yvette, France
   - The Causal TAU seminar
 
-- **National Taiwan University**
+- **National Taiwan University**, Remote
   - Machine Learning Summer School MLSS 2021
 
 
