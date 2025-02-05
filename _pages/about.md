@@ -69,7 +69,7 @@ My work focuses on developing innovative approaches that merge **causality** wit
 ## 📊 GitLab Analytics
 
 <div align="center">
-  <img src="\assets\contribution-graph.png" alt="GitLab Contributions" width="100%"/>
+  <img src="contribution-graph.png" alt="GitLab Contributions" width="100%"/>
   <p><i>Tickets, merge requests, pushes and comments from February 2024 to February 2025</i></p>
 </div>
 
