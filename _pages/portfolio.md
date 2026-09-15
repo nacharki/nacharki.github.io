@@ -150,16 +150,93 @@ author_profile: true
   <p style="margin: 0; color: #334155; line-height: 1.6;"><strong>Research & Development Background:</strong> PhD in Statistics & Machine Learning from École Polytechnique, with published research at ICML 2023 and patent filing for novel prediction methodologies. Previous experience at TotalEnergies (causal inference, Gaussian processes) and namR (large-scale ML optimization).</p>
 </div>
 
-## Expertise Areas
+## Core Competencies & Technical Skills
 
-**Marketing Data Science**: Customer segmentation, propensity modeling, attribution, campaign optimization, personalization engines
+<div style="background: #F8FAFC; padding: 2rem; border-radius: 8px; margin-top: 2rem;">
 
-**Causal Inference**: Treatment effect estimation, uplift modeling, experimentation design, A/B testing frameworks
+### Domain Expertise
 
-**MLOps & Production**: Docker, Kubernetes, Airflow, MLflow, CI/CD pipelines, cloud infrastructure (AWS, GCP, Azure)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1rem 0;">
 
-**Statistical Methods**: Bayesian modeling, uncertainty quantification, time series, recommendation systems
+<div>
+<strong style="color: #1E3A8A;">Marketing Data Science</strong>
+<ul style="margin-top: 0.5rem; line-height: 1.8;">
+<li>Customer segmentation & propensity modeling</li>
+<li>Campaign optimization & attribution</li>
+<li>Personalization engines</li>
+<li>Conversion rate optimization</li>
+</ul>
+</div>
+
+<div>
+<strong style="color: #1E3A8A;">Experimentation & Causal Inference</strong>
+<ul style="margin-top: 0.5rem; line-height: 1.8;">
+<li>A/B testing design & power analysis</li>
+<li>Treatment effect estimation</li>
+<li>Uplift modeling</li>
+<li>Sequential analysis & early stopping</li>
+</ul>
+</div>
+
+<div>
+<strong style="color: #1E3A8A;">Recommendation Systems</strong>
+<ul style="margin-top: 0.5rem; line-height: 1.8;">
+<li>Ranking algorithms (learning-to-rank)</li>
+<li>Collaborative filtering</li>
+<li>Contextual bandits</li>
+<li>Offline/online evaluation</li>
+</ul>
+</div>
+
+<div>
+<strong style="color: #1E3A8A;">Statistical Methods</strong>
+<ul style="margin-top: 0.5rem; line-height: 1.8;">
+<li>Bayesian modeling</li>
+<li>Uncertainty quantification</li>
+<li>Time series analysis</li>
+<li>Gaussian processes</li>
+</ul>
+</div>
+
+</div>
+
+### Technical Stack
+
+**Programming Languages**
+- Python, R, SQL, MATLAB
+
+**Machine Learning & Statistics**
+- Scikit-learn, XGBoost, LightGBM, CausalML, Shapely
+- Pandas, NumPy, Matplotlib, ggplot2, SQLAlchemy
+
+**Data Platforms & Cloud**
+- **AWS:** EC2, Redshift, S3
+- **GCP:** BigQuery, Vertex.ai
+- **Azure:** Data platforms (TotalEnergies)
+- **Databases:** PostgreSQL, MySQL, Trino
+
+**MLOps & Production Systems**
+- Docker, Kubernetes, Airflow, MLflow, DVC
+- GitLab CI/CD, GitHub Actions
+- FastAPI, Streamlit, PySpark
+
+**Development & Collaboration Tools**
+- VSCode, PyCharm, Jupyter Notebook
+- Jira, Linear, Confluence, Atlassian, Kanban
+- Dataiku DSS, Grafana
+
+</div>
 
 ---
 
-**Looking for collaboration?** I'm available for freelance projects and consulting engagements in marketing analytics, causal ML, and production ML systems. [Get in touch](mailto:naoufal.acharki@gmail.com).
+## Let's Work Together
+
+I'm available for **freelance projects** and **full-time opportunities** in:
+
+- Marketing analytics & customer intelligence
+- A/B testing & experimentation programs
+- Recommendation systems & personalization
+- Causal ML & treatment effect estimation
+- Production ML systems & MLOps
+
+**Ready to drive measurable impact?** [Get in touch](mailto:naoufal.acharki@gmail.com) to discuss your data science challenges.
