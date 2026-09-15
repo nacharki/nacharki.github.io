@@ -14,8 +14,8 @@ $indent-var                 : 1.3em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace;
+$sans-serif                 : -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+$monospace                  : "JetBrains Mono", "Fira Code", Monaco, Consolas, "Courier New", monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
@@ -47,24 +47,34 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+/* Modern professional palette for data science/analytics */
+$deep-blue                  : #1E3A8A; // Primary - professional, trustworthy
+$cyan                       : #06B6D4; // Accent - tech, innovation
+$amber                      : #F59E0B; // Highlight - energy, CTA
+$slate-900                  : #0F172A; // Dark text
+$slate-700                  : #334155; // Medium text
+$slate-300                  : #CBD5E1; // Light borders
+$slate-100                  : #F1F5F9; // Light backgrounds
+$slate-50                   : #F8FAFC; // Very light backgrounds
+
+$gray                       : $slate-700;
+$dark-gray                  : $slate-900;
+$darker-gray                : $slate-900;
+$light-gray                 : $slate-300;
+$lighter-gray               : $slate-100;
 
 $body-color                 : #fff;
 $background-color           : #fff;
-$code-background-color      : #fafafa;
-$code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+$code-background-color      : $slate-50;
+$code-background-color-dark : $slate-100;
+$text-color                 : $slate-900;
+$border-color               : $slate-300;
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-$danger-color               : #ee5f5b;
-$info-color                 : #52adc8;
+$primary-color              : $deep-blue;
+$success-color              : #10B981; // Modern green
+$warning-color              : $amber;
+$danger-color               : #EF4444; // Modern red
+$info-color                 : $cyan;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -90,11 +100,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$link-color                 : $deep-blue;
+$link-color-hover           : $cyan;
+$link-color-visited         : mix($deep-blue, $cyan, 70%);
+$masthead-link-color        : $slate-700;
+$masthead-link-color-hover  : $cyan;
 
 
 /*

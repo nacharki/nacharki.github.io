@@ -80,11 +80,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Naoufal ACHARKI" 
+  name             : "Naoufal ACHARKI"
   avatar           : "Capture.PNG"
-  bio              : "Senior Data Scientist and Machine Learning Engineer - PhD in Statistics and Machine Learning"
+  bio              : "Senior Data Scientist | Marketing ML Expert | Causal Inference Specialist"
   location         : "Paris, France"
-  employer         : "Freelance - Senzai"
+  employer         : "Air France-KLM | Freelance Consultant"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=2svE5nwAAAAJ&hl=fr"
   email            : "naoufal.acharki@gmail.com"
@@ -175,6 +175,9 @@ kramdown:
 
 # Collections
 collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -195,6 +198,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
   # _ongoing
   - scope:
       path: ""

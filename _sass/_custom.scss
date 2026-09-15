@@ -1,0 +1,165 @@
+/* ==========================================================================
+   CUSTOM STYLES - Modern Professional Design
+   ========================================================================== */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Modern link styles */
+a {
+  transition: color 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Card-style sections with subtle shadows */
+.archive__item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Modern table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2em 0;
+
+  th {
+    background: $slate-100;
+    color: $dark-gray;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid $deep-blue;
+  }
+
+  td {
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid $slate-300;
+  }
+
+  tr:hover {
+    background: $slate-50;
+  }
+}
+
+/* Code blocks with modern styling */
+code {
+  background: $slate-100;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: $deep-blue;
+}
+
+pre {
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: $slate-900;
+
+  code {
+    background: transparent;
+    color: #E2E8F0;
+  }
+}
+
+/* List styling improvements */
+ul, ol {
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+/* Button/badge styling */
+.btn {
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Professional author sidebar styling */
+.sidebar {
+  .author__avatar {
+    img {
+      border-radius: 50%;
+      border: 3px solid $slate-300;
+      transition: border-color 0.3s ease;
+
+      &:hover {
+        border-color: $cyan;
+      }
+    }
+  }
+
+  .author__name {
+    color: $dark-gray;
+    font-weight: 700;
+  }
+
+  .author__bio {
+    color: $slate-700;
+    line-height: 1.6;
+  }
+}
+
+/* Navigation improvements */
+.greedy-nav {
+  a {
+    font-weight: 500;
+
+    &:hover {
+      color: $cyan !important;
+    }
+  }
+
+  .visible-links a:before {
+    background: $cyan;
+  }
+}
+
+/* Archive grid improvements */
+.archive {
+  .archive__item-title {
+    color: $deep-blue;
+    font-weight: 700;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  .archive__item-excerpt {
+    color: $slate-700;
+    line-height: 1.6;
+  }
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
