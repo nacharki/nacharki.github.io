@@ -95,25 +95,16 @@ author_profile: true
   <p>Specialized in designing, building, and deploying production-ready machine learning systems that drive measurable business impact. From recommendation engines to causal inference frameworks, I deliver solutions that combine academic rigor with engineering excellence.</p>
 </div>
 
-<div class="portfolio-grid">
+<div class="hero-project" style="background: linear-gradient(135deg, #1E3A8A 0%, #06B6D4 100%); color: white; padding: 3rem; border-radius: 12px; margin-bottom: 3rem;">
+  <div style="font-size: 0.9em; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; opacity: 0.9;">Featured Case Study</div>
+  <h2 style="color: white; font-size: 2em; margin: 0 0 1rem 0;">Air France-KLM: Recommendation Systems at Scale</h2>
+  <p style="font-size: 1.2em; margin-bottom: 2rem; opacity: 0.95;">Driving €1M+ monthly revenue through intelligent flight recommendations and rigorous experimentation</p>
+  <a href="/portfolio/project-02-airfrance-personalization/" style="background: white; color: #1E3A8A; padding: 0.75rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease;">Read Full Case Study →</a>
+</div>
 
-  <div class="project-card">
-    <div class="company">Air France-KLM</div>
-    <h3>Personalized Offer Display & A/B Testing</h3>
-    <p class="description">
-      Designed and executed A/B testing framework to optimize customer journey and personalize product offerings on the airline's website. Analyzed customer behavior to translate insights into actionable strategies for business stakeholders.
-    </p>
-    <div class="impact">
-      <strong>Impact:</strong> Enhanced customer experience through data-driven personalization at scale for one of Europe's largest airline groups.
-    </div>
-    <div class="tags">
-      <span class="tag">Recommendation Systems</span>
-      <span class="tag">A/B Testing</span>
-      <span class="tag">Customer Analytics</span>
-      <span class="tag">BigQuery</span>
-      <span class="tag">Marketing Operations</span>
-    </div>
-  </div>
+<h2 style="margin-top: 3rem; margin-bottom: 1.5rem; color: #1E3A8A;">Marketing Data Science Projects</h2>
+
+<div class="portfolio-grid">
 
   <div class="project-card">
     <div class="company">Senzai</div>
@@ -151,42 +142,12 @@ author_profile: true
     </div>
   </div>
 
-  <div class="project-card">
-    <div class="company">namR</div>
-    <h3>Large-Scale Feature Engineering & ML Optimization</h3>
-    <p class="description">
-      Developed new features on large-scale datasets (50M+ rows) for building energy intelligence. Optimized existing ML algorithms for solar panel detection, significantly reducing processing time.
-    </p>
-    <div class="impact">
-      <strong>Impact:</strong> Reduced solar panel detection runtime from 25 to 8 hours (68% improvement).
-    </div>
-    <div class="tags">
-      <span class="tag">GCP</span>
-      <span class="tag">BigQuery</span>
-      <span class="tag">Computer Vision</span>
-      <span class="tag">Optimization</span>
-      <span class="tag">Geospatial ML</span>
-    </div>
-  </div>
+</div>
 
-  <div class="project-card">
-    <div class="company">TotalEnergies</div>
-    <h3>Causal Inference for Energy Production</h3>
-    <p class="description">
-      Developed Gaussian process regression models for gas well production prediction and causal inference models for geothermal wells. Research resulted in patent filing and three scientific publications.
-    </p>
-    <div class="impact">
-      <strong>Impact:</strong> 80% confidence prediction accuracy, patent filing, 3 scientific publications including ICML 2023.
-    </div>
-    <div class="tags">
-      <span class="tag">Causal Inference</span>
-      <span class="tag">Gaussian Processes</span>
-      <span class="tag">Uncertainty Quantification</span>
-      <span class="tag">Research & Development</span>
-      <span class="tag">Azure</span>
-    </div>
-  </div>
+<h2 style="margin-top: 3rem; margin-bottom: 1.5rem; color: #334155;">Additional Experience</h2>
 
+<div style="background: #F8FAFC; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #CBD5E1;">
+  <p style="margin: 0; color: #334155; line-height: 1.6;"><strong>Research & Development Background:</strong> PhD in Statistics & Machine Learning from École Polytechnique, with published research at ICML 2023 and patent filing for novel prediction methodologies. Previous experience at TotalEnergies (causal inference, Gaussian processes) and namR (large-scale ML optimization).</p>
 </div>
 
 ## Expertise Areas

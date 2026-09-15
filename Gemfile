@@ -16,7 +16,12 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# gem "wdm", "~> 0.1.0" if Gem.win_platform?  # Commented out - incompatible with Ruby 4.0
+
+# Ruby 4.0 compatibility - add gems that were removed from stdlib
+gem "csv"
+gem "base64"
+gem "logger"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
