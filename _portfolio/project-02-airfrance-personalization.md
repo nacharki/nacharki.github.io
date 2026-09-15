@@ -1,6 +1,6 @@
 ---
-title: "Air France-KLM: Driving €1M Monthly Revenue with Recommendation Systems"
-excerpt: "Designing, evaluating, and deploying intelligent flight recommendations that increased conversion rate by 0.6% and ARPV by 0.5% - translating to €1M+ monthly incremental revenue"
+title: "Air France-KLM: Driving €1M Monthly Revenue with Smart Recommendations"
+excerpt: "How I helped one of Europe's largest airlines increase conversion by 0.6% and revenue per visitor by 0.5% through intelligent flight recommendations and rigorous A/B testing"
 collection: portfolio
 date: 2025-11-01
 company: "Air France-KLM"
@@ -15,246 +15,107 @@ tags:
 
 ## The Challenge
 
-When millions of travelers visit Air France or KLM websites to book flights, they encounter a critical decision point: which flight to choose from dozens of options? Which branded fare (Basic, Standard, Flex) offers the best value?
+Picture this: You land on Air France's website to book a flight from Paris to New York. Dozens of options appear—different airlines, times, prices, connections. Which flight should appear first? Should we recommend the Basic fare or try to upsell you to Flex?
 
-**The business problem:** How do you personalize these recommendations at scale to maximize conversion rates and revenue per visitor, while ensuring rigorous scientific evaluation before deployment?
+**This is the problem I solve.**
 
-**The stakes:** With millions of monthly visitors and average booking values in the hundreds of euros, even a 0.5% improvement translates to **millions in incremental revenue**.
+With millions of monthly visitors and average bookings worth €300-500, even tiny improvements have massive impact. A 0.5% lift in conversion doesn't sound like much—until you realize that's **€1 million in monthly revenue**.
 
----
-
-## My Role: From Design to Production
-
-As the **Senior Data Scientist** leading experimentation and evaluation for recommendation systems, I'm responsible for the complete lifecycle:
-
-### 1. Pre-Launch: Offline Evaluation & Design
-
-**Before any experiment goes live**, I evaluate recommender performance using historical data:
-
-- **Offline metrics analysis**: Precision@K, NDCG, ranking quality
-- **Counterfactual evaluation**: Estimating online performance from logged data
-- **A/B test design**: Defining success metrics, treatment/control splits, sample size requirements
-- **Power analysis**: Calculating required traffic and experiment duration to detect meaningful effects
-
-**Why this matters:** Launching poorly-designed experiments wastes engineering resources and risks degrading customer experience. Rigorous offline evaluation ensures only promising candidates reach production testing.
-
-### 2. Pre-Experiment: Power Analysis & Planning
-
-**Statistical rigor from day one:**
-
-- Calculate minimum detectable effect (MDE) given traffic constraints
-- Determine optimal experiment duration to achieve 80%+ statistical power
-- Design guardrail metrics to prevent negative side effects
-- Set up monitoring dashboards and alerting thresholds
-
-### 3. During Experiment: Monitoring & Analysis
-
-**Real-time oversight of live A/B tests:**
-
-- Monitor key metrics: conversion rate (CR), average revenue per visitor (ARPV), click-through rate
-- Track sample ratio mismatch (SRM) and other experiment health metrics
-- Conduct sequential analysis to detect early winners or stop harmful variants
-- Investigate anomalies and ensure data quality
-
-### 4. Post-Experiment: Decision & Deployment
-
-**Data-driven shipping decisions:**
-
-- Conduct statistical significance testing (frequentist + Bayesian approaches)
-- Analyze heterogeneous treatment effects across customer segments
-- Calculate business impact and ROI projections
-- Present findings to stakeholders for go/no-go decision
-- Work with engineering teams to ship winners to 100% of traffic
+My job? Design the recommendation systems that personalize these choices, then prove they work through rigorous A/B testing before we deploy them to production.
 
 ---
 
-## The Recommendation Systems
+## What I Do
 
-I work on two critical recommender systems:
+I lead the experimentation and evaluation for two critical recommender systems:
 
-### Flight List Ranker
+### 1. Flight List Ranker
+When you search for flights, we rank them based on what matters to YOU—not just price. We consider your search behavior, booking history, preferences, and hundreds of other signals to show you the flights you're most likely to book.
 
-**The problem:** When a customer searches for Paris → New York, dozens of flight options appear. Which should rank highest?
-
-**The solution:** A machine learning ranking model that personalizes the flight list based on:
-- Customer search behavior and preferences
-- Historical booking patterns
-- Flight attributes (price, duration, stops, airline)
-- Contextual signals (time of day, device, location)
-
-**How I evaluate it:**
-- Offline: Ranking metrics (NDCG, MRR) on historical data
-- Online: A/B tests measuring conversion rate and revenue impact
-- Guardrails: Ensure diversity and fairness across flight options
-
-### Branded Fare Recommender
-
-**The problem:** Air France-KLM offers multiple fare classes (Basic Economy, Standard, Flex). Which should we recommend?
-
-**The solution:** A propensity model predicting customer willingness to pay for premium fares, enabling personalized upsell recommendations.
-
-**How I evaluate it:**
-- Offline: Uplift modeling to predict incremental revenue
-- Online: Multi-armed bandit or A/B tests to optimize recommendation strategy
-- Business metrics: Conversion rate, ARPV, fare mix shift
+### 2. Branded Fare Recommender
+Should we show you the €150 Basic Economy fare or highlight the €250 Flex fare with free cancellation? We predict which customers are willing to pay for premium features and personalize the recommendation accordingly.
 
 ---
 
-## Impact: The Numbers That Matter
+## My Process: From Idea to Production
 
-### Experiment Results
+**Before anything goes live**, I put it through the wringer:
 
-**Conversion Rate (CR):** +0.6% improvement
-- Baseline CR: ~3%
-- After recommendation optimization: 3.6%
-- **20% relative lift in conversions**
+**Step 1: Offline Testing**
+I test new models on historical data to see if they would have performed better than what we currently have. No point running a real experiment if the idea is doomed to fail.
 
-**Average Revenue Per Visitor (ARPV):** +0.5% improvement
-- Higher conversion + better fare mix optimization
-- Increased upsell to premium fares
+**Step 2: Experiment Design**
+If it looks promising, I design the A/B test. How many visitors do we need? How long should we run it? What could go wrong? I calculate all of this upfront so we're not wasting time or traffic.
 
-### Business Impact
+**Step 3: Live Monitoring**
+Once the experiment is running, I watch it like a hawk. Are conversion rates moving? Is anything breaking? Are certain customer segments reacting differently? I catch problems early and make decisions fast.
 
-**Given Air France-KLM's traffic volume:**
-
-- Millions of monthly website visitors
-- Average booking value: €300-500+
-- **+0.6% CR + 0.5% ARPV = €1M+ incremental revenue per month**
-- **€12M+ annualized impact** from a single successful experiment
-
-**Why this is impressive:**
-- Large-scale impact: Optimizing at European airline group scale
-- Rigorous methodology: Scientific A/B testing, not just correlation
-- Sustainable gains: Production deployment means continuous revenue lift
+**Step 4: Ship or Kill**
+After the experiment, I analyze the results, present findings to stakeholders, and make the call: deploy to everyone or kill it. No gut feelings—just data.
 
 ---
 
-## Technical Approach
+## The Impact
 
-### Data Infrastructure
+**Conversion Rate:** +0.6% improvement
+- That's a 20% relative lift over baseline
+- Thousands more bookings every month
 
-- **Google BigQuery**: Petabyte-scale data warehouse for customer behavior analysis
-- **Event tracking**: Millions of search, click, and booking events daily
-- **Feature engineering**: Real-time and batch feature pipelines
+**Average Revenue Per Visitor:** +0.5% improvement
+- Better conversion + smarter upselling
+- More customers choosing premium fares
 
-### Experimentation Framework
-
-- **A/B testing platform**: Custom experimentation infrastructure for flight recommendations
-- **Statistical methods**: Frequentist hypothesis testing, Bayesian credible intervals, sequential analysis
-- **Causal inference**: Ensuring we measure true treatment effects, not confounding
-
-### Recommendation Algorithms
-
-- **Collaborative filtering**: Learning from similar customer behavior
-- **Content-based ranking**: Flight attributes and customer preferences
-- **Contextual bandits**: Balancing exploration vs exploitation
-- **Ensemble methods**: Combining multiple signals for robust predictions
+**Business Value:** €1M+ incremental monthly revenue
+- €12M+ annualized impact
+- From a single successful experiment
+- Sustainable gains that compound over time
 
 ---
 
-## Key Challenges & Solutions
+## Why This Matters
 
-### Challenge 1: High Variance in Booking Behavior
+**Scale:** Air France-KLM is one of Europe's largest airline groups. We're talking millions of users, massive revenue, and zero room for error.
 
-**Problem:** Flight bookings are rare events (low conversion rate), making experiments noisy.
+**Rigor:** This isn't "we built a model and hope it works." Every recommendation system goes through scientific A/B testing. We measure real impact on real customers.
 
-**Solution:**
-- Use CUPED (variance reduction) to improve sensitivity
-- Focus on proxy metrics (clicks, engagement) for faster iteration
-- Run power analysis to ensure sufficient sample size
+**Ownership:** I don't just analyze data. I own the entire lifecycle—from designing the test to monitoring it live to making the final shipping decision.
 
-### Challenge 2: Seasonality & External Factors
-
-**Problem:** Travel demand fluctuates with holidays, events, fuel prices.
-
-**Solution:**
-- Pair-wise randomization to balance treatment/control
-- Track external variables and adjust analysis
-- Use diff-in-diff or synthetic control when necessary
-
-### Challenge 3: Multiple Touchpoints
-
-**Problem:** Customers often search multiple times before booking.
-
-**Solution:**
-- User-level randomization (not session-level)
-- Track customer journeys across visits
-- Analyze long-term effects, not just immediate conversions
+**Complexity:** Aviation is tough. Customers search multiple times before booking, demand fluctuates wildly with seasons and events, and we're competing with dozens of airlines and OTAs.
 
 ---
 
-## Skills Demonstrated
+## What I Learned
 
-### Experimentation & Causal Inference
-- A/B test design and power analysis
-- Statistical testing (frequentist + Bayesian)
-- Causal inference methods
-- Sequential analysis and early stopping
+**Business metrics beat technical metrics every time.**
+Nobody cares if your ranking algorithm has a great "score." They care if it makes money.
 
-### Recommendation Systems
-- Ranking algorithms (learning-to-rank)
-- Personalization at scale
-- Offline/online evaluation methodologies
-- Multi-armed bandits and reinforcement learning
+**Fast iteration wins.**
+The faster you can test ideas, the faster you learn. I've built processes that let us run experiments in weeks, not months.
 
-### Business Impact
-- Translating statistical findings to business metrics
-- ROI calculation and stakeholder communication
-- Cross-functional collaboration (engineering, product, marketing)
-- Data-driven decision making
+**Simple usually beats complex.**
+The best solutions are often embarrassingly simple. Don't over-engineer.
 
-### Technical Execution
-- Big data processing (BigQuery, SQL)
-- Python for statistical analysis and ML
-- Experiment monitoring and alerting
-- Production ML systems
+**Trust but verify.**
+Models that look great in testing can fail in production. Always validate with real experiments.
 
 ---
 
-## What Makes This Work Impressive
+## The Stack
 
-**1. Scale:** Optimizing for one of Europe's largest airline groups with millions of monthly users
-
-**2. Rigor:** Not just "we built a model" - scientifically validated through A/B testing with proper statistical methods
-
-**3. Impact:** €1M+ monthly revenue increase is a tangible, measurable business outcome
-
-**4. End-to-end ownership:** From offline evaluation → power analysis → live experiments → production deployment
-
-**5. Domain complexity:** Aviation is a complex domain with high-stakes decisions, seasonal patterns, and competitive dynamics
+- **Data:** Google BigQuery for petabyte-scale customer behavior analysis
+- **Experimentation:** Custom A/B testing platform for millions of concurrent users
+- **Languages:** Python, SQL
+- **ML:** Scikit-learn, XGBoost, ranking algorithms, ensemble methods
+- **Collaboration:** Working across data science, engineering, product, and commercial teams
 
 ---
 
-## Lessons Learned
+## Let's Talk
 
-**1. Offline evaluation is necessary but not sufficient**
-- Models that look great offline can fail in production
-- Always validate with live experiments
+I'm open to freelance projects and full-time opportunities where I can apply this experience:
+- Building recommendation systems that drive revenue
+- Designing and scaling A/B testing programs
+- Applying causal inference to marketing problems
+- Leading data science teams tackling complex challenges
 
-**2. Power analysis prevents wasted effort**
-- Running underpowered experiments wastes time and traffic
-- Invest upfront in proper statistical planning
-
-**3. Business metrics trump ML metrics**
-- NDCG@10 is interesting, but stakeholders care about revenue
-- Always connect technical metrics to business outcomes
-
-**4. Guardrails are critical**
-- Monitor for negative side effects (latency, diversity, fairness)
-- One bad metric can outweigh multiple positive metrics
-
-**5. Iteration speed matters**
-- Fast experiment cycles enable rapid learning
-- Invest in infrastructure to accelerate testing
-
----
-
-## Looking Forward
-
-This work demonstrates my ability to:
-- Design and execute rigorous A/B testing programs at scale
-- Build and evaluate recommendation systems that drive revenue
-- Combine academic research rigor with business pragmatism
-- Deliver measurable impact in complex, high-stakes environments
-
-**Interested in similar challenges?** I'm open to freelance projects and full-time opportunities in marketing analytics, experimentation, and recommendation systems. [Get in touch](mailto:naoufal.acharki@gmail.com).
+**Interested?** [Get in touch](mailto:naoufal.acharki@gmail.com).
