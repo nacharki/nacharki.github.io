@@ -322,7 +322,7 @@ body {
 
 .case-study-header {
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  padding: 3rem;
+  padding: 2.5rem 2rem;
   position: relative;
   overflow: hidden;
 }
@@ -380,21 +380,19 @@ body {
 
 /* Split content layout */
 .case-study-content {
-  padding: 3rem;
+  padding: 2rem;
+  max-width: 100%;
 }
 
 .split-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: block;
   margin: 2rem 0;
 }
 
 .split-layout .left-col,
 .split-layout .right-col {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .case-study .section {
@@ -448,10 +446,12 @@ body {
 .uplift-diagram {
   background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%);
   border-radius: 24px;
-  padding: 3rem;
-  margin: 3rem 0;
+  padding: 2rem 1.5rem;
+  margin: 2rem 0;
   box-shadow: 0 8px 32px rgba(245, 158, 11, 0.2);
   border: 2px solid #fbbf24;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .uplift-diagram h3 {
@@ -465,11 +465,18 @@ body {
 .uplift-matrix {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 800px;
+  gap: 1.5rem;
+  max-width: 700px;
   margin: 0 auto;
   position: relative;
-  padding: 3rem 1rem 1rem 3rem;
+  padding: 3rem 0.5rem 0.5rem 3rem;
+}
+
+@media (max-width: 600px) {
+  .uplift-matrix {
+    padding: 2.5rem 0.5rem 0.5rem 2.5rem;
+    gap: 1rem;
+  }
 }
 
 /* Axis labels */
@@ -505,7 +512,7 @@ body {
 }
 
 .uplift-quadrant {
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 1rem;
   border-radius: 16px;
   text-align: center;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -513,6 +520,10 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .uplift-quadrant::before {
@@ -972,12 +983,7 @@ body {
    RESPONSIVE DESIGN
    ======================================== */
 
-@media (max-width: 1024px) {
-  .split-layout {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
+/* Split layout is already set to block/stack by default above */
 
 @media (max-width: 768px) {
   .hero-portfolio h1 {
