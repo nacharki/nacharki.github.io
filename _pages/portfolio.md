@@ -22,6 +22,20 @@ body {
   overflow-x: hidden;
 }
 
+.page__content {
+  overflow-x: hidden;
+}
+
+/* Ensure sections don't overflow */
+.hero-portfolio,
+.case-studies-container,
+.dark-section,
+.process-section,
+.skills-grid,
+.about-section {
+  max-width: 100%;
+}
+
 /* Fade in on scroll animation */
 @keyframes fadeInUp {
   from {
@@ -89,8 +103,8 @@ body {
   animation: gradientShift 15s ease infinite;
   color: white;
   padding: 6rem 2rem;
-  border-radius: 0;
-  margin: -2rem -2rem 0 -2rem;
+  border-radius: 16px;
+  margin: 0 0 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -213,7 +227,8 @@ body {
   background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
   color: white;
   padding: 5rem 2rem;
-  margin: 4rem -2rem;
+  margin: 5rem 0;
+  border-radius: 24px;
   position: relative;
 }
 
@@ -1014,8 +1029,8 @@ body {
   }
 
   .dark-section {
-    margin: 2rem -1rem;
-    padding: 3rem 1rem;
+    margin: 3rem 0;
+    padding: 3rem 1.5rem;
   }
 }
 
