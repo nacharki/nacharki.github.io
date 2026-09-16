@@ -230,8 +230,8 @@ author_profile: true
 
   <div class="section">
     <h3>The Challenge</h3>
-    <p>Picture this: millions of travelers visiting Air France-KLM to book flights. You have dozens of flight options and fare classes to recommend. The obvious approach? Show them what they're most likely to buy—target the high-propensity customers.</p>
-    <p>But here's the problem: <strong>high propensity doesn't mean high uplift.</strong> Some customers will book regardless of what you show them. Others will never convert. The real value is in the persuadables—those you can influence.</p>
+    <p>Picture this: millions of travelers visiting Air France-KLM to book flights. You have dozens of flight options and fare classes to recommend. The obvious approach? Show them what they're most likely to buy: target the high-propensity customers.</p>
+    <p>But here's the problem: <strong>high propensity doesn't mean high uplift.</strong> Some customers will book regardless of what you show them. Others will never convert. The real value is in the persuadables, those you can influence.</p>
   </div>
 
   <div class="section">
@@ -281,7 +281,7 @@ author_profile: true
       <li>Real-time experiment monitoring and statistical analysis</li>
       <li>Final go/no-go shipping decisions based on evidence</li>
     </ul>
-    <p>Every recommendation is battle-tested on real users. No guesswork—just rigorous science driving measurable revenue.</p>
+    <p>Every recommendation is battle-tested on real users. No guesswork, just rigorous science driving measurable revenue.</p>
   </div>
 
   <div class="tags">
@@ -299,16 +299,16 @@ author_profile: true
 
   <div class="section">
     <h3>The Problem</h3>
-    <p>Thousands of leads go cold. Customers churn. They already know your brand—they just stopped engaging. Traditional marketing blasts everyone the same way, wasting budget on customers who won't respond and annoying those who would have converted anyway.</p>
+    <p>Thousands of leads go cold. Customers churn. They already know your brand, they just stopped engaging. Traditional marketing blasts everyone the same way, wasting budget on customers who won't respond and annoying those who would have converted anyway.</p>
     <p>Senzai built an AI re-engagement engine that wakes up the right customers at the right time with the right message.</p>
   </div>
 
   <div class="section">
     <h3>My Role: Building the Brain</h3>
-    <p>I designed and deployed the causal ML system that powers intelligent customer targeting:</p>
+    <p>I designed and deployed two multi-stage causal ML pipelines that power intelligent customer targeting:</p>
     <ul>
-      <li><strong>Drip Campaign Engine:</strong> Multi-channel uplift models identifying which dormant leads to re-engage via email, SMS, or ads. Achieved 15% conversion uplift by targeting persuadables, not just high-propensity contacts.</li>
-      <li><strong>Newsletter Optimization:</strong> Ensemble models predicting not just who will open emails, but who will <em>convert because of them</em>. Delivered 30% uplift for telco client by avoiding "sleeping dogs."</li>
+      <li><strong>Drip Campaign Pipeline:</strong> A 4-layer treatment model optimizing who to contact, when (time of day, day of week), through which channel (email, SMS, ads), and with what message variant. Built using genS-Learner for multi-outcome optimization (open, click, conversion). Achieved 15% conversion uplift by targeting persuadables, not just high-propensity contacts.</li>
+      <li><strong>Newsletter Pipeline:</strong> A 6-layer treatment model with ensemble majority voting predicting not just who will open emails, but who will convert because of them. Optimizes send time, frequency, content variant, and subject line across multiple customer segments. Delivered 30% uplift for telco client by avoiding "sleeping dogs."</li>
       <li><strong>Production Infrastructure:</strong> Built end-to-end MLOps pipelines on AWS with Docker, Kubernetes, Airflow, and MLflow. Scaled to score 3M customers across 50M+ interactions.</li>
     </ul>
   </div>
@@ -330,7 +330,7 @@ author_profile: true
 
   <div class="section">
     <h3>Why It Worked</h3>
-    <p>Easy integration, instant results, zero hassle. Clients plug in their CRM data, and the engine identifies exactly who to target and who to leave alone. This wasn't just a model—it was a complete, battle-tested system that reduced model deployment time from weeks to days.</p>
+    <p>Easy integration, instant results, zero hassle. Clients plug in their CRM data, and the engine identifies exactly who to target and who to leave alone. This wasn't just a model, it was a complete, battle-tested system that reduced model deployment time from weeks to days.</p>
   </div>
 
   <div class="tags">
@@ -354,7 +354,7 @@ author_profile: true
 
   <div class="section">
     <h3>My Approach</h3>
-    <p>Designed advanced mathematical problems spanning probability theory, statistical inference, optimization, and causal reasoning. Problems require multi-step reasoning and proper interpretation of uncertainty—areas where LLMs often struggle.</p>
+    <p>Designed advanced mathematical problems spanning probability theory, statistical inference, optimization, and causal reasoning. Problems require multi-step reasoning and proper interpretation of uncertainty, areas where LLMs often struggle.</p>
   </div>
 
   <div class="section">
@@ -419,22 +419,6 @@ author_profile: true
 
 ---
 
-## Clients & Testimonials
-
-<div class="testimonial">
-  "Naoufal's rigorous approach to experimentation and causal inference helped us make data-driven decisions with confidence. His work on recommendation systems delivered measurable revenue impact."
-  <br><br>
-  <strong>— Marketing Operations Lead, Major European Airline</strong>
-</div>
-
-**Select Clients & Projects:**
-- **Air France-KLM:** Recommendation systems & A/B testing for flight booking optimization
-- **Senzai:** End-to-end ML infrastructure for marketing campaign optimization
-- **Mercor:** AI evaluation frameworks for frontier language models
-- **TotalEnergies:** Causal inference research (ICML 2023 publication)
-
----
-
 ## Core Competencies
 
 <div class="skills-grid">
@@ -467,16 +451,6 @@ author_profile: true
       <li>Offline/online evaluation</li>
     </ul>
   </div>
-
-  <div class="skill-category">
-    <h3>Technical Stack</h3>
-    <ul>
-      <li>Python, R, SQL</li>
-      <li>AWS, GCP (BigQuery), Azure</li>
-      <li>Docker, Kubernetes, Airflow, MLflow</li>
-      <li>Scikit-learn, XGBoost, CausalML</li>
-    </ul>
-  </div>
 </div>
 
 ---
@@ -485,18 +459,4 @@ author_profile: true
 
 PhD in Statistics & Machine Learning from École Polytechnique with 7+ years building production ML systems. Published at ICML 2023. Based in Paris, working with clients across Europe and North America. Fluent in English, French, and Arabic.
 
-**Core strengths:** Combining academic rigor with business pragmatism. I don't just build models—I drive measurable revenue impact through rigorous experimentation and causal inference.
-
----
-
-## Let's Work Together
-
-I'm available for **freelance projects** and **full-time opportunities** in:
-
-- Marketing analytics & customer intelligence
-- A/B testing & experimentation programs
-- Recommendation systems & personalization
-- Causal ML & treatment effect estimation
-- MLOps & production ML systems
-
-**Ready to drive measurable impact?** [Get in touch](mailto:naoufal.acharki@gmail.com)
+**Core strengths:** Combining academic rigor with business pragmatism. I don't just build models, I drive measurable revenue impact through rigorous experimentation and causal inference.
