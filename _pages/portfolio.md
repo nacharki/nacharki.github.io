@@ -6,79 +6,276 @@ author_profile: true
 ---
 
 <style>
+/* Smooth scroll and animations */
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Enhanced Hero Section */
 .hero-portfolio {
-  background: linear-gradient(135deg, #1E3A8A 0%, #06B6D4 100%);
+  background: linear-gradient(135deg, #1E3A8A 0%, #0C4A6E 50%, #06B6D4 100%);
   color: white;
-  padding: 4rem 2rem;
-  border-radius: 12px;
-  margin-bottom: 3rem;
+  padding: 5rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(30, 58, 138, 0.3);
+}
+
+.hero-portfolio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="white" opacity="0.03"/></svg>');
+  background-size: 20px 20px;
+  opacity: 0.5;
+}
+
+.hero-portfolio > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-portfolio h1 {
   color: white;
-  font-size: 2.5em;
-  margin: 0 0 1rem 0;
-  line-height: 1.2;
+  font-size: 3em;
+  font-weight: 800;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 .hero-portfolio .tagline {
-  font-size: 1.3em;
-  margin-bottom: 2rem;
+  font-size: 1.35em;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
   opacity: 0.95;
-  font-weight: 300;
-  max-width: 800px;
+  font-weight: 400;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hero-portfolio .cta {
-  background: white;
-  color: #1E3A8A;
-  padding: 0.75rem 2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-block;
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 2.5rem auto 0 auto;
+}
+
+.hero-stat {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
 }
 
-.hero-portfolio .cta:hover {
-  background: #F59E0B;
-  color: white;
-  transform: translateY(-2px);
+.hero-stat:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
 }
 
+.hero-stat .stat-number {
+  font-size: 2.2em;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #FDE68A;
+}
+
+.hero-stat .stat-label {
+  font-size: 1em;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+/* Uplift Modeling Diagram */
+.uplift-diagram {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 3rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 2px solid #06B6D4;
+}
+
+.uplift-diagram h3 {
+  text-align: center;
+  color: #1E3A8A;
+  font-size: 1.8em;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.uplift-matrix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.uplift-matrix::before {
+  content: 'Treatment Effect (Uplift) →';
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  color: #1E3A8A;
+  font-size: 0.9em;
+}
+
+.uplift-matrix::after {
+  content: 'Propensity to Convert →';
+  position: absolute;
+  left: -180px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-weight: 600;
+  color: #1E3A8A;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.uplift-quadrant {
+  padding: 1.8rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid;
+}
+
+.uplift-quadrant:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.uplift-quadrant.persuadables {
+  background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);
+  border-color: #10B981;
+}
+
+.uplift-quadrant.sure-things {
+  background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+  border-color: #3B82F6;
+}
+
+.uplift-quadrant.sleeping-dogs {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+  border-color: #F59E0B;
+}
+
+.uplift-quadrant.lost-causes {
+  background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
+  border-color: #9CA3AF;
+}
+
+.uplift-quadrant .quad-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+  color: #1E3A8A;
+}
+
+.uplift-quadrant .quad-desc {
+  font-size: 0.9em;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.uplift-quadrant .quad-action {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  font-size: 0.85em;
+  color: #0C4A6E;
+}
+
+/* Callout Box */
+.callout-box {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+  border-left: 6px solid #F59E0B;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.2);
+}
+
+.callout-box .callout-icon {
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+}
+
+.callout-box h4 {
+  color: #92400E;
+  font-size: 1.3em;
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+}
+
+.callout-box p {
+  color: #451A03;
+  line-height: 1.7;
+  margin: 0.5rem 0;
+}
+
+.callout-box strong {
+  color: #92400E;
+}
+
+/* Enhanced Case Studies */
 .case-study {
   background: white;
-  border: 1px solid #CBD5E1;
-  border-radius: 12px;
-  padding: 2.5rem;
-  margin-bottom: 2.5rem;
-  transition: all 0.3s ease;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .case-study:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
   border-color: #06B6D4;
+  transform: translateY(-4px);
 }
 
 .case-study.featured {
-  border: 2px solid #06B6D4;
-  background: linear-gradient(135deg, #F8FAFC 0%, #E0F2FE 100%);
+  border: 3px solid #06B6D4;
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
+  box-shadow: 0 8px 32px rgba(6, 182, 212, 0.2);
 }
 
 .case-study .company-badge {
   display: inline-block;
   background: #06B6D4;
   color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  border-radius: 24px;
   font-size: 0.85em;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 1rem;
+  letter-spacing: 0.8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
 }
 
 .case-study.featured .company-badge {
@@ -87,144 +284,338 @@ author_profile: true
 
 .case-study h2 {
   color: #1E3A8A;
-  font-size: 1.8em;
+  font-size: 2em;
+  font-weight: 800;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
 }
 
+/* Enhanced Metrics with Icons */
 .case-study .metrics {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 8px;
-  border-left: 4px solid #10B981;
-}
-
-.case-study.featured .metrics {
-  border-left-color: #F59E0B;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
 }
 
 .metric {
   text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.metric .number {
-  font-size: 2em;
-  font-weight: 700;
-  color: #1E3A8A;
+.metric::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #06B6D4, #1E3A8A);
+}
+
+.metric:nth-child(1) { background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%); }
+.metric:nth-child(1)::before { background: linear-gradient(90deg, #10B981, #059669); }
+
+.metric:nth-child(2) { background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); }
+.metric:nth-child(2)::before { background: linear-gradient(90deg, #F59E0B, #D97706); }
+
+.metric:nth-child(3) { background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%); }
+.metric:nth-child(3)::before { background: linear-gradient(90deg, #3B82F6, #2563EB); }
+
+.metric:nth-child(4) { background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 100%); }
+.metric:nth-child(4)::before { background: linear-gradient(90deg, #8B5CF6, #7C3AED); }
+
+.metric:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.metric .icon {
+  font-size: 2.5em;
+  margin-bottom: 0.75rem;
   display: block;
 }
 
+.metric .number {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #1E3A8A;
+  display: block;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
 .metric .label {
-  font-size: 0.9em;
-  color: #334155;
-  margin-top: 0.25rem;
+  font-size: 0.95em;
+  color: #475569;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .case-study .section {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
 }
 
 .case-study .section h3 {
   color: #1E3A8A;
-  font-size: 1.2em;
-  margin-bottom: 0.75rem;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #E0F2FE;
+  padding-bottom: 0.5rem;
+}
+
+.case-study .section p {
+  line-height: 1.8;
+  color: #334155;
+  font-size: 1.05em;
+}
+
+.case-study .section ul {
+  line-height: 1.9;
+  color: #334155;
+}
+
+.case-study .section li {
+  margin: 0.75rem 0;
 }
 
 .case-study .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.5rem;
+  gap: 0.75rem;
+  margin-top: 2rem;
 }
 
 .case-study .tag {
   background: #E0F2FE;
-  color: #0C4A6E;
-  padding: 0.3rem 0.8rem;
-  border-radius: 12px;
+  color: #075985;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   font-size: 0.85em;
-  font-weight: 500;
+  font-weight: 600;
+  border: 1px solid #BAE6FD;
+  transition: all 0.2s ease;
 }
 
+.case-study .tag:hover {
+  background: #06B6D4;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Process Section */
 .process-section {
-  background: #F8FAFC;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  margin: 3rem 0;
+  background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  margin: 4rem 0;
+  border: 2px solid #DBEAFE;
+}
+
+.process-section h2 {
+  text-align: center;
+  color: #1E3A8A;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.process-section > p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  color: #475569;
+  font-size: 1.1em;
+  line-height: 1.7;
 }
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .process-step {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
+  background: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid #E0F2FE;
+}
+
+.process-step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(30, 58, 138, 0.15);
+  border-color: #06B6D4;
 }
 
 .process-step .number {
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: #1E3A8A;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #1E3A8A, #06B6D4);
   color: white;
   border-radius: 50%;
-  line-height: 50px;
-  font-weight: 700;
-  font-size: 1.5em;
-  margin-bottom: 1rem;
+  line-height: 60px;
+  font-weight: 800;
+  font-size: 1.8em;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 20px rgba(30, 58, 138, 0.3);
 }
 
 .process-step h3 {
   color: #1E3A8A;
-  margin-bottom: 0.5rem;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
-.testimonial {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid #06B6D4;
-  margin: 1.5rem 0;
-  font-style: italic;
-  color: #334155;
+.process-step p {
+  color: #475569;
+  line-height: 1.7;
 }
 
+/* Skills Section */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
+}
+
+.skill-category {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #E0F2FE;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  border-color: #06B6D4;
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.15);
+  transform: translateY(-4px);
 }
 
 .skill-category h3 {
   color: #1E3A8A;
-  margin-bottom: 0.75rem;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #06B6D4;
+  padding-bottom: 0.5rem;
 }
 
 .skill-category ul {
+  line-height: 2;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-category li::before {
+  content: "▸ ";
+  color: #06B6D4;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Section Headers */
+.page-content h2 {
+  color: #1E3A8A;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin: 3rem 0 2rem 0;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.page-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #06B6D4, #1E3A8A);
+  border-radius: 2px;
+}
+
+/* About Section */
+.about-section {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 2px solid #E0F2FE;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   line-height: 1.8;
+}
+
+.about-section p {
+  color: #334155;
+  font-size: 1.05em;
+  margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-portfolio h1 {
+    font-size: 2em;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .uplift-matrix::after,
+  .uplift-matrix::before {
+    display: none;
+  }
+
+  .case-study {
+    padding: 2rem 1.5rem;
+  }
+
+  .case-study h2 {
+    font-size: 1.5em;
+  }
 }
 </style>
 
-<div class="hero-portfolio">
-  <h1>Marketing decisions, backed by evidence and science</h1>
-  <p class="tagline">Delivered €1M+ monthly revenue for airlines. Identified customer segments with >5% uplift. Designed drip campaigns with 15% conversion lift and newsletter strategies with 30% uplift for telco.</p>
-  <a href="mailto:naoufal.acharki@gmail.com" class="cta">Let's Work Together</a>
+<div class="hero-portfolio fade-in">
+  <h1>Measure what truly drives marketing growth.</h1>
+  <p class="tagline">I use experimentation, causal inference, and customer-level modeling to help marketing teams target better, test smarter, and distinguish correlation from real incrementality.</p>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="stat-number">€1M+</span>
+      <span class="stat-label">monthly revenue supported for airline businesses</span>
+    </div>
+    <div class="hero-stat">
+      <span class="stat-number">5%+</span>
+      <span class="stat-label">uplift from customer segmentation</span>
+    </div>
+    <div class="hero-stat">
+      <span class="stat-number">15-30%</span>
+      <span class="stat-label">conversion lift in drip campaigns and newsletter performance</span>
+    </div>
+  </div>
 </div>
 
 ---
 
 ## Featured Case Studies
 
-<div class="case-study featured">
+<div class="case-study featured fade-in">
   <span class="company-badge">Air France-KLM</span>
   <h2>From High-Propensity to High-Uplift: Driving €1M Monthly Revenue</h2>
 
@@ -238,35 +629,64 @@ author_profile: true
     <h3>The Shift to Uplift Modeling</h3>
     <p>I moved us from predictive modeling to causal inference. Instead of asking "who will convert?" I ask "who will convert <em>because</em> of this recommendation?"</p>
     <p>This means identifying four customer segments:</p>
-    <ul>
-      <li><strong>Sure Things:</strong> Will book your recommended fare anyway (don't waste effort)</li>
-      <li><strong>Persuadables:</strong> Need the right nudge to upgrade or convert (your targets)</li>
-      <li><strong>Sleeping Dogs:</strong> Will book a cheaper option if you show them (let them be)</li>
-      <li><strong>Lost Causes:</strong> Won't convert no matter what (skip them)</li>
-    </ul>
+  </div>
+
+  <div class="uplift-diagram">
+    <h3>The Four Customer Segments</h3>
+    <div class="uplift-matrix">
+      <div class="uplift-quadrant persuadables">
+        <div class="quad-title">🎯 Persuadables</div>
+        <div class="quad-desc">Will convert BECAUSE of your recommendation</div>
+        <div class="quad-action">→ Target them!</div>
+      </div>
+      <div class="uplift-quadrant sure-things">
+        <div class="quad-title">✓ Sure Things</div>
+        <div class="quad-desc">Will book anyway, regardless of treatment</div>
+        <div class="quad-action">→ Don't waste effort</div>
+      </div>
+      <div class="uplift-quadrant sleeping-dogs">
+        <div class="quad-title">💤 Sleeping Dogs</div>
+        <div class="quad-desc">Will book cheaper if you show them</div>
+        <div class="quad-action">→ Let them be!</div>
+      </div>
+      <div class="uplift-quadrant lost-causes">
+        <div class="quad-title">✗ Lost Causes</div>
+        <div class="quad-desc">Won't convert no matter what</div>
+        <div class="quad-action">→ Skip them</div>
+      </div>
+    </div>
   </div>
 
   <div class="section">
     <h3>The Cannibalization Insight</h3>
-    <p>Here's where it gets interesting: Sometimes the best recommendation is <em>no recommendation</em>.</p>
-    <p>Example: A customer is browsing a €400 flight. Your model predicts they're likely to book if you show them a €200 budget option. That's a conversion win, right? Wrong. You just cannibalized €200 in revenue.</p>
-    <p>By focusing on uplift rather than propensity, we identify when NOT showing a cheaper option preserves revenue. Conversion alone doesn't equal profit.</p>
+  </div>
+
+  <div class="callout-box">
+    <div class="callout-icon">💡</div>
+    <h4>Key Insight: Sometimes the best recommendation is NO recommendation</h4>
+    <p><strong>Example:</strong> A customer is browsing a €400 flight. Your model predicts they're likely to book if you show them a €200 budget option. That's a conversion win, right?</p>
+    <p><strong>Wrong.</strong> You just cannibalized €200 in revenue.</p>
+    <p>By focusing on uplift rather than propensity, we identify when NOT showing a cheaper option preserves revenue. <strong>Conversion alone doesn't equal profit.</strong></p>
   </div>
 
   <div class="metrics">
     <div class="metric">
+      <span class="icon">📈</span>
       <span class="number">>5%</span>
       <span class="label">Uplift in Target Segments</span>
     </div>
     <div class="metric">
+      <span class="icon">💰</span>
       <span class="number">€1M+</span>
       <span class="label">Monthly Revenue Impact</span>
     </div>
     <div class="metric">
+      <span class="icon">👥</span>
       <span class="number">Millions</span>
       <span class="label">Users in Experiments</span>
     </div>
     <div class="metric">
+      <span class="icon">🎯</span>
       <span class="number">€12M+</span>
       <span class="label">Annualized Value</span>
     </div>
@@ -293,7 +713,7 @@ author_profile: true
   </div>
 </div>
 
-<div class="case-study">
+<div class="case-study fade-in">
   <span class="company-badge">Senzai</span>
   <h2>AI-Powered Re-Engagement: 15-30% Uplift for Dormant Customers</h2>
 
@@ -315,14 +735,17 @@ author_profile: true
 
   <div class="metrics">
     <div class="metric">
+      <span class="icon">🚀</span>
       <span class="number">15-30%</span>
       <span class="label">Conversion Uplift</span>
     </div>
     <div class="metric">
+      <span class="icon">👤</span>
       <span class="number">3M</span>
       <span class="label">Customers Scored</span>
     </div>
     <div class="metric">
+      <span class="icon">📊</span>
       <span class="number">50M+</span>
       <span class="label">Interactions Processed</span>
     </div>
@@ -343,7 +766,7 @@ author_profile: true
   </div>
 </div>
 
-<div class="case-study">
+<div class="case-study fade-in">
   <span class="company-badge">Mercor</span>
   <h2>AI Evaluation for State-of-the-Art Language Models</h2>
 
@@ -374,9 +797,9 @@ author_profile: true
 
 ## My Process
 
-<div class="process-section">
-  <h2 style="text-align: center; color: #1E3A8A; margin-bottom: 1rem;">How I Drive Measurable Impact</h2>
-  <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto; color: #334155;">A systematic approach from data to deployment, ensuring every insight translates to business value.</p>
+<div class="process-section fade-in">
+  <h2>How I Drive Measurable Impact</h2>
+  <p>A systematic approach from data to deployment, ensuring every insight translates to business value.</p>
 
   <div class="process-grid">
     <div class="process-step">
@@ -421,7 +844,7 @@ author_profile: true
 
 ## Core Competencies
 
-<div class="skills-grid">
+<div class="skills-grid fade-in">
   <div class="skill-category">
     <h3>Marketing Data Science</h3>
     <ul>
@@ -457,6 +880,8 @@ author_profile: true
 
 ## About Me
 
-PhD in Statistics & Machine Learning from École Polytechnique with 7+ years building production ML systems. Published at ICML 2023. Based in Paris, working with clients across Europe and North America. Fluent in English, French, and Arabic.
+<div class="about-section fade-in">
+  <p>PhD in Statistics & Machine Learning from École Polytechnique with 7+ years building production ML systems. Published at ICML 2023. Based in Paris, working with clients across Europe and North America. Fluent in English, French, and Arabic.</p>
 
-**Core strengths:** Combining academic rigor with business pragmatism. I don't just build models, I drive measurable revenue impact through rigorous experimentation and causal inference.
+  <p><strong>Core strengths:</strong> Combining academic rigor with business pragmatism. I don't just build models, I drive measurable revenue impact through rigorous experimentation and causal inference.</p>
+</div>
