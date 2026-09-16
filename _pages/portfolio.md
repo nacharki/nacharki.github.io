@@ -215,8 +215,8 @@ author_profile: true
 </style>
 
 <div class="hero-portfolio">
-  <h1>I Turn Data Into Revenue-Driving Marketing Insights</h1>
-  <p class="tagline">Specialized in causal inference, A/B testing, and recommendation systems that deliver measurable business impact—from €1M revenue lifts to 30% conversion increases.</p>
+  <h1>Marketing decisions, backed by evidence and science</h1>
+  <p class="tagline">Delivered €1M+ monthly revenue for airlines. Identified customer segments with >5% uplift. Designed drip campaigns with 15% conversion lift and newsletter strategies with 30% uplift for telco.</p>
   <a href="mailto:naoufal.acharki@gmail.com" class="cta">Let's Work Together</a>
 </div>
 
@@ -226,35 +226,45 @@ author_profile: true
 
 <div class="case-study featured">
   <span class="company-badge">Air France-KLM</span>
-  <h2>Driving €1M Monthly Revenue with Smart Flight Recommendations</h2>
+  <h2>From High-Propensity to High-Uplift: Driving €1M Monthly Revenue</h2>
 
   <div class="section">
     <h3>The Challenge</h3>
-    <p>When millions of travelers visit Air France-KLM websites to book flights, they face dozens of options. Which flight should rank first? Which fare class should we recommend? With millions of monthly visitors and bookings averaging €300-500, even a 0.5% improvement translates to significant revenue impact.</p>
+    <p>Picture this: millions of travelers visiting Air France-KLM to book flights. You have dozens of flight options and fare classes to recommend. The obvious approach? Show them what they're most likely to buy—target the high-propensity customers.</p>
+    <p>But here's the problem: <strong>high propensity doesn't mean high uplift.</strong> Some customers will book regardless of what you show them. Others will never convert. The real value is in the persuadables—those you can influence.</p>
   </div>
 
   <div class="section">
-    <h3>My Approach</h3>
-    <p>I lead experimentation and evaluation for two critical recommender systems:</p>
+    <h3>The Shift to Uplift Modeling</h3>
+    <p>I moved us from predictive modeling to causal inference. Instead of asking "who will convert?" I ask "who will convert <em>because</em> of this recommendation?"</p>
+    <p>This means identifying four customer segments:</p>
     <ul>
-      <li><strong>Flight List Ranker:</strong> Personalizes flight rankings based on customer search behavior, booking history, and hundreds of signals to show flights customers are most likely to book</li>
-      <li><strong>Branded Fare Recommender:</strong> Predicts customer willingness to pay for premium features and personalizes fare class recommendations (Basic vs. Flex)</li>
+      <li><strong>Sure Things:</strong> Will book your recommended fare anyway (don't waste effort)</li>
+      <li><strong>Persuadables:</strong> Need the right nudge to upgrade or convert (your targets)</li>
+      <li><strong>Sleeping Dogs:</strong> Will book a cheaper option if you show them (let them be)</li>
+      <li><strong>Lost Causes:</strong> Won't convert no matter what (skip them)</li>
     </ul>
-    <p>My role spans the complete lifecycle: offline evaluation on historical data → A/B test design and power analysis → live experiment monitoring → statistical analysis → final shipping decision.</p>
+  </div>
+
+  <div class="section">
+    <h3>The Cannibalization Insight</h3>
+    <p>Here's where it gets interesting: Sometimes the best recommendation is <em>no recommendation</em>.</p>
+    <p>Example: A customer is browsing a €400 flight. Your model predicts they're likely to book if you show them a €200 budget option. That's a conversion win, right? Wrong. You just cannibalized €200 in revenue.</p>
+    <p>By focusing on uplift rather than propensity, we identify when NOT showing a cheaper option preserves revenue. Conversion alone doesn't equal profit.</p>
   </div>
 
   <div class="metrics">
     <div class="metric">
-      <span class="number">+0.6%</span>
-      <span class="label">Conversion Rate Lift</span>
-    </div>
-    <div class="metric">
-      <span class="number">+0.5%</span>
-      <span class="label">Revenue Per Visitor</span>
+      <span class="number">>5%</span>
+      <span class="label">Uplift in Target Segments</span>
     </div>
     <div class="metric">
       <span class="number">€1M+</span>
       <span class="label">Monthly Revenue Impact</span>
+    </div>
+    <div class="metric">
+      <span class="number">Millions</span>
+      <span class="label">Users in Experiments</span>
     </div>
     <div class="metric">
       <span class="number">€12M+</span>
@@ -263,65 +273,73 @@ author_profile: true
   </div>
 
   <div class="section">
-    <h3>Why It Matters</h3>
-    <p>This isn't "we built a model and hope it works." Every recommendation goes through rigorous A/B testing on millions of real users. I own the entire process—from designing experiments to making final deployment decisions. At this scale, even small optimizations drive massive business value.</p>
+    <h3>How I Deliver This</h3>
+    <p>I own the complete experimentation lifecycle for Air France-KLM's flight ranking and fare recommendation systems:</p>
+    <ul>
+      <li>Offline causal evaluation on historical booking data</li>
+      <li>A/B test design with power analysis across millions of visitors</li>
+      <li>Real-time experiment monitoring and statistical analysis</li>
+      <li>Final go/no-go shipping decisions based on evidence</li>
+    </ul>
+    <p>Every recommendation is battle-tested on real users. No guesswork—just rigorous science driving measurable revenue.</p>
   </div>
 
   <div class="tags">
-    <span class="tag">Recommendation Systems</span>
-    <span class="tag">A/B Testing</span>
+    <span class="tag">Uplift Modeling</span>
     <span class="tag">Causal Inference</span>
+    <span class="tag">A/B Testing</span>
+    <span class="tag">Recommendation Systems</span>
     <span class="tag">BigQuery</span>
-    <span class="tag">Experimentation Design</span>
   </div>
 </div>
 
 <div class="case-study">
   <span class="company-badge">Senzai</span>
-  <h2>30% Conversion Lift Through Marketing Campaign Optimization</h2>
+  <h2>AI-Powered Re-Engagement: 15-30% Uplift for Dormant Customers</h2>
 
   <div class="section">
-    <h3>The Challenge</h3>
-    <p>Digital marketing campaigns were struggling with low conversion rates and inefficient customer targeting. The startup needed a scalable ML solution to optimize campaign performance across millions of customers and interactions.</p>
+    <h3>The Problem</h3>
+    <p>Thousands of leads go cold. Customers churn. They already know your brand—they just stopped engaging. Traditional marketing blasts everyone the same way, wasting budget on customers who won't respond and annoying those who would have converted anyway.</p>
+    <p>Senzai built an AI re-engagement engine that wakes up the right customers at the right time with the right message.</p>
   </div>
 
   <div class="section">
-    <h3>My Approach</h3>
-    <p>Designed and deployed an end-to-end recommendation system for customer targeting optimization:</p>
+    <h3>My Role: Building the Brain</h3>
+    <p>I designed and deployed the causal ML system that powers intelligent customer targeting:</p>
     <ul>
-      <li><strong>Causal ML Models:</strong> Implemented uplift modeling and treatment effect estimation to identify high-propensity customers</li>
-      <li><strong>Production Infrastructure:</strong> Built scalable MLOps pipelines using Docker, Kubernetes, Airflow, and MLflow on AWS</li>
-      <li><strong>Data Engineering:</strong> Processed 50M+ interaction events across 3M customer profiles</li>
+      <li><strong>Drip Campaign Engine:</strong> Multi-channel uplift models identifying which dormant leads to re-engage via email, SMS, or ads. Achieved 15% conversion uplift by targeting persuadables, not just high-propensity contacts.</li>
+      <li><strong>Newsletter Optimization:</strong> Ensemble models predicting not just who will open emails, but who will <em>convert because of them</em>. Delivered 30% uplift for telco client by avoiding "sleeping dogs."</li>
+      <li><strong>Production Infrastructure:</strong> Built end-to-end MLOps pipelines on AWS with Docker, Kubernetes, Airflow, and MLflow. Scaled to score 3M customers across 50M+ interactions.</li>
     </ul>
   </div>
 
   <div class="metrics">
     <div class="metric">
-      <span class="number">+30%</span>
-      <span class="label">Conversion Rate Increase</span>
+      <span class="number">15-30%</span>
+      <span class="label">Conversion Uplift</span>
     </div>
     <div class="metric">
       <span class="number">3M</span>
       <span class="label">Customers Scored</span>
     </div>
     <div class="metric">
-      <span class="number">50M</span>
+      <span class="number">50M+</span>
       <span class="label">Interactions Processed</span>
     </div>
   </div>
 
   <div class="section">
-    <h3>Key Achievement</h3>
-    <p>Established MLOps best practices and production-ready infrastructure that reduced time-to-deployment for new models from weeks to days. This wasn't just a model—it was a complete, scalable system.</p>
+    <h3>Why It Worked</h3>
+    <p>Easy integration, instant results, zero hassle. Clients plug in their CRM data, and the engine identifies exactly who to target and who to leave alone. This wasn't just a model—it was a complete, battle-tested system that reduced model deployment time from weeks to days.</p>
   </div>
 
   <div class="tags">
+    <span class="tag">Re-Engagement</span>
     <span class="tag">Uplift Modeling</span>
     <span class="tag">MLOps</span>
     <span class="tag">AWS</span>
     <span class="tag">Kubernetes</span>
-    <span class="tag">Causal Inference</span>
-    <span class="tag">Production ML</span>
+    <span class="tag">Causal ML</span>
   </div>
 </div>
 
