@@ -1069,10 +1069,6 @@ body {
       <span class="stat-label">monthly revenue supported for airline businesses</span>
     </div>
     <div class="hero-stat">
-      <span class="stat-number">5%+</span>
-      <span class="stat-label">uplift from customer segmentation</span>
-    </div>
-    <div class="hero-stat">
       <span class="stat-number">15-30%</span>
       <span class="stat-label">conversion lift in drip campaigns and newsletter performance</span>
     </div>
@@ -1166,18 +1162,6 @@ body {
           <span class="number">€12M+</span>
           <span class="label">Annualized Value</span>
         </div>
-      </div>
-
-      <div class="section">
-        <h3>How I Deliver This</h3>
-        <p>I own the complete experimentation lifecycle for Air France-KLM's flight ranking and fare recommendation systems:</p>
-        <ul>
-          <li>Offline causal evaluation on historical booking data</li>
-          <li>A/B test design with power analysis across millions of visitors</li>
-          <li>Real-time experiment monitoring and statistical analysis</li>
-          <li>Final go/no-go shipping decisions based on evidence</li>
-        </ul>
-        <p>Every recommendation is battle-tested on real users. No guesswork, just rigorous science driving measurable revenue.</p>
       </div>
 
       <div class="tags">
