@@ -635,22 +635,22 @@ html {
     <h3>The Four Customer Segments</h3>
     <div class="uplift-matrix">
       <div class="uplift-quadrant persuadables">
-        <div class="quad-title">🎯 Persuadables</div>
+        <div class="quad-title">Persuadables</div>
         <div class="quad-desc">Will convert BECAUSE of your recommendation</div>
         <div class="quad-action">→ Target them!</div>
       </div>
       <div class="uplift-quadrant sure-things">
-        <div class="quad-title">✓ Sure Things</div>
+        <div class="quad-title">Sure Things</div>
         <div class="quad-desc">Will book anyway, regardless of treatment</div>
         <div class="quad-action">→ Don't waste effort</div>
       </div>
       <div class="uplift-quadrant sleeping-dogs">
-        <div class="quad-title">💤 Sleeping Dogs</div>
+        <div class="quad-title">Sleeping Dogs</div>
         <div class="quad-desc">Will book cheaper if you show them</div>
         <div class="quad-action">→ Let them be!</div>
       </div>
       <div class="uplift-quadrant lost-causes">
-        <div class="quad-title">✗ Lost Causes</div>
+        <div class="quad-title">Lost Causes</div>
         <div class="quad-desc">Won't convert no matter what</div>
         <div class="quad-action">→ Skip them</div>
       </div>
@@ -662,7 +662,6 @@ html {
   </div>
 
   <div class="callout-box">
-    <div class="callout-icon">💡</div>
     <h4>Key Insight: Sometimes the best recommendation is NO recommendation</h4>
     <p><strong>Example:</strong> A customer is browsing a €400 flight. Your model predicts they're likely to book if you show them a €200 budget option. That's a conversion win, right?</p>
     <p><strong>Wrong.</strong> You just cannibalized €200 in revenue.</p>
@@ -671,22 +670,18 @@ html {
 
   <div class="metrics">
     <div class="metric">
-      <span class="icon">📈</span>
       <span class="number">>5%</span>
       <span class="label">Uplift in Target Segments</span>
     </div>
     <div class="metric">
-      <span class="icon">💰</span>
       <span class="number">€1M+</span>
       <span class="label">Monthly Revenue Impact</span>
     </div>
     <div class="metric">
-      <span class="icon">👥</span>
-      <span class="number">Millions</span>
-      <span class="label">Users in Experiments</span>
+      <span class="number">160k Daily</span>
+      <span class="label">Visitors (~5M Monthly)</span>
     </div>
     <div class="metric">
-      <span class="icon">🎯</span>
       <span class="number">€12M+</span>
       <span class="label">Annualized Value</span>
     </div>
@@ -725,28 +720,25 @@ html {
 
   <div class="section">
     <h3>My Role: Building the Brain</h3>
-    <p>I designed and deployed two multi-stage causal ML pipelines that power intelligent customer targeting:</p>
+    <p>I designed and deployed two intelligent targeting pipelines that identify exactly which customers to contact, when, and through which channel:</p>
     <ul>
-      <li><strong>Drip Campaign Pipeline:</strong> A 4-layer treatment model optimizing who to contact, when (time of day, day of week), through which channel (email, SMS, ads), and with what message variant. Built using genS-Learner for multi-outcome optimization (open, click, conversion). Achieved 15% conversion uplift by targeting persuadables, not just high-propensity contacts.</li>
-      <li><strong>Newsletter Pipeline:</strong> A 6-layer treatment model with ensemble majority voting predicting not just who will open emails, but who will convert because of them. Optimizes send time, frequency, content variant, and subject line across multiple customer segments. Delivered 30% uplift for telco client by avoiding "sleeping dogs."</li>
-      <li><strong>Production Infrastructure:</strong> Built end-to-end MLOps pipelines on AWS with Docker, Kubernetes, Airflow, and MLflow. Scaled to score 3M customers across 50M+ interactions.</li>
+      <li><strong>Drip Campaign Engine:</strong> Optimizes who to contact, when (time of day, day of week), through which channel (email, SMS, ads), and with what message. Delivered 15% conversion uplift by targeting persuadables, not just likely responders.</li>
+      <li><strong>Newsletter Engine:</strong> Predicts not just who will open emails, but who will actually convert because of them. Optimizes send time, frequency, content, and subject line across customer segments. Delivered 30% uplift for telco client by avoiding "sleeping dogs."</li>
+      <li><strong>Production System:</strong> Built end-to-end MLOps infrastructure on AWS to score 100k customers across 3M interactions. Automated pipelines reduced deployment time from weeks to days.</li>
     </ul>
   </div>
 
   <div class="metrics">
     <div class="metric">
-      <span class="icon">🚀</span>
       <span class="number">15-30%</span>
       <span class="label">Conversion Uplift</span>
     </div>
     <div class="metric">
-      <span class="icon">👤</span>
-      <span class="number">3M</span>
+      <span class="number">100k</span>
       <span class="label">Customers Scored</span>
     </div>
     <div class="metric">
-      <span class="icon">📊</span>
-      <span class="number">50M+</span>
+      <span class="number">3M</span>
       <span class="label">Interactions Processed</span>
     </div>
   </div>
@@ -761,7 +753,6 @@ html {
     <span class="tag">Uplift Modeling</span>
     <span class="tag">MLOps</span>
     <span class="tag">AWS</span>
-    <span class="tag">Kubernetes</span>
     <span class="tag">Causal ML</span>
   </div>
 </div>
