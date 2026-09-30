@@ -1,0 +1,9 @@
+{%- comment -%}
+The site mark: two bars, control and treated; the part that changed because of the treatment is in the accent colour.
+Usage: {% include uplift-mark.html %} (inherits currentColor for the bars; the delta uses the accent token)
+{%- endcomment -%}
+<svg class="uplift-mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+  <rect x="3" y="11" width="7" height="11" rx="1" fill="currentColor"/>
+  <rect x="14" y="11" width="7" height="11" rx="1" fill="currentColor"/>
+  <rect x="14" y="2" width="7" height="7" rx="1" fill="var(--accent, #c2410c)"/>
+</svg>

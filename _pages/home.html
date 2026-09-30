@@ -1,0 +1,182 @@
+---
+layout: default
+permalink: /
+title: "Naoufal Acharki"
+description: "Naoufal Acharki is a Senior Data Scientist in Paris working on A/B testing, uplift modelling and recommender systems for marketing teams. PhD in Applied Mathematics from École Polytechnique, published at ICML 2023."
+body_class: page-home
+redirect_from:
+  - /about/
+  - /about.html
+---
+{%- assign cv = site.data.cv -%}
+{%- assign work = site.portfolio | sort: "order" -%}
+{%- assign pubs = site.data.publications | where: "selected", true -%}
+{%- assign talks = site.data.talks -%}
+
+<section class="hero">
+  <div class="container grid hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">{{ site.author.headline }} · {{ site.author.employer }} · {{ site.author.location }}</p>
+      <h1 class="hero__title">Causal ML and experimentation for marketing teams.</h1>
+      <p class="lead hero__lead">I'm {{ site.author.name }}. I design A/B tests, uplift models and recommender systems that show marketing teams which actions actually change customer behaviour, and I run them in production.</p>
+      <div class="btn-row hero__actions">
+        <a class="btn" href="{{ '/portfolio/' | relative_url }}">Selected work {% include icon-arrow.html %}</a>
+        <a class="btn btn--secondary" href="{{ site.author.cv_pdf | relative_url }}">Download CV</a>
+        <a class="arrow-link hero__email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img class="photo hero__photo" src="{{ site.author.avatar | relative_url }}" width="800" height="800" alt="Portrait of {{ site.author.name }}" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" aria-labelledby="proof-title">
+  <div class="container">
+    <h2 id="proof-title" class="visually-hidden">Selected outcomes</h2>
+    {%- assign proof = "" | split: "" -%}
+    <ul class="ledger ledger--proof">
+      <li class="ledger__row">
+        <span class="ledger__value is-delta">€1M+</span>
+        <span class="ledger__label">Incremental revenue per month</span>
+        <span class="ledger__basis">Air France-KLM · A/B-tested flight-selection and offer-display recommenders · 2025–26</span>
+      </li>
+      <li class="ledger__row">
+        <span class="ledger__value is-delta">Up to 30%</span>
+        <span class="ledger__label">Higher conversion in digital campaigns</span>
+        <span class="ledger__basis">Senzai · uplift-based targeting across 3M customers and 50M interactions · 2023–25</span>
+      </li>
+      <li class="ledger__row">
+        <span class="ledger__value">ICML 2023</span>
+        <span class="ledger__label">Peer-reviewed research in causal machine learning</span>
+        <span class="ledger__basis">Meta-learners for multi-valued treatments · plus a CSDA journal paper and a PhD from École Polytechnique</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="work" aria-labelledby="work-title">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="section__index">01 — Selected work</span>
+        <h2 id="work-title">Case studies from production, not notebooks.</h2>
+      </div>
+      <a class="section__more arrow-link" href="{{ '/portfolio/' | relative_url }}">All work {% include icon-arrow.html %}</a>
+    </div>
+    <div class="work-list">
+      {%- for cs in work -%}
+        {% include work-row.html item=cs %}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+<section class="section section--band" aria-labelledby="approach-title">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="section__index">02 — How I work</span>
+        <h2 id="approach-title">From business question to shipped result.</h2>
+      </div>
+    </div>
+    <ol class="approach">
+      <li class="approach__step">
+        <span class="approach__num">1</span>
+        <h3>Start from the decision</h3>
+        <p>Agree with stakeholders on the business question, the success metric and the constraints before touching the data.</p>
+      </li>
+      <li class="approach__step">
+        <span class="approach__num">2</span>
+        <h3>Test before you trust</h3>
+        <p>Offline evaluation first, then a properly powered A/B test with live monitoring. Ship what wins, stop what doesn't.</p>
+      </li>
+      <li class="approach__step">
+        <span class="approach__num">3</span>
+        <h3>Make it run in production</h3>
+        <p>Models ship with pipelines, monitoring and CI/CD, so the result measured in the experiment holds after launch.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="experience" aria-labelledby="experience-title">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="section__index">03 — Experience</span>
+        <h2 id="experience-title">Industry and research, side by side.</h2>
+      </div>
+      <a class="section__more arrow-link" href="{{ '/cv/' | relative_url }}">Full CV {% include icon-arrow.html %}</a>
+    </div>
+    <ol class="timeline">
+      {%- for job in cv.experience -%}
+      <li class="timeline__item{% if job.current %} is-current{% endif %}">
+        <span class="timeline__period">{{ job.start | append: "-01" | date: "%b %Y" }} – {% if job.end == "present" %}Present{% else %}{{ job.end | append: "-01" | date: "%b %Y" }}{% endif %}</span>
+        <div>
+          <span class="timeline__role">{{ job.role }}</span>
+          <span class="timeline__company"> · {{ job.company }}</span>
+          <p class="timeline__summary">{{ job.summary }}</p>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="research" aria-labelledby="research-title">
+  <div class="container grid research">
+    <div class="research__col">
+      <div class="section__head">
+        <div>
+          <span class="section__index">04 — Publications</span>
+          <h2 id="research-title">Selected publications</h2>
+        </div>
+        <a class="section__more arrow-link" href="{{ '/publications/' | relative_url }}">All {% include icon-arrow.html %}</a>
+      </div>
+      <ul class="pub-list pub-list--compact">
+        {%- for pub in pubs -%}
+        <li class="pub-item">
+          <span class="pub-item__meta">{{ pub.type }} · {{ pub.year }}</span>
+          <span class="pub-item__title">{{ pub.title }}</span>
+          <span class="pub-item__venue">{{ pub.venue }}</span>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="research__col">
+      <div class="section__head">
+        <div>
+          <span class="section__index">05 — Talks</span>
+          <h2>Recent talks</h2>
+        </div>
+        <a class="section__more arrow-link" href="{{ '/talks/' | relative_url }}">All {{ talks | size }} {% include icon-arrow.html %}</a>
+      </div>
+      <ul class="talk-list talk-list--compact">
+        {%- for talk in talks limit: 4 -%}
+        <li class="talk-row">
+          <span class="talk-row__date">{{ talk.date | date: "%b %Y" }}</span>
+          <div>
+            <span class="talk-row__title">{{ talk.title }}</span>
+            <span class="talk-row__where">{{ talk.type }}{% if talk.venue %} · {{ talk.venue }}{% endif %} · {{ talk.location }}</span>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink cta" aria-labelledby="cta-title">
+  <div class="container grid">
+    <div class="cta__copy">
+      <span class="section__index">06 — Contact</span>
+      <h2 id="cta-title">Working on a measurement, targeting or personalisation problem?</h2>
+      <p class="cta__text">{{ site.author.availability }} Based in {{ site.author.location }}; I work in English and French.</p>
+      <div class="btn-row">
+        <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
+        <a class="btn btn--secondary" href="{{ site.author.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>

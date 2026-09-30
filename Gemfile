@@ -22,6 +22,7 @@ gem "github-pages", group: :jekyll_plugins
 gem "csv"
 gem "base64"
 gem "logger"
+gem "bigdecimal"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

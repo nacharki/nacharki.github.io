@@ -1,0 +1,12 @@
+{%- comment -%}
+Ledger rows: value / label / basis. Pass `rows` (array of {value, label, basis, delta}) and optional `compact`.
+{%- endcomment -%}
+<ul class="ledger{% if include.compact %} ledger--compact{% endif %}">
+  {%- for row in include.rows -%}
+  <li class="ledger__row">
+    <span class="ledger__value{% if row.delta %} is-delta{% endif %}">{{ row.value }}</span>
+    <span class="ledger__label">{{ row.label }}</span>
+    <span class="ledger__basis">{{ row.basis }}</span>
+  </li>
+  {%- endfor -%}
+</ul>

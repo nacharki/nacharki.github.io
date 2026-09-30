@@ -1,0 +1,45 @@
+# Publications exactly as listed on the site by the owner (see git history of _pages/publications.md).
+# Only bibliographic fields and the owner's own links; no editorial text.
+- type: Conference paper
+  title: Comparison of meta-learners for estimating multi-valued treatment heterogeneous effects
+  authors: "Naoufal Acharki, Ramiro Lugo, Antoine Bertoncello and Josselin Garnier"
+  venue: ICML 2023
+  year: 2023
+  selected: true
+  links:
+    - label: PDF
+      url: /files/Arxiv_Causal_Inference_multiple_treatments.pdf
+    - label: arXiv 2205.14714
+      url: https://arxiv.org/abs/2205.14714
+
+- type: PhD thesis
+  title: Statistical learning and causal inference for energy production
+  authors: "Naoufal Acharki"
+  venue: PhD thesis, École Polytechnique, defended in November 2022
+  year: 2022
+  selected: true
+  links:
+    - label: HAL
+      url: https://theses.hal.science/tel-04106368
+    - label: theses.fr
+      url: https://www.theses.fr/2022IPPAX101
+
+- type: Journal article
+  title: Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method
+  authors: "Naoufal Acharki, Antoine Bertoncello and Josselin Garnier"
+  venue: Computational Statistics and Data Analysis, 178:107597, 2023. doi 10.1016/j.csda.2022.107597
+  year: 2023
+  selected: true
+  links:
+    - label: Journal
+      url: https://www.sciencedirect.com/science/article/pii/S0167947322001773
+
+- type: MSc thesis
+  title: Statistical learning and sensitivity analysis - Application to Oil and Gas production
+  authors: "Naoufal Acharki"
+  venue: MSc thesis, prepared under the supervision of Prof. Josselin Garnier
+  year: 2019
+  selected: false
+  links:
+    - label: PDF
+      url: /files/MMMEF_Thesis_Naoufal.pdf

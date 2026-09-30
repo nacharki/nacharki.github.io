@@ -1,13 +1,10 @@
-# main links links
+# Main navigation
 main:
-  - title: "Portfolio"
+  - title: Work
     url: /portfolio/
-
-  - title: "Publications"
+  - title: Publications
     url: /publications/
-
-  - title: "Talks"
+  - title: Talks
     url: /talks/
-
-  - title: "CV"
+  - title: CV
     url: /cv/

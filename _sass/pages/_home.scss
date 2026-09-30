@@ -1,0 +1,154 @@
+/* ==========================================================================
+   HOME
+   ========================================================================== */
+
+.hero {
+  padding-top: clamp(3rem, 7vw, 6rem);
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.hero__grid {
+  align-items: center;
+}
+
+.hero__copy {
+  grid-column: 1 / span 7;
+}
+
+.hero__media {
+  grid-column: 9 / span 4;
+}
+
+.hero__title {
+  font-size: var(--fs-display);
+  margin: var(--s-4) 0 var(--s-5);
+  max-width: 14ch;
+}
+
+.hero__lead {
+  max-width: 52ch;
+}
+
+.hero__actions {
+  margin-top: var(--s-6);
+}
+
+.hero__email {
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  color: var(--ink-2);
+}
+
+.hero__photo {
+  max-width: 26rem;
+  margin-left: auto;
+}
+
+@media (max-width: 63.99em) {
+  .hero__copy {
+    grid-column: 1 / span 8;
+  }
+
+  .hero__media {
+    grid-column: 9 / span 4;
+  }
+}
+
+@media (max-width: 47.99em) {
+  .hero__media {
+    order: -1;
+  }
+
+  .hero__photo {
+    max-width: 9rem;
+    margin-left: 0;
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-1);
+  }
+
+  .hero__title {
+    max-width: none;
+  }
+}
+
+/* Proof ledger */
+.ledger--proof .ledger__row {
+  padding: var(--s-5) 0;
+}
+
+/* Approach */
+.approach {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.approach__step {
+  position: relative;
+  padding: var(--s-5) 0 0;
+  border-top: 1px solid var(--rule-strong);
+
+  h3 {
+    margin: var(--s-3) 0 var(--s-2);
+  }
+
+  p {
+    color: var(--ink-2);
+    max-width: 36ch;
+  }
+}
+
+.approach__num {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  color: var(--accent);
+  letter-spacing: 0.08em;
+
+  &::before {
+    content: "0";
+  }
+}
+
+@media (max-width: 47.99em) {
+  .approach {
+    grid-template-columns: 1fr;
+    gap: var(--s-5);
+  }
+}
+
+/* Research columns */
+.research__col {
+  grid-column: span 6;
+
+  .section__head {
+    margin-bottom: var(--s-4);
+  }
+}
+
+@media (max-width: 47.99em) {
+  .research__col + .research__col {
+    margin-top: var(--s-6);
+  }
+}
+
+/* CTA band */
+.cta__copy {
+  grid-column: 1 / span 8;
+
+  h2 {
+    margin: var(--s-3) 0 var(--s-4);
+    font-size: unquote("clamp(1.75rem, 1.3rem + 1.8vw, 2.75rem)");
+    max-width: 22ch;
+  }
+}
+
+.cta__text {
+  max-width: 52ch;
+  margin-bottom: var(--s-6);
+  color: var(--on-ink-2);
+}

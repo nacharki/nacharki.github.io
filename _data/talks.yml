@@ -1,0 +1,87 @@
+# The owner's talks, as entered in _talks/ (types kept as written). Only formatting was cleaned:
+# a "venue: Talk" data-entry glitch, spelling of places, and missing spaces. Newest first; month and year are displayed.
+- title: "Greek Stochastics μ' 2022: Causal Learning"
+  type: Talk
+  location: Corfu, Greece
+  date: 2022-08-26
+
+- title: MASCOT-NUM 2022 annual meeting
+  type: Talk
+  location: Clermont-Ferrand, France
+  date: 2022-06-07
+
+- title: The Causal TAU seminar
+  type: Invited talk
+  venue: Inria
+  location: Gif-sur-Yvette, France
+  date: 2022-06-02
+
+- title: Journée Causalité/XAI
+  type: Talk
+  venue: SINCLAIR, EDF Lab Paris-Saclay
+  location: Palaiseau, France
+  date: 2022-05-30
+
+- title: SIAM Conference on Uncertainty Quantification (UQ22)
+  type: Talk
+  location: Atlanta, Georgia, USA
+  date: 2022-04-12
+
+- title: CMAP and CMLS PhD students seminar 2021
+  type: Invited talk
+  location: Palaiseau, France
+  date: 2021-11-10
+
+- title: Young Statisticians and Probabilists 2021
+  type: Invited talk
+  venue: MAS-SMAI
+  location: Saint-Pierre-d'Oléron, France
+  date: 2021-10-25
+
+- title: Séminaire au vert ASCII
+  type: Talk
+  venue: ASCII, Inria
+  location: Saint-Rémy-lès-Chevreuse, France
+  date: 2021-10-19
+
+- title: "MATHIAS 2021: the annual conference on applied mathematics, scientific computing, data science and Artificial Intelligence"
+  type: Poster
+  venue: TotalEnergies R&D
+  location: Serris, France
+  date: 2021-10-04
+
+- title: European Network for Business and Industrial Statistics ENBIS-21 Online Conference
+  type: Talk
+  venue: European Network for Business and Industrial Statistics
+  location: Online
+  date: 2021-09-14
+
+- title: Machine Learning Summer School MLSS 2021
+  type: Poster
+  venue: National Taiwan University
+  location: Taipei, Taiwan
+  date: 2021-08-19
+
+- title: Recent advances in machine learning and uncertainty workshop
+  type: Talk
+  venue: Centre International de Rencontres Mathématiques
+  location: Luminy, Marseille, France
+  date: 2021-06-23
+
+- title: Causal Inference workshop
+  type: Talk
+  venue: Total R&D
+  location: Palaiseau, France
+  date: 2020-10-08
+
+- title: "MATHIAS 2019: the annual conference on applied mathematics, scientific computing, data science and Artificial Intelligence"
+  type: Talk
+  venue: Total R&D
+  location: Serris, France
+  date: 2019-10-15
+
+- title: "MATHIAS 2018: the annual conference on applied mathematics, scientific computing, data science and Artificial Intelligence"
+  type: Talk
+  venue: Total R&D
+  location: Serris, France
+  date: 2018-10-22

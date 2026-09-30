@@ -1,0 +1,120 @@
+/* ==========================================================================
+   TALKS
+   ========================================================================== */
+
+.talk-years {
+  margin-bottom: var(--section);
+}
+
+.talk-year {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 10fr);
+  gap: var(--s-4) var(--s-6);
+  padding: var(--s-6) 0;
+  border-top: 1px solid var(--rule-strong);
+}
+
+.talk-year__label {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.talk-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.talk-row {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  gap: var(--s-2) var(--s-5);
+  align-items: start;
+  padding: var(--s-4) 0;
+  border-bottom: 1px solid var(--rule);
+
+  &:first-child {
+    padding-top: 0.25rem;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.talk-row__date {
+  padding-top: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.talk-row__title {
+  display: block;
+  font-weight: 500;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+
+.talk-row__where {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: var(--fs-small);
+  color: var(--ink-3);
+}
+
+.talk-row__type {
+  justify-self: end;
+}
+
+/* Compact list on the home page */
+.talk-list--compact {
+  border-top: 1px solid var(--rule-strong);
+
+  .talk-row {
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    padding: var(--s-4) 0;
+
+    &:first-child {
+      padding-top: var(--s-4);
+    }
+
+    &:last-child {
+      border-bottom: 1px solid var(--rule);
+    }
+  }
+
+  .talk-row__title {
+    font-size: var(--fs-small);
+  }
+
+  .talk-row__where {
+    font-size: var(--fs-meta);
+  }
+}
+
+@media (max-width: 47.99em) {
+  .talk-year {
+    grid-template-columns: 1fr;
+    gap: var(--s-2);
+    padding: var(--s-5) 0;
+  }
+
+  .talk-year__label {
+    font-size: 1.5rem;
+  }
+
+  .talk-row {
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+  }
+
+  .talk-row__type {
+    grid-column: 2;
+    justify-self: start;
+  }
+}

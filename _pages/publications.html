@@ -1,0 +1,35 @@
+---
+layout: default
+permalink: /publications/
+title: "Publications"
+description: "Publications by Naoufal Acharki: ICML 2023 paper on meta-learners for multi-valued treatment effects, a Computational Statistics and Data Analysis article on Gaussian-process prediction intervals, and PhD and MSc theses."
+body_class: page-publications
+---
+{%- assign pubs = site.data.publications -%}
+<div class="container">
+  <header class="page-header">
+    <p class="eyebrow">Publications</p>
+    <h1>Research on causal inference and uncertainty quantification.</h1>
+    <p class="lead">Peer-reviewed work from my PhD at École Polytechnique and TotalEnergies. Also listed on <a href="{{ site.author.scholar }}" rel="me noopener" target="_blank">Google Scholar</a> and <a href="{{ site.author.researchgate }}" rel="me noopener" target="_blank">ResearchGate</a>.</p>
+  </header>
+
+  <ol class="pub-list pub-list--full">
+    {%- for pub in pubs -%}
+    <li class="pub-item">
+      <span class="pub-item__meta">{{ pub.type }} · {{ pub.year }}</span>
+      <div class="pub-item__body">
+        <h2 class="pub-item__title">{{ pub.title }}</h2>
+        <p class="pub-item__authors">{{ pub.authors | replace: "Naoufal Acharki", "<strong>Naoufal Acharki</strong>" }}</p>
+        <p class="pub-item__venue">{{ pub.venue }}</p>
+        {%- if pub.links -%}
+        <div class="pub-item__links">
+          {%- for l in pub.links -%}
+          <a class="btn btn--ghost" href="{{ l.url | relative_url }}"{% if l.url contains 'http' %} rel="noopener" target="_blank"{% endif %}>{{ l.label }}</a>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+      </div>
+    </li>
+    {%- endfor -%}
+  </ol>
+</div>

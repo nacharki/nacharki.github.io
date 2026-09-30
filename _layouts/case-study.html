@@ -1,0 +1,61 @@
+---
+layout: default
+---
+{%- assign work = site.portfolio | sort: "order" -%}
+{%- for cs in work -%}
+  {%- if cs.url == page.url -%}
+    {%- assign idx = forloop.index0 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign prev_idx = idx | minus: 1 -%}
+{%- assign next_idx = idx | plus: 1 -%}
+{%- if prev_idx >= 0 -%}{%- assign prev = work[prev_idx] -%}{%- endif -%}
+{%- if next_idx < work.size -%}{%- assign next = work[next_idx] -%}{%- endif -%}
+
+<article class="case">
+  <header class="container case__header">
+    <p class="eyebrow"><a href="{{ '/portfolio/' | relative_url }}">Work</a> · {{ page.company }}</p>
+    <h1 class="case__title">{{ page.title }}</h1>
+    <p class="lead">{{ page.summary }}</p>
+
+    <dl class="meta-grid case__meta">
+      <div><dt>Role</dt><dd>{{ page.role }}</dd></div>
+      <div><dt>Period</dt><dd>{{ page.period }}</dd></div>
+      {% if page.context %}<div><dt>Context</dt><dd>{{ page.context }}</dd></div>{% endif %}
+      {% if page.stack %}<div><dt>Stack</dt><dd>{{ page.stack | join: ", " }}</dd></div>{% endif %}
+    </dl>
+  </header>
+
+  {% if page.outcomes %}
+  <section class="container case__outcomes" aria-label="Outcomes">
+    <span class="section__index">Outcomes</span>
+    {% include ledger.html rows=page.outcomes %}
+  </section>
+  {% endif %}
+
+  <div class="container case__body">
+    <div class="prose">
+      {{ content }}
+    </div>
+    {% if page.tags %}
+    <div class="tag-list case__tags">
+      {% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+    </div>
+    {% endif %}
+
+    <nav class="pager" aria-label="Other case studies">
+      <div>
+        {% if prev %}
+        <a href="{{ prev.url | relative_url }}"><span class="pager__label">Previous</span><span class="pager__title">{{ prev.company }} · {{ prev.title }}</span></a>
+        {% endif %}
+      </div>
+      <div class="pager__next">
+        {% if next %}
+        <a href="{{ next.url | relative_url }}"><span class="pager__label">Next</span><span class="pager__title">{{ next.company }} · {{ next.title }}</span></a>
+        {% else %}
+        <a href="{{ '/portfolio/' | relative_url }}"><span class="pager__label">Back to</span><span class="pager__title">All work</span></a>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+</article>

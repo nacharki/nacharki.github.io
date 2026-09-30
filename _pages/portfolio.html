@@ -1,0 +1,21 @@
+---
+layout: default
+permalink: /portfolio/
+title: "Work"
+description: "Selected case studies by Naoufal Acharki: A/B-tested recommender systems at Air France-KLM, uplift-based campaign targeting at Senzai, LLM evaluation at Mercor and causal inference research at TotalEnergies."
+body_class: page-work
+---
+{%- assign work = site.portfolio | sort: "order" -%}
+<div class="container">
+  <header class="page-header">
+    <p class="eyebrow">Selected work</p>
+    <h1>Case studies from production systems and published research.</h1>
+    <p class="lead">Each one states what the problem was, what I built, and what was measured. Figures are the ones reported in the corresponding role; where an outcome comes from a controlled experiment, it is marked in the accent colour.</p>
+  </header>
+
+  <div class="work-list work-list--index">
+    {%- for cs in work -%}
+      {% include work-row.html item=cs %}
+    {%- endfor -%}
+  </div>
+</div>

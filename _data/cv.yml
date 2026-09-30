@@ -1,0 +1,155 @@
+# Single source of truth for experience, education, skills, training and awards.
+# Used by the home page and the CV page. Edit here, not in the pages.
+
+experience:
+  - company: Air France-KLM
+    company_note: Airline group
+    role: Senior Data Scientist, Marketing Operations Research
+    start: 2025-11
+    end: present
+    location: Paris, France
+    current: true
+    summary: A/B testing and recommender systems for flight selection and offer display.
+    highlights:
+      - Contribute to the Offer Display Recommender project that personalises the products shown to each customer.
+      - Design and run A/B tests on the customer journey and the flight-selection experience.
+      - Analyse customer behaviour and turn it into decisions for business stakeholders.
+    outcomes:
+      - value: "+0.6%"
+        label: conversion rate
+        basis: A/B-tested changes to flight selection and offer display
+      - value: "+0.5%"
+        label: average revenue per visitor
+        basis: same experiments, measured against control
+      - value: "€1M+"
+        label: incremental revenue per month
+        basis: attributed to shipped experiment winners
+    stack: [Python, SQL, BigQuery, A/B testing, Recommender systems]
+
+  - company: Mercor
+    company_note: Talent platform for AI labs
+    role: Mathematics and Statistics Expert
+    start: 2025-08
+    end: 2026-07
+    location: Remote
+    contract: true
+    summary: Problem design for evaluating the reasoning of frontier language models.
+    highlights:
+      - Wrote mathematical and statistical problems that test multi-step reasoning in state-of-the-art language models.
+      - Contributed to evaluation frameworks used by AI research labs.
+    stack: [Probability, Statistical inference, Optimisation, LLM evaluation]
+
+  - company: Senzai
+    company_note: Marketing-analytics startup
+    role: Senior Data Scientist and Machine Learning Engineer, Pipelines and MLOps Lead
+    start: 2023-10
+    end: 2025-10
+    location: Paris, France
+    summary: Uplift-based targeting for digital marketing campaigns, deployed to production.
+    highlights:
+      - Designed the recommendation system that decides which customers to target during digital marketing campaigns, raising conversion rates by up to 30% across 3 million customers and 50 million interactions.
+      - Built the data-engineering modules and deployed causal-inference models to production.
+      - Set up MLOps practices and backend pipelines with GitLab CI/CD, Docker on AWS EC2, Kubernetes, Airflow and MLflow.
+    outcomes:
+      - value: "up to 30%"
+        label: higher conversion rate
+        basis: uplift-based targeting vs. previous campaign targeting
+      - value: "3M"
+        label: customers scored
+        basis: 50M interactions processed in production
+    stack: [Python, CausalML, XGBoost, Airflow, MLflow, Docker, Kubernetes, AWS, GitLab CI/CD]
+
+  - company: namR
+    company_note: Data-intelligence startup, buildings and energy transition
+    role: Data Scientist, Geo and NLP team
+    start: 2023-05
+    end: 2023-10
+    location: Paris, France
+    summary: Large-scale feature engineering and pipeline optimisation on GCP.
+    highlights:
+      - Built new features on datasets of up to 50 million rows on Google Cloud.
+      - Optimised the solar-panel detection pipeline, cutting its runtime from 25 to 8 hours.
+    outcomes:
+      - value: "25h → 8h"
+        label: solar-panel detection runtime
+        basis: same input data, optimised pipeline
+    stack: [Python, SQL, GCP, BigQuery, PySpark]
+
+  - company: TotalEnergies One Tech
+    company_note: R&D branch of TotalEnergies
+    role: Research Engineer, AI and Data Science R&D (industrial PhD, CIFRE)
+    start: 2019-10
+    end: 2022-12
+    location: Palaiseau, France
+    summary: Statistical learning and causal inference for energy production.
+    highlights:
+      - Developed Gaussian-process regression models to predict gas-well production with 80% confidence intervals.
+      - Developed causal-inference models for geothermal wells, leading to a patent filing and three scientific publications.
+      - Presented research advances to Digital Factory stakeholders.
+    stack: [Python, R, MATLAB, Gaussian processes, Causal inference, Azure]
+
+education:
+  - school: École Polytechnique, Institut Polytechnique de Paris
+    degree: PhD in Applied Mathematics
+    detail: Causal inference and uncertainty quantification. Industrial PhD (CIFRE) with TotalEnergies. Thesis "Statistical learning and causal inference for energy production", defended November 2022.
+    start: 2019
+    end: 2022
+  - school: École des Mines de Saint-Étienne
+    degree: Engineering degree (diplôme d'ingénieur)
+    detail: Major in Data Science, minor in Operations Research and High Performance Computing.
+    start: 2016
+    end: 2019
+  - school: Université Paris 1 Panthéon-Sorbonne
+    degree: MSc in Applied Mathematics (MMMEF)
+    detail: Mathematical Models and Methods in Economics and Finance. Stochastic calculus, optimisation, credit risk.
+    start: 2018
+    end: 2019
+
+skills:
+  - group: Methods
+    items: [Causal inference, Uplift modelling, A/B testing and experiment design, Recommender systems, Bayesian modelling, Uncertainty quantification, Gaussian processes, Optimisation, Time series]
+  - group: Languages
+    items: [Python, R, SQL, MATLAB]
+  - group: Libraries
+    items: [scikit-learn, XGBoost, LightGBM, CausalML, pandas, NumPy, PySpark, SQLAlchemy, Matplotlib, ggplot2]
+  - group: MLOps and production
+    items: [Docker, Kubernetes, Airflow, MLflow, DVC, GitLab CI/CD, FastAPI, Streamlit]
+  - group: Cloud and data
+    items: [AWS (EC2, Redshift, S3), GCP (BigQuery, Vertex AI), Azure, PostgreSQL, MySQL, Trino]
+  - group: Tools
+    items: [Jupyter, VS Code, PyCharm, Dataiku DSS, Grafana, Jira, Confluence]
+
+training:
+  - name: Machine Learning Summer School (MLSS) 2021
+    org: National Taiwan University, Taipei (online)
+    date: 2021-08
+  - name: Hi! PARIS Summer School on AI and Data for Science, Business and Society
+    org: Institut Polytechnique de Paris and HEC Paris
+    date: 2021-07
+  - name: Gaussian Process and Uncertainty Quantification Summer School
+    org: The University of Sheffield
+    date: 2020-09
+  - name: Data Science, Optimization and Operations Research Winter School
+    org: École Polytechnique Fédérale de Lausanne
+    date: 2020-01
+
+awards:
+  - name: Winner, IMT-Total data science challenge
+    detail: Kaggle-style competition won with random-forest models; awarded a research internship with TotalEnergies.
+    date: Feb 2018
+  - name: Study Abroad Grant (3,100€)
+    detail: Moroccan Ministry of Higher Education.
+    date: 2020-2022
+  - name: Government Merit Grant (15,500€)
+    detail: Moroccan Ministry of Higher Education.
+    date: 2016-2019
+
+languages:
+  - name: Arabic
+    level: native
+  - name: French
+    level: bilingual
+  - name: English
+    level: proficient
+  - name: Spanish
+    level: elementary

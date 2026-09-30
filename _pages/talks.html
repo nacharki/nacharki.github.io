@@ -1,16 +1,39 @@
 ---
-layout: archive
-title: "Oral and Poster communications"
+layout: default
 permalink: /talks/
-author_profile: true
+title: "Talks"
+description: "Oral and poster communications by Naoufal Acharki at ICML, SIAM UQ, MASCOT-NUM, CIRM, ENBIS and other conferences and seminars on causal inference and uncertainty quantification."
+body_class: page-talks
 ---
+{%- assign talks = site.data.talks -%}
+{%- assign years = talks | map: "date" | map: "year" -%}
+<div class="container">
+  <header class="page-header">
+    <p class="eyebrow">Talks</p>
+    <h1>Oral and poster communications.</h1>
+    <p class="lead">{{ talks | size }} presentations at conferences, workshops and seminars, mostly on causal inference, meta-learners and uncertainty quantification for Gaussian processes.</p>
+  </header>
 
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+  <div class="talk-years">
+    {%- assign current_year = "" -%}
+    {%- for talk in talks -%}
+      {%- assign y = talk.date | date: "%Y" -%}
+      {%- if y != current_year -%}
+        {%- unless forloop.first -%}</ol></section>{%- endunless -%}
+        <section class="talk-year" aria-labelledby="year-{{ y }}">
+          <h2 class="talk-year__label" id="year-{{ y }}">{{ y }}</h2>
+          <ol class="talk-list">
+        {%- assign current_year = y -%}
+      {%- endif -%}
+      <li class="talk-row">
+        <span class="talk-row__date">{{ talk.date | date: "%b" }}</span>
+        <div class="talk-row__body">
+          <span class="talk-row__title">{{ talk.title }}</span>
+          <span class="talk-row__where">{% if talk.venue %}{{ talk.venue }} · {% endif %}{{ talk.location }}</span>
+        </div>
+        <span class="talk-row__type tag">{{ talk.type }}</span>
+      </li>
+      {%- if forloop.last -%}</ol></section>{%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>

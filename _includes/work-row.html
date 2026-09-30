@@ -1,0 +1,23 @@
+{%- assign cs = include.item -%}
+<a class="work-row" href="{{ cs.url | relative_url }}">
+  <div class="work-row__meta">
+    <span class="work-row__company">{{ cs.company }}</span>
+    <span class="work-row__period">{{ cs.period }}</span>
+  </div>
+  <div>
+    <h3 class="work-row__title">{{ cs.title }}</h3>
+    <p class="work-row__summary">{{ cs.summary }}</p>
+    {%- if cs.tags -%}
+    <div class="work-row__tags">
+      {%- for t in cs.tags limit: 4 -%}<span class="tag">{{ t }}</span>{%- endfor -%}
+    </div>
+    {%- endif -%}
+  </div>
+  <div class="work-row__outcome">
+    {%- if cs.outcome_value -%}
+    <span class="work-row__value{% unless cs.outcome_delta %} muted{% endunless %}">{{ cs.outcome_value }}</span>
+    <span class="work-row__label">{{ cs.outcome_label }}</span>
+    {%- endif -%}
+    <span class="work-row__arrow">{% include icon-arrow.html %}</span>
+  </div>
+</a>

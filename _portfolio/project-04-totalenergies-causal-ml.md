@@ -1,87 +1,55 @@
 ---
-title: "Causal Inference for Energy Production Optimization"
-excerpt: "PhD research combining Gaussian processes and causal ML for well production prediction, resulting in patent and ICML publication"
-collection: portfolio
-date: 2022-12-01
+order: 3
+title: "Causal inference and uncertainty quantification for energy production"
 company: "TotalEnergies One Tech"
-role: "Research Engineer - AI & Data Science R&D"
-tags:
-  - Causal Inference
-  - Gaussian Processes
-  - Uncertainty Quantification
-  - Research
-  - Azure
+role: "Research Engineer, AI and Data Science R&D (industrial PhD with École Polytechnique)"
+period: "Oct 2019 – Dec 2022"
+context: "R&D branch of TotalEnergies; PhD supervised by Josselin Garnier (CMAP) and Antoine Bertoncello"
+summary: "Research at the intersection of statistical learning and causal inference: calibrated prediction intervals for gas-well production, and treatment-effect estimation for geothermal wells, leading to a patent filing and publications at ICML and in CSDA."
+stack: [Python, R, MATLAB, Gaussian processes, Meta-learners, Bayesian methods, Azure]
+tags: [Causal inference, Gaussian processes, Uncertainty quantification, Research]
+outcome_value: "ICML 2023"
+outcome_label: "peer-reviewed paper, plus CSDA journal article"
+outcome_delta: false
+outcomes:
+  - value: "3"
+    label: "Scientific publications"
+    basis: "ICML 2023, Computational Statistics and Data Analysis 2023, PhD thesis 2022"
+  - value: "1"
+    label: "Patent filing"
+    basis: "Novel prediction methodology for well production"
+  - value: "80%"
+    label: "Confidence level of production forecasts"
+    basis: "Gaussian-process prediction intervals calibrated by cross-validation"
+description: "PhD research by Naoufal Acharki at TotalEnergies and École Polytechnique: Gaussian-process prediction intervals and meta-learners for multi-valued treatments, published at ICML 2023 and in CSDA."
 ---
 
-## Overview
+## The challenge
 
-Conducted advanced research at the intersection of statistical learning and causal inference for energy production optimization, developing novel methods for gas and geothermal well prediction under uncertainty.
+Energy companies make expensive decisions under high uncertainty. Forecasting well production needs robust prediction intervals, not just point estimates, and operational questions are causal: what would happen to output if we changed this parameter? Field experiments are costly, so the answers have to come from observational data and reliable models.
 
-## Challenge
+## Research contributions
 
-Energy companies face critical decisions with:
-- High uncertainty in well production forecasting
-- Need for robust prediction intervals, not just point estimates
-- Causal questions about operational interventions
-- Expensive field experiments requiring reliable predictions
+**Gaussian-process regression for production prediction.** Developed a method for robust prediction-interval estimation, calibrating the intervals by cross-validation so that an 80% interval really covers 80% of outcomes. Published in *Computational Statistics and Data Analysis*.
 
-## Solution
+**Causal inference for geothermal wells.** Applied treatment-effect estimation to operational decisions and extended meta-learners (S-, T-, X- and R-learners) from binary treatments to multi-valued treatments. Published at ICML 2023.
 
-### Research Contributions
+**Uncertainty quantification.** Bayesian modelling for decision-making under uncertainty, sensitivity analysis for model robustness, and integration of domain knowledge with statistical methods.
 
-**1. Gaussian Process Regression for Production Prediction**
-- Developed robust prediction interval estimation methods
-- Achieved 80% confidence in gas well production forecasts
-- Implemented cross-validation techniques for interval calibration
-- Published in *Computational Statistics & Data Analysis* (CSDA) journal
+## Outcomes
 
-**2. Causal Inference for Geothermal Wells**
-- Applied treatment effect estimation to operational decisions
-- Developed causal ML methods for continuous treatments
-- Compared meta-learners (T-learner, S-learner, X-learner, R-learner)
-- Published at **ICML 2023** (top-tier ML conference)
-
-**3. Uncertainty Quantification**
-- Bayesian modeling approaches for decision-making under uncertainty
-- Sensitivity analysis for model robustness
-- Integration of domain knowledge with statistical methods
-
-### Technology Stack
-
-- **Languages**: Python, R, MATLAB
-- **ML Methods**: Gaussian Processes, Causal ML, Bayesian Methods
-- **Cloud**: Azure (TotalEnergies infrastructure)
-- **Research Tools**: Academic publishing, scientific communication
-
-## Impact
-
-- **Patent filing** for novel prediction methodology
-- **3 scientific publications** (ICML 2023, CSDA journal, PhD thesis)
-- **80% confidence** in production predictions enabling better operational decisions
-- Presented research to Digital Factory stakeholders for real-world deployment
-- Advanced state-of-the-art in causal inference for continuous treatments
+The work led to a patent filing for a novel prediction methodology, three scientific publications (ICML 2023, CSDA and the PhD thesis), and production forecasts with an 80% confidence level that supported operational decisions. Results were presented to Digital Factory stakeholders for real-world deployment.
 
 ## Publications
 
-1. **Acharki, N.**, Lugo, R., Bertoncello, A., & Garnier, J. (2023). *Comparison of meta-learners for estimating multi-valued treatment heterogeneous effects*. ICML 2023.
+1. **Acharki, N.**, Lugo, R., Bertoncello, A., and Garnier, J. (2023). *Comparison of meta-learners for estimating multi-valued treatment heterogeneous effects.* ICML 2023.
+2. **Acharki, N.**, Bertoncello, A., and Garnier, J. (2023). *Robust prediction interval estimation for Gaussian processes by cross-validation method.* Computational Statistics and Data Analysis, 178:107597.
+3. **Acharki, N.** (2022). *Statistical learning and causal inference for energy production.* PhD thesis, École Polytechnique.
 
-2. **Acharki, N.**, Bertoncello, A., & Garnier, J. (2023). *Robust Prediction Interval estimation for Gaussian Processes by Cross-Validation method*. Computational Statistics & Data Analysis, 178:107597.
+## What I learned
 
-3. **Acharki, N.** (2022). *Statistical learning and causal inference for energy production*. PhD Thesis, École Polytechnique.
+**Academic rigour plus industrial impact.** Bridging theoretical research with practical applications is what drove the innovation.
 
-## Key Learnings
+**Uncertainty matters.** Decision-makers need reliable uncertainty estimates, not just predictions.
 
-1. **Academic Rigor + Industrial Impact**: Bridging theoretical research with practical applications drives innovation
-
-2. **Uncertainty Matters**: Decision-makers need reliable uncertainty estimates, not just predictions
-
-3. **Causal Thinking**: Answering "what if" questions requires causal methods, not just correlation
-
-## Skills Demonstrated
-
-- Advanced statistical modeling (Gaussian processes, Bayesian methods)
-- Causal inference and treatment effect estimation
-- Research design and scientific publication
-- Uncertainty quantification
-- Stakeholder communication in industrial R&D
-- PhD-level domain expertise
+**Causal thinking.** Answering "what if" questions requires causal methods, not correlation.

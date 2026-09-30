@@ -1,75 +1,38 @@
 ---
-title: "LLM Reasoning Evaluation for AI Research Labs"
-excerpt: "Designing advanced mathematical problems to challenge frontier language models"
-collection: portfolio
-date: 2025-08-01
+order: 4
+title: "Evaluating the mathematical reasoning of frontier language models"
 company: "Mercor"
-role: "Mathematics/Statistics Expert"
-tags:
-  - AI Evaluation
-  - LLMs
-  - Mathematics
-  - Statistics
-  - Model Testing
+role: "Mathematics and Statistics Expert"
+period: "Aug 2025 – Jul 2026"
+context: "Contract work alongside my main role; evaluation frameworks for AI research labs"
+summary: "Designed mathematical and statistical problems that test multi-step reasoning in state-of-the-art language models, contributing to evaluation frameworks used by leading AI research labs."
+stack: [Probability theory, Statistical inference, Optimisation, Causal reasoning]
+tags: [LLM evaluation, Mathematics, Statistics]
+description: "Mathematical and statistical problem design for evaluating frontier language models, by Naoufal Acharki for Mercor and AI research labs."
 ---
 
-## Overview
+## The challenge
 
-Contributed to evaluation frameworks for state-of-the-art language models by designing challenging mathematical and statistical problems that test reasoning capabilities of frontier AI systems.
+As language models become more capable, evaluation needs to distinguish genuine reasoning from pattern matching, identify gaps in mathematical reasoning, and provide problems that challenge even the most advanced models.
 
-## Challenge
+## My approach
 
-As LLMs become increasingly capable, robust evaluation methodologies are needed to:
-- Assess true reasoning vs pattern matching
-- Identify capability gaps in mathematical reasoning
-- Create problems that challenge even advanced models
-- Develop benchmarks for AI safety and capabilities research
+**Mathematical complexity.** Multi-step problems drawing on probability, statistics, optimisation and analysis, designed to test understanding rather than memorisation.
 
-## Solution
+**Statistical rigour.** Problems in statistical inference, hypothesis testing and causal reasoning that require a correct interpretation of uncertainty, an area where models often struggle.
 
-### Problem Design Methodology
+**Reasoning evaluation.** Problems structured to require chain-of-thought reasoning, with difficulty balanced to separate capability levels, and documentation of common failure modes.
 
-**1. Mathematical Complexity**
-- Designed multi-step problems requiring deep mathematical reasoning
-- Incorporated concepts from probability, statistics, optimization, and analysis
-- Ensured problems test understanding rather than memorization
-
-**2. Statistical Rigor**
-- Created problems in statistical inference, hypothesis testing, and causal reasoning
-- Designed scenarios requiring proper interpretation of uncertainty
-- Tested understanding of foundational statistical concepts
-
-**3. Reasoning Evaluation**
-- Structured problems to require chain-of-thought reasoning
-- Identified common failure modes in LLM mathematical reasoning
-- Balanced difficulty to test various capability levels
-
-### Areas of Focus
-
-- **Probability Theory**: Complex distributions, conditional probability, expectation
-- **Statistical Inference**: Hypothesis testing, confidence intervals, causal inference
-- **Optimization**: Constrained optimization, duality, algorithmic complexity
-- **Applied Mathematics**: Real-world problem formulation and solution
+Areas of focus: probability theory (complex distributions, conditional probability, expectation), statistical inference (hypothesis testing, confidence intervals, causal inference), optimisation (constrained optimisation, duality, algorithmic complexity) and applied problem formulation.
 
 ## Impact
 
-- Contributed to evaluation frameworks used by leading AI research labs
-- Helped identify reasoning limitations in state-of-the-art models
-- Advanced understanding of LLM mathematical capabilities
-- Supported development of more robust AI systems
+Contributed to evaluation frameworks used by leading AI research labs, helping to identify reasoning limitations in state-of-the-art models.
 
-## Key Learnings
+## What I learned
 
-1. **Evaluating Intelligence**: Creating effective benchmarks requires deep domain expertise and understanding of common failure modes
+**Evaluating intelligence requires domain depth.** Effective benchmarks come from expertise in the subject and in where models fail.
 
-2. **Human-AI Comparison**: Designing problems that are challenging for AI but solvable by domain experts reveals interesting capability gaps
+**Human-versus-model comparison is revealing.** Problems that are hard for models but solvable by domain experts expose interesting capability gaps.
 
-3. **Iterative Refinement**: Continuous testing and refinement of problem sets improves evaluation quality
-
-## Skills Demonstrated
-
-- Advanced mathematical problem design
-- Statistical reasoning and inference
-- AI/LLM evaluation methodologies
-- Technical writing and problem formulation
-- Domain expertise in mathematics and statistics
+**Iterate.** Continuous testing and refinement of problem sets is what improves evaluation quality.

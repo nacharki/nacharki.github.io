@@ -1,0 +1,142 @@
+---
+layout: default
+permalink: /cv/
+title: "CV"
+description: "Curriculum vitae of Naoufal Acharki: Senior Data Scientist at Air France-KLM, previously Senzai, namR and TotalEnergies; PhD in Applied Mathematics from École Polytechnique."
+body_class: page-cv
+redirect_from:
+  - /resume
+  - /resume/
+---
+{%- assign cv = site.data.cv -%}
+<div class="container">
+  <header class="page-header cv__header">
+    <p class="eyebrow">Curriculum vitae</p>
+    <h1>{{ site.author.name }}</h1>
+    <p class="lead">{{ site.author.headline }} at {{ site.author.employer }}, {{ site.author.location }}. PhD in Applied Mathematics from École Polytechnique. {{ site.author.tagline }}.</p>
+    <div class="btn-row">
+      <a class="btn" href="{{ site.author.cv_pdf | relative_url }}">Download PDF</a>
+      <a class="btn btn--secondary" href="mailto:{{ site.author.email }}">Email</a>
+      <a class="arrow-link mono" href="{{ site.author.linkedin }}" rel="me noopener" target="_blank">LinkedIn {% include icon-arrow.html %}</a>
+    </div>
+  </header>
+
+  <div class="cv">
+    <nav class="cv__nav no-print" aria-label="CV sections">
+      <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+
+    <div class="cv__content">
+      <section class="cv__section" id="experience" aria-labelledby="cv-experience">
+        <h2 id="cv-experience" class="cv__heading">Experience</h2>
+        <ol class="timeline timeline--cv">
+          {%- for job in cv.experience -%}
+          <li class="timeline__item{% if job.current %} is-current{% endif %}">
+            <div class="timeline__aside">
+              <span class="timeline__period">{{ job.start | append: "-01" | date: "%b %Y" }} – {% if job.end == "present" %}Present{% else %}{{ job.end | append: "-01" | date: "%b %Y" }}{% endif %}</span>
+              <span class="timeline__place">{{ job.location }}</span>
+            </div>
+            <div>
+              <h3 class="timeline__role">{{ job.role }}</h3>
+              <p class="timeline__company">{{ job.company }}{% if job.company_note %} <span class="muted">· {{ job.company_note }}</span>{% endif %}</p>
+              <ul class="timeline__list">
+                {%- for h in job.highlights -%}<li>{{ h }}</li>{%- endfor -%}
+              </ul>
+              {%- if job.outcomes -%}
+              <ul class="ledger ledger--compact ledger--cv">
+                {%- for o in job.outcomes -%}
+                <li class="ledger__row">
+                  <span class="ledger__value is-delta">{{ o.value }}</span>
+                  <span class="ledger__label">{{ o.label }}</span>
+                  <span class="ledger__basis">{{ o.basis }}</span>
+                </li>
+                {%- endfor -%}
+              </ul>
+              {%- endif -%}
+              {%- if job.stack -%}
+              <div class="tag-list timeline__tags">{% for t in job.stack %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+              {%- endif -%}
+            </div>
+          </li>
+          {%- endfor -%}
+        </ol>
+      </section>
+
+      <section class="cv__section" id="education" aria-labelledby="cv-education">
+        <h2 id="cv-education" class="cv__heading">Education</h2>
+        <ol class="timeline timeline--cv">
+          {%- for ed in cv.education -%}
+          <li class="timeline__item">
+            <div class="timeline__aside">
+              <span class="timeline__period">{{ ed.start }} – {{ ed.end }}</span>
+            </div>
+            <div>
+              <h3 class="timeline__role">{{ ed.degree }}</h3>
+              <p class="timeline__company">{{ ed.school }}</p>
+              <p class="timeline__summary">{{ ed.detail }}</p>
+            </div>
+          </li>
+          {%- endfor -%}
+        </ol>
+      </section>
+
+      <section class="cv__section" id="skills" aria-labelledby="cv-skills">
+        <h2 id="cv-skills" class="cv__heading">Skills</h2>
+        <dl class="skills">
+          {%- for g in cv.skills -%}
+          <div class="skills__group">
+            <dt>{{ g.group }}</dt>
+            <dd><div class="tag-list">{% for s in g.items %}<span class="tag">{{ s }}</span>{% endfor %}</div></dd>
+          </div>
+          {%- endfor -%}
+        </dl>
+      </section>
+
+      <section class="cv__section" id="training" aria-labelledby="cv-training">
+        <h2 id="cv-training" class="cv__heading">Summer and winter schools</h2>
+        <ol class="timeline timeline--cv timeline--simple">
+          {%- for t in cv.training -%}
+          <li class="timeline__item">
+            <div class="timeline__aside"><span class="timeline__period">{{ t.date | append: "-01" | date: "%b %Y" }}</span></div>
+            <div>
+              <span class="timeline__role">{{ t.name }}</span>
+              <p class="timeline__company">{{ t.org }}</p>
+            </div>
+          </li>
+          {%- endfor -%}
+        </ol>
+      </section>
+
+      <section class="cv__section" id="awards" aria-labelledby="cv-awards">
+        <h2 id="cv-awards" class="cv__heading">Awards and scholarships</h2>
+        <ol class="timeline timeline--cv timeline--simple">
+          {%- for a in cv.awards -%}
+          <li class="timeline__item">
+            <div class="timeline__aside"><span class="timeline__period">{{ a.date }}</span></div>
+            <div>
+              <span class="timeline__role">{{ a.name }}</span>
+              <p class="timeline__company">{{ a.detail }}</p>
+            </div>
+          </li>
+          {%- endfor -%}
+        </ol>
+      </section>
+
+      <section class="cv__section" id="languages" aria-labelledby="cv-languages">
+        <h2 id="cv-languages" class="cv__heading">Languages</h2>
+        <dl class="languages">
+          {%- for l in cv.languages -%}
+          <div><dt>{{ l.name }}</dt><dd>{{ l.level }}</dd></div>
+          {%- endfor -%}
+        </dl>
+      </section>
+    </div>
+  </div>
+</div>

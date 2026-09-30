@@ -1,0 +1,31 @@
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <p class="site-footer__name">{{ site.author.name }}</p>
+        <p class="site-footer__blurb">{{ site.author.headline }}, {{ site.author.location }}. {{ site.author.tagline }}.</p>
+      </div>
+      <div>
+        <p class="site-footer__title">Contact</p>
+        <ul class="site-footer__list">
+          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          <li><a href="{{ site.author.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a></li>
+          <li><a href="{{ site.author.github }}" rel="me noopener" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="site-footer__title">Research</p>
+        <ul class="site-footer__list">
+          <li><a href="{{ site.author.scholar }}" rel="me noopener" target="_blank">Google Scholar</a></li>
+          <li><a href="{{ site.author.researchgate }}" rel="me noopener" target="_blank">ResearchGate</a></li>
+          <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+          <li><a href="{{ '/talks/' | relative_url }}">Talks</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© {{ site.time | date: '%Y' }} {{ site.author.name }}</span>
+      <span><a href="{{ '/cv/' | relative_url }}">CV</a> · <a href="https://github.com/{{ site.repository }}" rel="noopener" target="_blank">Site source</a></span>
+    </div>
+  </div>
+</footer>

@@ -1,18 +1,67 @@
 /* ==========================================================================
-   PRINT STYLES
-   ========================================================================== */
-
-/*
-   Hide the following elements on print
+   PRINT
    ========================================================================== */
 
 @media print {
-  .masthead,
-  .toc,
-  .page__share,
-  .page__related,
-  .ads,
-  .page__footer {
-    display: none;
+  :root {
+    --fs-body: 10.5pt;
+    --fs-small: 9.5pt;
+    --fs-meta: 8pt;
+    --section: 1.2rem;
+  }
+
+  html {
+    scroll-padding-top: 0;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .site-header,
+  .site-footer,
+  .nav-toggle,
+  .skip-link,
+  .no-print,
+  .pager {
+    display: none !important;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .prose a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-family: var(--font-mono);
+    font-size: 8pt;
+    color: #555;
+  }
+
+  .section {
+    padding-block: 1rem;
+    break-inside: avoid;
+  }
+
+  .section--ink,
+  .section--band {
+    background: none;
+    color: #000;
+
+    h1, h2, h3, strong {
+      color: #000;
+    }
+  }
+
+  .ledger__row,
+  .timeline__item,
+  .work-row {
+    break-inside: avoid;
+  }
+
+  .photo {
+    box-shadow: none;
   }
 }
