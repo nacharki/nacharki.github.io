@@ -5,7 +5,7 @@ locale                   : "en-GB"
 title                    : "Naoufal Acharki"
 title_separator          : "·"
 name                     : "Naoufal Acharki"
-description              : "Senior Data Scientist in Paris. A/B testing, uplift modelling and recommender systems for marketing teams. PhD in Applied Mathematics from École Polytechnique."
+description              : "Freelance senior data scientist in Paris. A/B testing, uplift modelling and recommender systems for marketing teams. PhD in Applied Mathematics from École Polytechnique."
 url                      : https://nacharki.github.io
 baseurl                  : ""
 repository               : "nacharki/nacharki.github.io"
@@ -17,6 +17,7 @@ author:
   name          : "Naoufal Acharki"
   first_name    : "Naoufal"
   headline      : "Senior Data Scientist"
+  freelance     : "Freelance consultant"
   tagline       : "Marketing experimentation, causal ML and recommender systems"
   avatar        : "/images/naoufal-acharki.jpg"
   avatar_small  : "/images/naoufal-acharki-320.jpg"
@@ -28,7 +29,7 @@ author:
   scholar       : "https://scholar.google.com/citations?user=2svE5nwAAAAJ"
   researchgate  : "https://www.researchgate.net/profile/Naoufal-Acharki"
   cv_pdf        : "/files/Naoufal_resume.pdf"
-  availability  : "Open to senior data-science roles and selected freelance engagements in marketing analytics and causal ML."
+  availability  : "Available for freelance and consulting engagements in marketing analytics, experimentation and causal ML, from a single A/B test to a full personalisation programme."
 
 # Reading files
 include:

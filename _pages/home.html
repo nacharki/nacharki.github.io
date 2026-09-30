@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 title: "Naoufal Acharki"
-description: "Naoufal Acharki is a Senior Data Scientist in Paris working on A/B testing, uplift modelling and recommender systems for marketing teams. PhD in Applied Mathematics from École Polytechnique, published at ICML 2023."
+description: "Naoufal Acharki is a freelance senior data scientist in Paris: A/B testing, uplift modelling and recommender systems for marketing teams. PhD in Applied Mathematics from École Polytechnique, published at ICML 2023."
 body_class: page-home
 redirect_from:
   - /about/
@@ -16,13 +16,13 @@ redirect_from:
 <section class="hero">
   <div class="container grid hero__grid">
     <div class="hero__copy">
-      <p class="eyebrow">{{ site.author.headline }} · {{ site.author.employer }} · {{ site.author.location }}</p>
+      <p class="eyebrow">{{ site.author.freelance }} · {{ site.author.headline }} · {{ site.author.location }}</p>
       <h1 class="hero__title">Causal ML and experimentation for marketing teams.</h1>
-      <p class="lead hero__lead">I'm {{ site.author.name }}. I design A/B tests, uplift models and recommender systems that show marketing teams which actions actually change customer behaviour, and I run them in production.</p>
+      <p class="lead hero__lead">I'm {{ site.author.name }}, a senior data scientist working with marketing and product teams as a freelance consultant. I design A/B tests, uplift models and recommender systems that show which actions actually change customer behaviour, and I get them running in production.</p>
       <div class="btn-row hero__actions">
-        <a class="btn" href="{{ '/portfolio/' | relative_url }}">Selected work {% include icon-arrow.html %}</a>
-        <a class="btn btn--secondary" href="{{ site.author.cv_pdf | relative_url }}">Download CV</a>
-        <a class="arrow-link hero__email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project {% include icon-arrow.html %}</a>
+        <a class="btn btn--secondary" href="{{ '/portfolio/' | relative_url }}">Selected work</a>
+        <a class="arrow-link hero__email" href="{{ site.author.cv_pdf | relative_url }}">Download CV</a>
       </div>
     </div>
     <div class="hero__media">
@@ -72,11 +72,45 @@ redirect_from:
   </div>
 </section>
 
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <span class="section__index">02 — Services</span>
+        <h2 id="services-title">What I can do for your team.</h2>
+      </div>
+      <a class="section__more arrow-link" href="mailto:{{ site.author.email }}">Discuss a project {% include icon-arrow.html %}</a>
+    </div>
+    <ul class="services">
+      <li class="service">
+        <span class="service__num">01</span>
+        <h3>Experimentation programmes</h3>
+        <p>A/B test design, power and sample-size analysis, guardrail metrics, live monitoring and clear ship-or-stop decisions. From your first test to a running programme.</p>
+      </li>
+      <li class="service">
+        <span class="service__num">02</span>
+        <h3>Uplift modelling and targeting</h3>
+        <p>Causal models that find the customers whose behaviour a campaign actually changes, so budget goes to persuadables rather than to people who would have converted anyway.</p>
+      </li>
+      <li class="service">
+        <span class="service__num">03</span>
+        <h3>Recommender systems and personalisation</h3>
+        <p>Ranking and offer recommendation on booking, checkout and CRM flows, evaluated offline first and then validated against a control group in production.</p>
+      </li>
+      <li class="service">
+        <span class="service__num">04</span>
+        <h3>Production ML and MLOps</h3>
+        <p>Pipelines, CI/CD, model tracking and monitoring with Airflow, MLflow, Docker and Kubernetes on AWS or GCP, so the effect you measured holds after launch.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
 <section class="section section--band" aria-labelledby="approach-title">
   <div class="container">
     <div class="section__head">
       <div>
-        <span class="section__index">02 — How I work</span>
+        <span class="section__index">03 — How I work</span>
         <h2 id="approach-title">From business question to shipped result.</h2>
       </div>
     </div>
@@ -104,7 +138,7 @@ redirect_from:
   <div class="container">
     <div class="section__head">
       <div>
-        <span class="section__index">03 — Experience</span>
+        <span class="section__index">04 — Experience</span>
         <h2 id="experience-title">Industry and research, side by side.</h2>
       </div>
       <a class="section__more arrow-link" href="{{ '/cv/' | relative_url }}">Full CV {% include icon-arrow.html %}</a>
@@ -129,7 +163,7 @@ redirect_from:
     <div class="research__col">
       <div class="section__head">
         <div>
-          <span class="section__index">04 — Publications</span>
+          <span class="section__index">05 — Publications</span>
           <h2 id="research-title">Selected publications</h2>
         </div>
         <a class="section__more arrow-link" href="{{ '/publications/' | relative_url }}">All {% include icon-arrow.html %}</a>
@@ -147,7 +181,7 @@ redirect_from:
     <div class="research__col">
       <div class="section__head">
         <div>
-          <span class="section__index">05 — Talks</span>
+          <span class="section__index">06 — Talks</span>
           <h2>Recent talks</h2>
         </div>
         <a class="section__more arrow-link" href="{{ '/talks/' | relative_url }}">All {{ talks | size }} {% include icon-arrow.html %}</a>
@@ -170,11 +204,11 @@ redirect_from:
 <section class="section section--ink cta" aria-labelledby="cta-title">
   <div class="container grid">
     <div class="cta__copy">
-      <span class="section__index">06 — Contact</span>
+      <span class="section__index">07 — Contact</span>
       <h2 id="cta-title">Working on a measurement, targeting or personalisation problem?</h2>
-      <p class="cta__text">{{ site.author.availability }} Based in {{ site.author.location }}; I work in English and French.</p>
+      <p class="cta__text">{{ site.author.availability }} Project-based or longer engagements, remote or in {{ site.author.location }}; I work in English and French.</p>
       <div class="btn-row">
-        <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
+        <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project</a>
         <a class="btn btn--secondary" href="{{ site.author.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a>
       </div>
     </div>
