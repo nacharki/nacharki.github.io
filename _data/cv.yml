@@ -3,11 +3,11 @@
 
 experience:
   - company: Air France-KLM
-    company_note: Airline group
+    company_note: Commercial Data Officer, airline group
     role: Senior Data Scientist, Marketing Operations Research
     start: 2025-11
     end: present
-    location: Paris, France
+    location: Roissy-en-France, France
     current: true
     summary: A/B testing and recommender systems for flight selection and offer display.
     highlights:
@@ -31,7 +31,7 @@ experience:
     role: Mathematics and Statistics Expert
     start: 2025-08
     end: 2026-07
-    location: Remote
+    location: San Francisco, USA (remote)
     contract: true
     summary: Problem design for evaluating the reasoning of frontier language models.
     highlights:
@@ -44,7 +44,7 @@ experience:
     role: Senior Data Scientist and Machine Learning Engineer, Pipelines and MLOps Lead
     start: 2023-10
     end: 2025-10
-    location: Paris, France
+    location: Mexico City, Mexico (remote)
     summary: Uplift-based targeting for digital marketing campaigns, deployed to production.
     highlights:
       - Designed the recommendation system that decides which customers to target during digital marketing campaigns, raising conversion rates by up to 30% across 3 million customers and 50 million interactions.
@@ -115,7 +115,7 @@ skills:
   - group: MLOps and production
     items: [Docker, Kubernetes, Airflow, MLflow, DVC, GitLab CI/CD, FastAPI, Streamlit]
   - group: Cloud and data
-    items: [AWS (EC2, Redshift, S3), GCP (BigQuery, Vertex AI), Azure, PostgreSQL, MySQL, Trino]
+    items: [AWS (EC2, Redshift, S3), GCP (BigQuery, Vertex AI), Azure, PostgreSQL, MySQL, Trino, Dataiku DSS]
   - group: Tools
     items: [Jupyter, VS Code, PyCharm, Dataiku DSS, Grafana, Jira, Confluence]
 

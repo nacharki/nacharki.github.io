@@ -1,21 +1,113 @@
 ---
 layout: default
 permalink: /portfolio/
-title: "Work"
-description: "Selected case studies by Naoufal Acharki: A/B-tested recommender systems at Air France-KLM, uplift-based campaign targeting at Senzai, LLM evaluation at Mercor and causal inference research at TotalEnergies."
+title: "Portfolio"
+description: "Portfolio of Naoufal Acharki, freelance senior data scientist: areas of expertise with measured results, case studies at Air France-KLM, Senzai, TotalEnergies and Mercor, and the full toolbox."
 body_class: page-work
 ---
 {%- assign work = site.portfolio | sort: "order" -%}
+{%- assign cv = site.data.cv -%}
 <div class="container">
   <header class="page-header">
-    <p class="eyebrow">Selected work</p>
-    <h1>Case studies from production systems and published research.</h1>
-    <p class="lead">Each one states what the problem was, what I built, and what was measured. Figures are the ones reported in the corresponding role; where an outcome comes from a controlled experiment, it is marked in the accent colour.</p>
+    <p class="eyebrow">Portfolio</p>
+    <h1>Expertise, case studies and the tools behind them.</h1>
+    <p class="lead">What I can do for your team, with the measured result that backs each claim. Every figure comes from a controlled experiment or a reported production outcome in the corresponding role; treatment effects are shown in the accent colour.</p>
+    <div class="btn-row">
+      <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project {% include icon-arrow.html %}</a>
+      <a class="btn btn--secondary" href="{{ site.author.cv_pdf | relative_url }}">Download CV</a>
+    </div>
   </header>
 
-  <div class="work-list work-list--index">
-    {%- for cs in work -%}
-      {% include work-row.html item=cs %}
-    {%- endfor -%}
-  </div>
+  <section class="section section--tight" id="expertise" aria-labelledby="expertise-title">
+    <div class="section__head">
+      <div>
+        <span class="section__index">01 — Expertise</span>
+        <h2 id="expertise-title">Six things I do well, each with a result behind it.</h2>
+      </div>
+    </div>
+    <ol class="expertise">
+      <li class="expertise__item">
+        <span class="expertise__num">01</span>
+        <h3>Experimentation and A/B testing</h3>
+        <p>Test design, power and sample-size analysis, guardrail metrics, live monitoring and ship-or-stop decisions, on flows with millions of monthly visitors.</p>
+        <p class="expertise__proof"><span class="delta">+0.6% conversion rate, +0.5% revenue per visitor</span> · Air France-KLM, A/B-tested recommenders</p>
+      </li>
+      <li class="expertise__item">
+        <span class="expertise__num">02</span>
+        <h3>Causal inference and uplift modelling</h3>
+        <p>Meta-learners (S-, T-, X-, R-learners), heterogeneous treatment effects and persuadables targeting, so budget goes to customers whose behaviour actually changes.</p>
+        <p class="expertise__proof"><span class="delta">Up to 30% higher conversion</span> · Senzai, 3M customers · published at ICML 2023</p>
+      </li>
+      <li class="expertise__item">
+        <span class="expertise__num">03</span>
+        <h3>Recommender systems and personalisation</h3>
+        <p>Ranking and offer recommendation on booking, checkout and CRM flows, evaluated offline first and validated against a control group before rollout.</p>
+        <p class="expertise__proof"><span class="delta">€1M+ incremental revenue per month</span> · Air France-KLM flight ranker and branded-fare recommender</p>
+      </li>
+      <li class="expertise__item">
+        <span class="expertise__num">04</span>
+        <h3>MLOps and production ML</h3>
+        <p>Airflow, MLflow, DVC, Docker, Kubernetes and GitLab CI/CD on AWS, GCP or Azure: pipelines that score millions of customers and ship new models in days.</p>
+        <p class="expertise__proof">3M customers and 50M interactions scored in production · Senzai, MLOps lead</p>
+      </li>
+      <li class="expertise__item">
+        <span class="expertise__num">05</span>
+        <h3>Bayesian modelling and uncertainty quantification</h3>
+        <p>Gaussian processes, calibrated prediction intervals and sensitivity analysis for decisions that need a confidence level, not just a point estimate.</p>
+        <p class="expertise__proof">80% prediction intervals for well production · TotalEnergies · paper in Computational Statistics and Data Analysis</p>
+      </li>
+      <li class="expertise__item">
+        <span class="expertise__num">06</span>
+        <h3>Large-scale data engineering</h3>
+        <p>Feature engineering and pipeline optimisation on datasets of tens of millions of rows with BigQuery, PySpark, Redshift and PostgreSQL.</p>
+        <p class="expertise__proof"><span class="delta">Detection runtime cut from 25 h to 8 h</span> · namR, 50M-row datasets on GCP</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="case-studies" aria-labelledby="cases-title">
+    <div class="section__head">
+      <div>
+        <span class="section__index">02 — Case studies</span>
+        <h2 id="cases-title">Case studies from production systems and published research.</h2>
+      </div>
+    </div>
+    <div class="work-list work-list--index">
+      {%- for cs in work -%}
+        {% include work-row.html item=cs %}
+      {%- endfor -%}
+    </div>
+  </section>
+
+  <section class="section" id="toolbox" aria-labelledby="toolbox-title">
+    <div class="section__head">
+      <div>
+        <span class="section__index">03 — Toolbox</span>
+        <h2 id="toolbox-title">Methods, languages and infrastructure.</h2>
+      </div>
+      <a class="section__more arrow-link" href="{{ '/cv/' | relative_url }}">Full CV {% include icon-arrow.html %}</a>
+    </div>
+    <dl class="skills">
+      {%- for g in cv.skills -%}
+      <div class="skills__group">
+        <dt>{{ g.group }}</dt>
+        <dd><div class="tag-list">{% for s in g.items %}<span class="tag">{{ s }}</span>{% endfor %}</div></dd>
+      </div>
+      {%- endfor -%}
+    </dl>
+  </section>
 </div>
+
+<section class="section section--ink cta" aria-labelledby="work-cta-title">
+  <div class="container grid">
+    <div class="cta__copy">
+      <span class="section__index">04 — Contact</span>
+      <h2 id="work-cta-title">Have a problem that looks like one of these?</h2>
+      <p class="cta__text">{{ site.author.availability }} Project-based or longer engagements, remote or in {{ site.author.location }}.</p>
+      <div class="btn-row">
+        <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project</a>
+        <a class="btn btn--secondary" href="{{ site.author.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -14,7 +14,7 @@ layout: default
 
 <article class="case">
   <header class="container case__header">
-    <p class="eyebrow"><a href="{{ '/portfolio/' | relative_url }}">Work</a> · {{ page.company }}</p>
+    <p class="eyebrow"><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a> · {{ page.company }}</p>
     <h1 class="case__title">{{ page.title }}</h1>
     <p class="lead">{{ page.summary }}</p>
 
@@ -53,7 +53,7 @@ layout: default
         {% if next %}
         <a href="{{ next.url | relative_url }}"><span class="pager__label">Next</span><span class="pager__title">{{ next.company }} · {{ next.title }}</span></a>
         {% else %}
-        <a href="{{ '/portfolio/' | relative_url }}"><span class="pager__label">Back to</span><span class="pager__title">All work</span></a>
+        <a href="{{ '/portfolio/' | relative_url }}"><span class="pager__label">Back to</span><span class="pager__title">Portfolio</span></a>
         {% endif %}
       </div>
     </nav>

@@ -1,6 +1,6 @@
 # Main navigation
 main:
-  - title: Work
+  - title: Portfolio
     url: /portfolio/
   - title: Publications
     url: /publications/

@@ -18,10 +18,10 @@ redirect_from:
     <div class="hero__copy">
       <p class="eyebrow">{{ site.author.freelance }} · {{ site.author.headline }} · {{ site.author.location }}</p>
       <h1 class="hero__title">Causal ML and experimentation for marketing teams.</h1>
-      <p class="lead hero__lead">I'm {{ site.author.name }}, a senior data scientist working with marketing and product teams as a freelance consultant. I design A/B tests, uplift models and recommender systems that show which actions actually change customer behaviour, and I get them running in production.</p>
+      <p class="lead hero__lead">I'm {{ site.author.name }}, PhD in Applied Mathematics with {{ site.author.experience }} in data science and machine learning. As a freelance consultant I design, build and deploy end-to-end ML for marketing and product teams, from proof of concept to production: A/B tests, uplift models and recommender systems that show which actions actually change customer behaviour.</p>
       <div class="btn-row hero__actions">
         <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project {% include icon-arrow.html %}</a>
-        <a class="btn btn--secondary" href="{{ '/portfolio/' | relative_url }}">Selected work</a>
+        <a class="btn btn--secondary" href="{{ '/portfolio/' | relative_url }}">See the portfolio</a>
         <a class="arrow-link hero__email" href="{{ site.author.cv_pdf | relative_url }}">Download CV</a>
       </div>
     </div>
@@ -62,7 +62,7 @@ redirect_from:
         <span class="section__index">01 — Selected work</span>
         <h2 id="work-title">Case studies from production, not notebooks.</h2>
       </div>
-      <a class="section__more arrow-link" href="{{ '/portfolio/' | relative_url }}">All work {% include icon-arrow.html %}</a>
+      <a class="section__more arrow-link" href="{{ '/portfolio/' | relative_url }}">Full portfolio {% include icon-arrow.html %}</a>
     </div>
     <div class="work-list">
       {%- for cs in work -%}
