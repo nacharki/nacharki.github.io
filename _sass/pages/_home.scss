@@ -122,6 +122,18 @@
   }
 }
 
+/* How I work: short prose instead of a card grid */
+.approach-prose {
+  max-width: 62ch;
+  font-size: var(--fs-lead);
+  line-height: 1.55;
+  color: var(--ink-2);
+
+  p + p {
+    margin-top: var(--s-4);
+  }
+}
+
 /* Approach */
 .approach {
   display: grid;

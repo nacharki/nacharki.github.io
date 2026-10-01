@@ -9,11 +9,11 @@ experience:
     end: present
     location: Roissy-en-France, France
     current: true
-    summary: Analysis and evaluation for A/B-tested recommender systems on flight selection and offer display, in a team of five to six data scientists.
+    summary: A/B-tested recommender systems on the booking flow, in a team of five or six data scientists. I handle the metrics, the data and the offline and online evaluation.
     highlights:
-      - Contribute to the Offer Display Recommender project that personalises the products shown to each customer.
-      - Analyse the customer funnel, traffic and segments to define the metrics and guardrails of A/B tests on the booking flow.
-      - Prepare and explore the data feeding the models; run the offline and online evaluation of each experiment and turn it into decisions for business stakeholders.
+      - Offer Display Recommender, which personalises the products each customer sees.
+      - Funnel, traffic and segment analyses to decide which metrics and guardrails each A/B test on the booking flow should use.
+      - Data preparation and exploration for the models, then the offline and online evaluation of every experiment, turned into decisions for the business.
     outcomes:
       - value: "+0.6%"
         label: conversion rate, relative lift
@@ -33,11 +33,11 @@ experience:
     end: 2026-07
     location: San Francisco, USA (remote)
     contract: true
-    summary: Three evaluation projects for AI research labs on frontier language models.
+    summary: Three evaluation projects on frontier language models, for AI research labs.
     highlights:
-      - Wrote mathematical and statistical problems that state-of-the-art language models fail and domain experts solve, each with a verified solution.
-      - Defined agentic frameworks and model behaviours under multiple constraints and evaluated models against them.
-      - STEM review project, exploring datasets and producing data visualisations, diagrams and infographics with the science and data behind each output checked.
+      - Mathematics and statistics problems that state-of-the-art models get wrong and experts can solve, each with a verified solution.
+      - Agentic frameworks and expected model behaviour under several constraints, and the evaluation of models against them.
+      - A STEM review project, exploring datasets and producing visualisations, diagrams and infographics with the science checked behind each one.
     stack: [Probability, Statistical inference, Optimisation, LLM evaluation]
 
   - company: Kemba AI
@@ -48,8 +48,8 @@ experience:
     location: Remote
     summary: Built and launched the MVP of a multi-agent platform for financial services.
     highlights:
-      - Developed and launched the MVP of a multi-agent system platform for financial services, from architecture to deployment.
-      - Led the technical side of the venture; the company did not secure funding and the project stopped in July 2025.
+      - Designed, built and launched the MVP of a multi-agent platform for financial services, from the architecture to the deployment.
+      - Ran the technical side of the venture. We didn't raise the funding we needed, and the project stopped in July 2025.
     stack: [Multi-agent systems, LLMs, AWS]
     website: https://kemba.ai/
 
@@ -59,11 +59,11 @@ experience:
     start: 2023-10
     end: 2025-10
     location: Mexico City, Mexico (remote)
-    summary: ML lead for an uplift-based re-engagement engine serving a telecom operator and a bank, deployed to production.
+    summary: Led the machine learning of an uplift-based re-engagement engine for a telecom operator and a bank, and ran it in production.
     highlights:
-      - Developed, tested and deployed the recommendation system that decides which customers to target, when and through which channel, raising conversion by up to 30% across 3 million customers and 50 million interactions.
-      - Contributed to the data pipelines and designed the evaluation methods and monitoring sensors for the campaigns and the models.
-      - Set up MLOps practices and backend pipelines with GitLab CI/CD, Docker on AWS EC2, Kubernetes, Airflow and MLflow.
+      - Built, tested and deployed the recommendation system that decides whom to contact, when and on which channel; conversion up by as much as 30% across 3 million customers and 50 million interactions.
+      - Data pipelines, evaluation methods and monitoring for the campaigns and the models.
+      - The MLOps stack behind it, GitLab CI/CD, Docker on AWS EC2, Kubernetes, Airflow and MLflow.
     outcomes:
       - value: "+30%"
         label: relative conversion uplift
@@ -82,10 +82,10 @@ experience:
     start: 2023-05
     end: 2023-10
     location: Paris, France
-    summary: Large-scale feature engineering and pipeline optimisation on GCP.
+    summary: Feature engineering and pipeline optimisation on large geospatial datasets, on GCP.
     highlights:
-      - Built new features on datasets of up to 50 million rows on Google Cloud.
-      - Optimised the solar-panel detection pipeline, cutting its runtime from 25 to 8 hours by replacing a full-factorial combination plan with an optimised Latin-hypercube design.
+      - New features on datasets of up to 50 million rows on Google Cloud.
+      - Cut the solar-panel detection pipeline from 25 hours to 8 by replacing its full-factorial combination plan with an optimised Latin-hypercube design.
     outcomes:
       - value: "25h → 8h"
         label: solar-panel detection runtime
@@ -98,11 +98,11 @@ experience:
     start: 2019-10
     end: 2022-12
     location: Palaiseau, France
-    summary: Statistical learning and causal inference for energy production.
+    summary: Industrial PhD on statistical learning and causal inference for energy production.
     highlights:
-      - Developed Gaussian-process regression models to predict gas-well production with 80% confidence intervals.
-      - Developed causal-inference models for geothermal wells, leading to a patent application (US 2024/0211803 A1) and three scientific publications.
-      - Presented research advances to Digital Factory stakeholders.
+      - Gaussian-process models to forecast gas-well production, with calibrated 80% prediction intervals.
+      - Causal-inference models for geothermal wells, which led to a patent application (US 2024/0211803 A1) and three publications.
+      - Regular presentations of the results to the Digital Factory stakeholders.
     stack: [Python, R, MATLAB, Gaussian processes, Causal inference, Azure]
 
 education:

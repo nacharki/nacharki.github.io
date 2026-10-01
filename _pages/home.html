@@ -12,13 +12,14 @@ redirect_from:
 {%- assign work = site.portfolio | sort: "order" -%}
 {%- assign pubs = site.data.publications | where: "selected", true -%}
 {%- assign talks = site.data.talks -%}
+{%- assign press = site.data.press -%}
 
 <section class="hero">
   <div class="container grid hero__grid">
     <div class="hero__copy">
       <p class="eyebrow">{{ site.author.freelance }} · {{ site.author.headline }} · {{ site.author.location }}</p>
       <h1 class="hero__title">Causal ML and experimentation for marketing teams.</h1>
-      <p class="lead hero__lead">I'm {{ site.author.name }}, PhD in Applied Mathematics with {{ site.author.experience }} in data science and machine learning. As a freelance consultant I design, build and deploy end-to-end ML for marketing and product teams, from proof of concept to production: A/B tests, uplift models and recommender systems that show which actions actually change customer behaviour.</p>
+      <p class="lead hero__lead">I'm Naoufal, a data scientist based in Paris. Over the past seven years, PhD at École Polytechnique included, I've built machine learning that marketing and product teams actually use: A/B tests, uplift models and recommender systems, taken from the first notebook to production. I now do this as a freelance consultant.</p>
       <div class="btn-row hero__actions">
         <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project {% include icon-arrow.html %}</a>
         <a class="btn btn--secondary" href="{{ '/portfolio/' | relative_url }}">See the portfolio</a>
@@ -34,7 +35,6 @@ redirect_from:
 <section class="section section--tight" aria-labelledby="proof-title">
   <div class="container">
     <h2 id="proof-title" class="visually-hidden">Selected outcomes</h2>
-    {%- assign proof = "" | split: "" -%}
     <ul class="ledger ledger--proof">
       <li class="ledger__row">
         <span class="ledger__value is-delta">€1M+</span>
@@ -49,7 +49,7 @@ redirect_from:
       <li class="ledger__row">
         <span class="ledger__value">ICML 2023</span>
         <span class="ledger__label">Peer-reviewed research in causal machine learning</span>
-        <span class="ledger__basis">Meta-learners for multi-valued treatments · plus a CSDA journal paper and a PhD from École Polytechnique</span>
+        <span class="ledger__basis">Meta-learners for multi-valued treatments · plus a CSDA journal paper, a patent application and a PhD from École Polytechnique</span>
       </li>
     </ul>
   </div>
@@ -60,7 +60,7 @@ redirect_from:
     <div class="section__head">
       <div>
         <span class="section__index">01 — Selected work</span>
-        <h2 id="work-title">Case studies from production, not notebooks.</h2>
+        <h2 id="work-title">Four projects, with the numbers that came out of them.</h2>
       </div>
       <a class="section__more arrow-link" href="{{ '/portfolio/' | relative_url }}">Full portfolio {% include icon-arrow.html %}</a>
     </div>
@@ -77,30 +77,30 @@ redirect_from:
     <div class="section__head">
       <div>
         <span class="section__index">02 — Services</span>
-        <h2 id="services-title">What I can do for your team.</h2>
+        <h2 id="services-title">What I can help with.</h2>
       </div>
       <a class="section__more arrow-link" href="mailto:{{ site.author.email }}">Discuss a project {% include icon-arrow.html %}</a>
     </div>
     <ul class="services">
       <li class="service">
         <span class="service__num">01</span>
-        <h3>Experimentation programmes</h3>
-        <p>A/B test design, power and sample-size analysis, guardrail metrics, live monitoring and clear ship-or-stop decisions. From your first test to a running programme.</p>
+        <h3>Experimentation</h3>
+        <p>Setting up, or fixing, an A/B testing practice: which metric, how much traffic, how long, what could go wrong, and a clear answer at the end. I've done this on flows with tens of millions of visits a month, and with teams running their first test.</p>
       </li>
       <li class="service">
         <span class="service__num">02</span>
         <h3>Uplift modelling and targeting</h3>
-        <p>Causal models that find the customers whose behaviour a campaign actually changes, so budget goes to persuadables rather than to people who would have converted anyway.</p>
+        <p>Finding the customers a campaign will actually change, rather than the ones who'd have converted anyway. Causal models, meta-learners, and the evaluation that shows they beat whatever targeting you use today.</p>
       </li>
       <li class="service">
         <span class="service__num">03</span>
-        <h3>Recommender systems and personalisation</h3>
-        <p>Ranking and offer recommendation on booking, checkout and CRM flows, evaluated offline first and then validated against a control group in production.</p>
+        <h3>Recommender systems</h3>
+        <p>Ranking and offer recommendation on booking, checkout or CRM flows. Evaluated offline first, then against a control group, so nobody has to take the model's word for it.</p>
       </li>
       <li class="service">
         <span class="service__num">04</span>
-        <h3>Production ML and MLOps</h3>
-        <p>Pipelines, CI/CD, model tracking and monitoring with Airflow, MLflow, Docker and Kubernetes on AWS or GCP, so the effect you measured holds after launch.</p>
+        <h3>Getting ML into production</h3>
+        <p>Pipelines, CI/CD, model tracking and monitoring, with Airflow, MLflow, Docker and Kubernetes on AWS or GCP. I've led this end to end, and I'd rather work with your engineers than around them.</p>
       </li>
     </ul>
   </div>
@@ -111,26 +111,14 @@ redirect_from:
     <div class="section__head">
       <div>
         <span class="section__index">03 — How I work</span>
-        <h2 id="approach-title">From business question to shipped result.</h2>
+        <h2 id="approach-title">A few things I insist on.</h2>
       </div>
     </div>
-    <ol class="approach">
-      <li class="approach__step">
-        <span class="approach__num">1</span>
-        <h3>Start from the decision</h3>
-        <p>Agree with stakeholders on the business question, the success metric and the constraints before touching the data.</p>
-      </li>
-      <li class="approach__step">
-        <span class="approach__num">2</span>
-        <h3>Test before you trust</h3>
-        <p>Offline evaluation first, then a properly powered A/B test with live monitoring. Ship what wins, stop what doesn't.</p>
-      </li>
-      <li class="approach__step">
-        <span class="approach__num">3</span>
-        <h3>Make it run in production</h3>
-        <p>Models ship with pipelines, monitoring and CI/CD, so the result measured in the experiment holds after launch.</p>
-      </li>
-    </ol>
+    <div class="approach-prose">
+      <p>We agree on the metric before anyone touches the data. Most of the value of an experiment is decided right there, and it's the step people most like to skip.</p>
+      <p>Ideas get tested offline first, then with a real control group. Models that look great on historical data fail in production more often than you'd think, so I don't ask anyone to trust a model, I ask them to trust the test.</p>
+      <p>Whatever we ship comes with pipelines and monitoring, so the effect we measured is still there three months later. I write things down, I'd rather show a plot than a slide, and I'll tell you when the honest answer is "inconclusive, let's run it longer".</p>
+    </div>
   </div>
 </section>
 
@@ -139,7 +127,7 @@ redirect_from:
     <div class="section__head">
       <div>
         <span class="section__index">04 — Experience</span>
-        <h2 id="experience-title">Industry and research, side by side.</h2>
+        <h2 id="experience-title">Where I've worked.</h2>
       </div>
       <a class="section__more arrow-link" href="{{ '/cv/' | relative_url }}">Full CV {% include icon-arrow.html %}</a>
     </div>
@@ -164,7 +152,7 @@ redirect_from:
       <div class="section__head">
         <div>
           <span class="section__index">05 — Publications</span>
-          <h2 id="research-title">Selected publications</h2>
+          <h2 id="research-title">Research</h2>
         </div>
         <a class="section__more arrow-link" href="{{ '/publications/' | relative_url }}">All {% include icon-arrow.html %}</a>
       </div>
@@ -174,6 +162,13 @@ redirect_from:
           <span class="pub-item__meta">{{ pub.type }} · {{ pub.year }}</span>
           <span class="pub-item__title">{{ pub.title }}</span>
           <span class="pub-item__venue">{{ pub.venue }}</span>
+        </li>
+        {%- endfor -%}
+        {%- for item in press -%}
+        <li class="pub-item">
+          <span class="pub-item__meta">{{ item.kind }} · {{ item.date | date: "%Y" }}</span>
+          <span class="pub-item__title"><a href="{{ item.url }}" rel="noopener" target="_blank">{{ item.title }}</a></span>
+          <span class="pub-item__venue">{{ item.outlet }} · {{ item.note }}</span>
         </li>
         {%- endfor -%}
       </ul>
@@ -205,10 +200,10 @@ redirect_from:
   <div class="container grid">
     <div class="cta__copy">
       <span class="section__index">07 — Contact</span>
-      <h2 id="cta-title">Working on a measurement, targeting or personalisation problem?</h2>
-      <p class="cta__text">{{ site.author.availability }} Project-based or longer engagements, remote or in {{ site.author.location }}; I work in English and French.</p>
+      <h2 id="cta-title">Got a measurement, targeting or personalisation problem?</h2>
+      <p class="cta__text">{{ site.author.availability }} I'm in {{ site.author.location }}, happy to work remotely or on site, in English or French. The quickest way to find out whether I can help is a short call: send me an email and we'll set one up.</p>
       <div class="btn-row">
-        <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project</a>
+        <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
         <a class="btn btn--secondary" href="{{ site.author.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a>
       </div>
     </div>

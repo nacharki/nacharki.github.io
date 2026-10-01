@@ -10,8 +10,8 @@ body_class: page-work
 <div class="container">
   <header class="page-header">
     <p class="eyebrow">Portfolio</p>
-    <h1>Expertise, case studies and the tools behind them.</h1>
-    <p class="lead">What I can do for your team, with the measured result that backs each claim. Every figure comes from a controlled experiment or a reported production outcome in the corresponding role; treatment effects are shown in the accent colour.</p>
+    <h1>What I do, and what it has produced so far.</h1>
+    <p class="lead">Every number on this page comes from a controlled experiment or from what the company reported for that role. The orange ones are measured treatment effects, the rest is scale. If you want the long version of any of it, the case studies are below, and I'm happy to walk through them on a call.</p>
     <div class="btn-row">
       <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project {% include icon-arrow.html %}</a>
       <a class="btn btn--secondary" href="{{ site.author.cv_pdf | relative_url }}">Download CV</a>
@@ -22,45 +22,45 @@ body_class: page-work
     <div class="section__head">
       <div>
         <span class="section__index">01 — Expertise</span>
-        <h2 id="expertise-title">Six things I do well, each with a result behind it.</h2>
+        <h2 id="expertise-title">Six things I'm good at, each with a result behind it.</h2>
       </div>
     </div>
     <ol class="expertise">
       <li class="expertise__item">
         <span class="expertise__num">01</span>
         <h3>Experimentation and A/B testing</h3>
-        <p>Test design, power and sample-size analysis, guardrail metrics, live monitoring and ship-or-stop decisions, on flows with tens of millions of monthly visits.</p>
-        <p class="expertise__proof"><span class="delta">+0.6% conversion, +0.5% revenue per visitor (relative)</span> · Air France-KLM, one-month A/B tests on a flow of hundreds of thousands of visitors a day</p>
+        <p>Designing tests that can actually answer the question: the right metric, enough traffic, sensible guardrails, and a clear call at the end. Mostly on booking and checkout flows with tens of millions of visits a month.</p>
+        <p class="expertise__proof"><span class="delta">+0.6% conversion, +0.5% revenue per visitor (relative)</span> · Air France-KLM, one-month A/B tests on hundreds of thousands of visitors a day</p>
       </li>
       <li class="expertise__item">
         <span class="expertise__num">02</span>
         <h3>Causal inference and uplift modelling</h3>
-        <p>Meta-learners (S-, T-, X-, R-learners), heterogeneous treatment effects and persuadables targeting, so budget goes to customers whose behaviour actually changes.</p>
+        <p>Meta-learners, heterogeneous treatment effects, persuadables. The point is to spend the budget on people whose behaviour will change, not on people who would have bought anyway.</p>
         <p class="expertise__proof"><span class="delta">+30% relative conversion uplift</span> · Senzai, telecom client; +5–15% monthly for a bank · published at ICML 2023</p>
       </li>
       <li class="expertise__item">
         <span class="expertise__num">03</span>
         <h3>Recommender systems and personalisation</h3>
-        <p>Ranking and offer recommendation on booking, checkout and CRM flows, evaluated offline first and validated against a control group before rollout.</p>
+        <p>Ranking and offer recommendation on booking, checkout and CRM flows, evaluated offline first and then against a control group before anyone rolls it out to everyone.</p>
         <p class="expertise__proof"><span class="delta">€1M+ incremental revenue per month</span> · Air France-KLM flight ranker and branded-fare recommender</p>
       </li>
       <li class="expertise__item">
         <span class="expertise__num">04</span>
         <h3>MLOps and production ML</h3>
-        <p>Airflow, MLflow, DVC, Docker, Kubernetes and GitLab CI/CD on AWS, GCP or Azure: pipelines that score millions of customers and ship new models in days.</p>
-        <p class="expertise__proof">3M customers and 50M interactions scored in production · Senzai, ML lead · new models shipped in days instead of weeks</p>
+        <p>Airflow, MLflow, DVC, Docker, Kubernetes and GitLab CI/CD, on AWS, GCP or Azure. Pipelines that score millions of customers and let a new model ship in days rather than weeks.</p>
+        <p class="expertise__proof">3M customers and 50M interactions scored in production · Senzai, ML lead</p>
       </li>
       <li class="expertise__item">
         <span class="expertise__num">05</span>
         <h3>Bayesian modelling and uncertainty quantification</h3>
-        <p>Gaussian processes, calibrated prediction intervals and sensitivity analysis for decisions that need a confidence level, not just a point estimate.</p>
-        <p class="expertise__proof">80% prediction intervals for well production · TotalEnergies · paper in Computational Statistics and Data Analysis and patent application US 2024/0211803 A1</p>
+        <p>Gaussian processes, calibrated prediction intervals and sensitivity analysis, for the decisions where a point estimate isn't enough and someone needs to know how sure we are.</p>
+        <p class="expertise__proof">80% prediction intervals for well production · TotalEnergies · journal paper in Computational Statistics and Data Analysis, patent application US 2024/0211803 A1</p>
       </li>
       <li class="expertise__item">
         <span class="expertise__num">06</span>
         <h3>Large-scale data engineering</h3>
-        <p>Feature engineering and pipeline optimisation on datasets of tens of millions of rows with BigQuery, PySpark, Redshift and PostgreSQL.</p>
-        <p class="expertise__proof"><span class="delta">Detection runtime cut from 25 h to 8 h</span> · namR, full-factorial plan replaced by an optimised Latin-hypercube design, 50M-row datasets on GCP</p>
+        <p>Feature engineering and pipeline optimisation on tens of millions of rows, with BigQuery, PySpark, Redshift and PostgreSQL.</p>
+        <p class="expertise__proof"><span class="delta">Detection runtime cut from 25 h to 8 h</span> · namR, a full-factorial plan replaced by an optimised Latin-hypercube design on 50M-row datasets</p>
       </li>
     </ol>
   </section>
@@ -69,7 +69,7 @@ body_class: page-work
     <div class="section__head">
       <div>
         <span class="section__index">02 — Case studies</span>
-        <h2 id="cases-title">Case studies from production systems and published research.</h2>
+        <h2 id="cases-title">The projects in detail.</h2>
       </div>
     </div>
     <div class="work-list work-list--index">
@@ -102,8 +102,8 @@ body_class: page-work
   <div class="container grid">
     <div class="cta__copy">
       <span class="section__index">04 — Contact</span>
-      <h2 id="work-cta-title">Have a problem that looks like one of these?</h2>
-      <p class="cta__text">{{ site.author.availability }} Project-based or longer engagements, remote or in {{ site.author.location }}.</p>
+      <h2 id="work-cta-title">Sound like your problem?</h2>
+      <p class="cta__text">{{ site.author.availability }} Project-based or longer, remote or in {{ site.author.location }}. Send me an email and we'll set up a short call.</p>
       <div class="btn-row">
         <a class="btn" href="mailto:{{ site.author.email }}">Discuss a project</a>
         <a class="btn btn--secondary" href="{{ site.author.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a>

@@ -4,8 +4,8 @@ title: "Personalising flight and fare offers with A/B-tested recommenders"
 company: "Air France-KLM"
 role: "Senior Data Scientist, Marketing Operations Research (Commercial Data Officer)"
 period: "Nov 2025 – present"
-context: "Airline group; team of five to six data scientists working on the booking flow of the website and the app"
-summary: "Analysis and evaluation for two recommender systems on the booking flow: which flights to rank first, and which fare to recommend. I define the metrics and segments, prepare the data, and run the offline and online evaluation of every A/B test before anything ships."
+context: "Airline group; a team of five or six data scientists working on the booking flow of the website and the app"
+summary: "Two recommender systems on the booking flow: which flights to show first, and which fare to suggest. I work on the metrics and segments, prepare the data, and run the offline and online evaluation of every A/B test before anything ships."
 stack: [Python, SQL, BigQuery, scikit-learn, XGBoost, A/B testing]
 tags: [Recommender systems, A/B testing, Uplift modelling, Conversion optimisation, BigQuery]
 outcome_value: "€1M+"
@@ -18,11 +18,11 @@ outcomes:
     delta: true
   - value: "+0.5%"
     label: "Revenue per visitor, relative lift"
-    basis: "Same experiments; a further test showed a significant upsell effect and is awaiting deployment"
+    basis: "Same experiments; a further test showed a significant upsell effect and is waiting to be deployed"
     delta: true
   - value: "€1M+"
     label: "Incremental revenue per month"
-    basis: "Reported impact attributed to the shipped experiment winners"
+    basis: "Business impact reported for the shipped experiment winners"
     delta: true
 scale:
   - value: "~50M"
@@ -36,54 +36,43 @@ description: "How Naoufal Acharki supports A/B-tested flight and fare recommende
 
 ## The challenge
 
-You land on Air France's website to book a flight from Paris to New York. Dozens of options appear: different times, prices and connections. Which flight should appear first? Should we recommend the Basic fare or suggest the Flex fare?
+You land on Air France's website to book a flight from Paris to New York. Dozens of options appear: different times, prices and connections. Which flight should come first? Should we recommend the Basic fare, or suggest Flex?
 
-At this scale, several hundred thousand visitors and flight searches a day across the website and the app, around 50 million visits a month, even a fraction of a percent on conversion or revenue per visitor is worth a lot. The recommendation systems that personalise these choices therefore have to prove themselves in a controlled experiment before they reach everyone.
+At this scale, several hundred thousand visitors and flight searches a day across the website and the app, around 50 million visits a month, a fraction of a percent on conversion or revenue per visitor is real money. Which is exactly why nothing that touches this page goes live without a controlled experiment.
 
 ## The two recommenders
 
-**Flight list ranker.** When you search for flights, the list is ranked on what matters to you, not only on price: search behaviour, booking history, preferences and many other signals, so the flights you are most likely to book appear first.
+The **flight list ranker** decides the order of the results. Price matters, but so do your search behaviour, your booking history and your preferences, so the flights you're most likely to book come first.
 
-**Branded fare recommender.** Should we show the Basic Economy fare or highlight the Flex fare with free cancellation? The model predicts which customers value premium features and personalises the recommendation accordingly.
+The **branded fare recommender** decides whether to put the Basic Economy fare in front of you or to highlight Flex with free cancellation, depending on how likely you are to value the extras.
 
-## My role in a team of five to six data scientists
+## What I actually do
 
-- **Funnel and journey analysis.** Studies of the customer funnel, traffic and segments to decide which metrics a test should move, which guardrails to watch, and how to split traffic.
-- **Data preparation and exploration.** Preprocessing and exploratory analysis of search, click and booking data feeding the models.
-- **Offline evaluation.** Testing candidate models on historical data to check they would beat what is currently live, so that only promising ideas use real traffic.
-- **Online evaluation.** Analysing the A/B tests once they run: effect sizes, significance, segment-level effects and the recommendation to ship or stop.
+I'm one of five or six data scientists on this, and my part sits mostly before and after the model.
 
-## From high-propensity to high-uplift
+Before: studying the funnel, the traffic and the segments, so that a test is built around the right metric, with the right guardrails and a sensible traffic split. Then the unglamorous part, preparing and exploring the search, click and booking data the models learn from.
 
-The obvious approach is to show customers what they are most likely to buy and target the high-propensity ones. But high propensity does not mean high uplift. Some customers will book regardless of what they see; others will never convert. The value is in the persuadables, the customers whose decision the recommendation actually changes. Instead of asking "who will convert?", the question becomes "who will convert *because* of this recommendation?"
+After: the evaluation. Offline first, on historical data, to see whether a candidate would even have beaten what's live. Then online, once the A/B test is running: effect sizes, significance, how the different segments reacted, and a recommendation to ship or stop.
+
+## Propensity is not uplift
+
+The obvious thing to do is to show people what they're most likely to buy and go after the high-propensity customers. The trouble is that some of them would have booked anyway, and some will never book whatever you show them. The ones worth the effort are the persuadables, the customers whose decision the recommendation actually changes. So the question moves from "who will convert?" to "who will convert *because* of this?"
 
 {% include uplift-matrix.html %}
 
 <div class="callout">
   <p class="callout__title">Sometimes the best recommendation is no recommendation</p>
-  <p>A customer is browsing a €400 flight. A propensity model predicts they are likely to book if shown a €200 option. That looks like a conversion win, but it cannibalises €200 of revenue. Optimising for uplift rather than propensity identifies when <em>not</em> showing a cheaper option preserves revenue. Conversion alone does not equal profit.</p>
+  <p>A customer is looking at a €400 flight. A propensity model says they're likely to book if we show them a €200 option. That looks like a conversion win, until you notice it just cost €200 of revenue. Optimising for uplift rather than propensity is what tells you when <em>not</em> showing the cheaper option is the better call. Conversion on its own isn't profit.</p>
 </div>
 
-## How an idea reaches production
+## How an idea gets to production
 
-**Offline evaluation.** New models are first tested on historical data to check whether they would have beaten what is currently live.
+An idea starts offline, on historical data, to check it would have beaten what's currently live. If it survives, the team sizes the test: how many visitors, how long, what could go wrong. The tests reported here each ran for a month. While they run we watch conversion, revenue per visitor and the segment effects, so problems show up early rather than at the end. Then the results go to the stakeholders and a decision is made, roll out or stop, on the numbers rather than on anyone's instinct.
 
-**Experiment design.** If it looks promising, the team designs the A/B test: how many visitors are needed, how long it should run, and what could go wrong. Power and sample size are calculated upfront so traffic is not wasted. The tests reported here each ran for one month.
+## What came out of it
 
-**Live monitoring.** While the experiment runs, conversion, revenue per visitor and segment-level effects are tracked, and problems are caught early.
+Across the one-month tests, conversion went up by 0.6% and revenue per visitor by 0.5%, both relative to the control group. A further test found a statistically significant upsell effect and is waiting to be deployed. The business impact reported for the shipped winners is over €1M of incremental revenue a month.
 
-**Ship or stop.** After the experiment, the results are analysed and presented to stakeholders, and the call is made: roll out to everyone, or stop. Decisions are based on the data, not on intuition.
+## What I took away
 
-## What was measured
-
-Across the one-month A/B tests, the recommenders lifted conversion rate by 0.6% and revenue per visitor by 0.5%, both relative to the control group. One further test showed a statistically significant upsell effect and is awaiting deployment. The reported business impact of the shipped winners is more than €1M of incremental revenue per month.
-
-## What I learned
-
-**Business metrics beat technical metrics.** Nobody cares whether a ranking algorithm has a great offline score. They care whether it changes bookings and revenue.
-
-**The metric comes before the model.** Most of the value of an experiment is decided when the success metric, the guardrails and the segments are chosen.
-
-**Simple usually beats complex.** The best solutions are often surprisingly simple. Do not over-engineer.
-
-**Trust but verify.** Models that look great offline can fail in production. Always validate with a real experiment.
+Nobody at an airline cares about an offline ranking score. They care about bookings and revenue, and that's the right way round. Most of the value of an experiment is decided when you pick the metric, the guardrails and the segments, before the model exists. The simple version usually wins. And a model that looks great offline can still fall flat in production, which is the whole point of running the test.

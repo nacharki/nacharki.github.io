@@ -10,7 +10,7 @@ body_class: page-publications
   <header class="page-header">
     <p class="eyebrow">Publications</p>
     <h1>Research on causal inference and uncertainty quantification.</h1>
-    <p class="lead">Peer-reviewed work and a patent application from my PhD at École Polytechnique and TotalEnergies. Also listed on <a href="{{ site.author.scholar }}" rel="me noopener" target="_blank">Google Scholar</a> and <a href="{{ site.author.researchgate }}" rel="me noopener" target="_blank">ResearchGate</a>.</p>
+    <p class="lead">The research side of my work: papers and a patent application from my PhD at École Polytechnique, done inside TotalEnergies' R&amp;D. Also on <a href="{{ site.author.scholar }}" rel="me noopener" target="_blank">Google Scholar</a> and <a href="{{ site.author.researchgate }}" rel="me noopener" target="_blank">ResearchGate</a>.</p>
   </header>
 
   <ol class="pub-list pub-list--full">
@@ -32,4 +32,30 @@ body_class: page-publications
     </li>
     {%- endfor -%}
   </ol>
+
+  {%- assign press = site.data.press -%}
+  {%- if press and press.size > 0 -%}
+  <section class="section section--tight" id="press" aria-labelledby="press-title">
+    <div class="section__head">
+      <div>
+        <span class="section__index">In the press</span>
+        <h2 id="press-title">Articles that quote this work.</h2>
+      </div>
+    </div>
+    <ol class="pub-list pub-list--full">
+      {%- for item in press -%}
+      <li class="pub-item">
+        <span class="pub-item__meta">{{ item.outlet }} · {{ item.date | date: "%b %Y" }}</span>
+        <div class="pub-item__body">
+          <h3 class="pub-item__title">{{ item.title }}</h3>
+          <p class="pub-item__venue">{{ item.note }}</p>
+          <div class="pub-item__links">
+            <a class="btn btn--ghost" href="{{ item.url }}" rel="noopener" target="_blank">Read the article</a>
+          </div>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ol>
+  </section>
+  {%- endif -%}
 </div>

@@ -4,8 +4,8 @@ title: "Uplift-based targeting for digital marketing campaigns"
 company: "Senzai"
 role: "ML lead: Senior Data Scientist and Machine Learning Engineer, Pipelines and MLOps Lead"
 period: "Oct 2023 – Oct 2025"
-context: "Marketing-analytics startup; re-engagement engine for two B2C clients, a telecom operator and a bank"
-summary: "Led the machine learning of a re-engagement engine: developed, tested and deployed the recommendation system that decides which customers to contact, when, and through which channel, using causal inference rather than propensity, and built the pipelines, evaluation and CI/CD it runs on."
+context: "Marketing-analytics startup; a re-engagement engine for two B2C clients, a telecom operator and a bank"
+summary: "I led the machine learning of a re-engagement engine: the recommendation system that decides which customers to contact, when, and through which channel, built on causal inference rather than propensity, plus the pipelines, evaluation and CI/CD it runs on."
 stack: [Python, CausalML, XGBoost, Airflow, MLflow, DVC, Docker, Kubernetes, AWS, GitLab CI/CD, FastAPI]
 tags: [Uplift modelling, Causal ML, Recommender systems, MLOps, AWS]
 outcome_value: "Up to 30%"
@@ -31,38 +31,28 @@ description: "Uplift-based campaign targeting at Senzai, led by Naoufal Acharki:
 
 ## The problem
 
-Thousands of leads go cold. Customers churn. They already know the brand; they just stopped engaging. Traditional marketing blasts everyone the same way, wasting budget on customers who will not respond and annoying those who would have converted anyway.
+Leads go cold. Customers drift away. They already know the brand, they've just stopped responding. The usual answer is to message everyone the same way, which wastes budget on people who were never going to respond and annoys the ones who would have come back on their own.
 
-Senzai built a re-engagement engine that contacts the right customers at the right time with the right message. I led the machine learning behind it: the models that make those decisions, and the platform that runs them.
+Senzai built a re-engagement engine to contact the right customers at the right moment, with the right message. I led the machine learning behind it: the models that make those calls, and the platform that runs them.
 
 ## Two clients, two engines
 
-**Telecom operator.** Re-engagement and newsletter campaigns for a small telecom company. The engine predicts not just who will open a message but who will convert *because* of it, and optimises send time, frequency, content and channel by customer segment, while avoiding "sleeping dogs", customers who react badly to being contacted. Result: a 30% relative uplift in conversion compared with the previous targeting.
+For a **small telecom operator**, the engine ran re-engagement and newsletter campaigns. It predicts not just who will open a message but who will convert *because* of it, and tunes send time, frequency, content and channel by segment, while leaving alone the "sleeping dogs", the customers who react badly to being contacted at all. Conversion came out 30% higher than with the previous targeting.
 
-**Bank.** Drip campaigns on a stream of 500 to 1,000 new leads a day, about 70,000 visitors over the campaign period. The engine decides who to contact, when (time of day, day of week) and through which channel (email, SMS, ads). Compared with the bank's existing CRM targeting, with the engine switched on versus off, monthly conversion rose by 5 to 15%.
+For a **bank**, the job was drip campaigns on a stream of 500 to 1,000 new leads a day, about 70,000 visitors over the campaign period. The engine decides who to contact, when (time of day, day of week) and through which channel (email, SMS, ads). Measured against the bank's existing CRM targeting, with the engine switched on versus off, monthly conversion rose by 5 to 15%.
 
-## What I did as ML lead
+## What I did
 
-- **Developed, tested and deployed the recommendation system**, from the causal models to the scoring service.
-- **Contributed to the data pipelines** ingesting customer interaction events and building behavioural features and profiles at scale: 3 million customers, 50 million interactions.
-- **Designed the evaluation methods and monitoring sensors** that tell whether a campaign is working and whether the models are drifting.
-- **Built the production stack**: GitLab CI/CD, Docker on AWS EC2, Kubernetes, Airflow for orchestration, MLflow for experiment tracking and model versioning, DVC for data. Deployment time for a new model went from weeks to days.
+Leading the ML meant, in practice, four things. I built, tested and deployed the recommendation system itself, from the causal models through to the scoring service. I worked on the data pipelines that turn 50 million interaction events into features for 3 million customers. I designed the evaluation and the monitoring, so we knew whether a campaign was working and whether a model was drifting. And I set up the stack it all ran on: GitLab CI/CD, Docker on AWS EC2, Kubernetes, Airflow, MLflow and DVC. Getting a new model into production went from weeks to days.
 
 ## How it works
 
-1. **Data engineering.** Ingest customer interaction events, build behavioural features and customer profiles at scale.
-2. **Causal models.** Estimate individual treatment effects with meta-learners (S-, T- and X-learners) so that campaigns target customers whose behaviour the contact will change.
-3. **Serving.** Score customers in batch, expose recommendations through an API, and monitor them with dashboards.
-4. **Experimentation.** Each change is validated against a control group before it becomes the default.
+Customer interaction events are ingested and turned into behavioural features and profiles. Meta-learners (S-, T- and X-learners) estimate the effect of a contact on each individual, so a campaign targets the people it will actually move. Customers are scored in batch, the recommendations are exposed through an API, and dashboards keep an eye on the whole thing. Every change is checked against a control group before it becomes the default.
 
 ## Why it worked
 
-Clients plug in their CRM data and the engine identifies who to target and who to leave alone. It was not just a model but a complete, tested system, which is what made the results repeatable across two very different clients.
+A client plugs in their CRM data and the engine tells them who to target and who to leave alone. What made the results hold up across two very different clients wasn't a clever model on its own, it was having a complete, tested system around it.
 
-## What I learned
+## What I took away
 
-**Causal inference matters.** Uplift modelling, compared with traditional prediction models, made a measurable difference in identifying persuadable customers.
-
-**Production first.** Building with deployment in mind from day one avoided costly refactoring.
-
-**Experiment-driven culture.** Validating each change against a control group enabled continuous iteration and measurable impact.
+Uplift modelling earned its keep: compared with ordinary prediction, it made a measurable difference in finding the persuadable customers. Building for production from the first day saved a painful rewrite later. And having a control group behind every change is what turned "we think it works" into numbers we could show the client.
