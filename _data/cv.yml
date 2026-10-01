@@ -40,6 +40,19 @@ experience:
       - STEM review project, exploring datasets and producing data visualisations, diagrams and infographics with the science and data behind each output checked.
     stack: [Probability, Statistical inference, Optimisation, LLM evaluation]
 
+  - company: Kemba AI
+    company_note: Startup, agentic AI operating system for banks and fintechs
+    role: CTO
+    start: 2025-01
+    end: 2025-07
+    location: Remote
+    summary: Built and launched the MVP of a multi-agent platform for financial services.
+    highlights:
+      - Developed and launched the MVP of a multi-agent system platform for financial services, from architecture to deployment.
+      - Led the technical side of the venture; the company did not secure funding and the project stopped in July 2025.
+    stack: [Multi-agent systems, LLMs, AWS]
+    website: https://kemba.ai/
+
   - company: Senzai
     company_note: Marketing-analytics startup
     role: Senior Data Scientist and Machine Learning Engineer, Pipelines and MLOps Lead
