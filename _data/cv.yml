@@ -9,21 +9,21 @@ experience:
     end: present
     location: Roissy-en-France, France
     current: true
-    summary: A/B testing and recommender systems for flight selection and offer display.
+    summary: Analysis and evaluation for A/B-tested recommender systems on flight selection and offer display, in a team of five to six data scientists.
     highlights:
       - Contribute to the Offer Display Recommender project that personalises the products shown to each customer.
-      - Design and run A/B tests on the customer journey and the flight-selection experience.
-      - Analyse customer behaviour and turn it into decisions for business stakeholders.
+      - Analyse the customer funnel, traffic and segments to define the metrics and guardrails of A/B tests on the booking flow.
+      - Prepare and explore the data feeding the models; run the offline and online evaluation of each experiment and turn it into decisions for business stakeholders.
     outcomes:
       - value: "+0.6%"
-        label: conversion rate
-        basis: A/B-tested changes to flight selection and offer display
+        label: conversion rate, relative lift
+        basis: one-month A/B tests against control, flight selection and offer display
       - value: "+0.5%"
-        label: average revenue per visitor
-        basis: same experiments, measured against control
+        label: revenue per visitor, relative lift
+        basis: same experiments; a further upsell test is significant and awaiting deployment
       - value: "€1M+"
         label: incremental revenue per month
-        basis: attributed to shipped experiment winners
+        basis: reported impact of the shipped experiment winners
     stack: [Python, SQL, BigQuery, A/B testing, Recommender systems]
 
   - company: Mercor
@@ -33,10 +33,11 @@ experience:
     end: 2026-07
     location: San Francisco, USA (remote)
     contract: true
-    summary: Problem design for evaluating the reasoning of frontier language models.
+    summary: Three evaluation projects for AI research labs on frontier language models.
     highlights:
-      - Wrote mathematical and statistical problems that test multi-step reasoning in state-of-the-art language models.
-      - Contributed to evaluation frameworks used by AI research labs.
+      - Wrote mathematical and statistical problems that state-of-the-art language models fail and domain experts solve, each with a verified solution.
+      - Defined agentic frameworks and model behaviours under multiple constraints and evaluated models against them.
+      - STEM review project, exploring datasets and producing data visualisations, diagrams and infographics with the science and data behind each output checked.
     stack: [Probability, Statistical inference, Optimisation, LLM evaluation]
 
   - company: Senzai
@@ -45,15 +46,18 @@ experience:
     start: 2023-10
     end: 2025-10
     location: Mexico City, Mexico (remote)
-    summary: Uplift-based targeting for digital marketing campaigns, deployed to production.
+    summary: ML lead for an uplift-based re-engagement engine serving a telecom operator and a bank, deployed to production.
     highlights:
-      - Designed the recommendation system that decides which customers to target during digital marketing campaigns, raising conversion rates by up to 30% across 3 million customers and 50 million interactions.
-      - Built the data-engineering modules and deployed causal-inference models to production.
+      - Developed, tested and deployed the recommendation system that decides which customers to target, when and through which channel, raising conversion by up to 30% across 3 million customers and 50 million interactions.
+      - Contributed to the data pipelines and designed the evaluation methods and monitoring sensors for the campaigns and the models.
       - Set up MLOps practices and backend pipelines with GitLab CI/CD, Docker on AWS EC2, Kubernetes, Airflow and MLflow.
     outcomes:
-      - value: "up to 30%"
-        label: higher conversion rate
-        basis: uplift-based targeting vs. previous campaign targeting
+      - value: "+30%"
+        label: relative conversion uplift
+        basis: telecom client, engine vs. previous targeting
+      - value: "+5–15%"
+        label: monthly conversion uplift
+        basis: bank client, drip campaigns on 500–1,000 leads a day, engine on vs. CRM targeting
       - value: "3M"
         label: customers scored
         basis: 50M interactions processed in production
@@ -68,11 +72,11 @@ experience:
     summary: Large-scale feature engineering and pipeline optimisation on GCP.
     highlights:
       - Built new features on datasets of up to 50 million rows on Google Cloud.
-      - Optimised the solar-panel detection pipeline, cutting its runtime from 25 to 8 hours.
+      - Optimised the solar-panel detection pipeline, cutting its runtime from 25 to 8 hours by replacing a full-factorial combination plan with an optimised Latin-hypercube design.
     outcomes:
       - value: "25h → 8h"
         label: solar-panel detection runtime
-        basis: same input data, optimised pipeline
+        basis: full-factorial plan replaced by an optimised Latin-hypercube design, same input data
     stack: [Python, SQL, GCP, BigQuery, PySpark]
 
   - company: TotalEnergies One Tech

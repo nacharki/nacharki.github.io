@@ -33,6 +33,13 @@ layout: default
   </section>
   {% endif %}
 
+  {% if page.scale %}
+  <section class="container case__scale" aria-label="Scale">
+    <span class="section__index">Scale</span>
+    {% include ledger.html rows=page.scale compact=true %}
+  </section>
+  {% endif %}
+
   <div class="container case__body">
     <div class="prose">
       {{ content }}
