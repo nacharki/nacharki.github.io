@@ -25,20 +25,20 @@ outcomes:
     basis: "Reported impact attributed to the shipped experiment winners"
     delta: true
 scale:
-  - value: "240k"
-    label: "Visitors per day on the website"
-    basis: "About 373k searches and 160k flight clicks a day"
-  - value: "150k"
-    label: "Search sessions per day on the app"
-    basis: "Conversion tracked per visitor and per session"
-description: "How Naoufal Acharki supports A/B-tested flight and fare recommenders at Air France-KLM: funnel analysis, metric design and offline/online evaluation, with +0.6% conversion and +0.5% revenue per visitor (relative) on a flow of 240k visitors a day."
+  - value: "~50M"
+    label: "Visits a month across website and app"
+    basis: "Several hundred thousand visitors and flight searches every day"
+  - value: "2"
+    label: "Recommender systems under test"
+    basis: "Flight list ranker and branded-fare recommender, each validated by A/B test"
+description: "How Naoufal Acharki supports A/B-tested flight and fare recommenders at Air France-KLM: funnel analysis, metric design and offline/online evaluation, with +0.6% conversion and +0.5% revenue per visitor (relative) on a flow of around 50 million visits a month."
 ---
 
 ## The challenge
 
 You land on Air France's website to book a flight from Paris to New York. Dozens of options appear: different times, prices and connections. Which flight should appear first? Should we recommend the Basic fare or suggest the Flex fare?
 
-At this scale, about 240,000 visitors and 373,000 searches a day on the website alone, plus 150,000 search sessions a day on the app, even a fraction of a percent on conversion or revenue per visitor is worth a lot. The recommendation systems that personalise these choices therefore have to prove themselves in a controlled experiment before they reach everyone.
+At this scale, several hundred thousand visitors and flight searches a day across the website and the app, around 50 million visits a month, even a fraction of a percent on conversion or revenue per visitor is worth a lot. The recommendation systems that personalise these choices therefore have to prove themselves in a controlled experiment before they reach everyone.
 
 ## The two recommenders
 

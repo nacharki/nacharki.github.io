@@ -16,8 +16,8 @@ outcomes:
     label: "Scientific publications"
     basis: "ICML 2023, Computational Statistics and Data Analysis 2023, PhD thesis 2022"
   - value: "1"
-    label: "Patent filing"
-    basis: "Novel prediction methodology for well production"
+    label: "Patent application"
+    basis: "US 2024/0211803 A1, filed May 2021 with Antoine Bertoncello and Josselin Garnier"
   - value: "80%"
     label: "Confidence level of production forecasts"
     basis: "Gaussian-process prediction intervals calibrated by cross-validation"
@@ -38,13 +38,14 @@ Energy companies make expensive decisions under high uncertainty. Forecasting we
 
 ## Outcomes
 
-The work led to a patent filing for a novel prediction methodology, three scientific publications (ICML 2023, CSDA and the PhD thesis), and production forecasts with an 80% confidence level that supported operational decisions. Results were presented to Digital Factory stakeholders for real-world deployment.
+The work led to a patent application for the prediction methodology, three scientific publications (ICML 2023, CSDA and the PhD thesis), and production forecasts with an 80% confidence level that supported operational decisions. Results were presented to Digital Factory stakeholders for real-world deployment.
 
-## Publications
+## Publications and patent
 
 1. **Acharki, N.**, Lugo, R., Bertoncello, A., and Garnier, J. (2023). *Comparison of meta-learners for estimating multi-valued treatment heterogeneous effects.* ICML 2023.
 2. **Acharki, N.**, Bertoncello, A., and Garnier, J. (2023). *Robust prediction interval estimation for Gaussian processes by cross-validation method.* Computational Statistics and Data Analysis, 178:107597.
 3. **Acharki, N.** (2022). *Statistical learning and causal inference for energy production.* PhD thesis, École Polytechnique.
+4. Bertoncello, A., **Acharki, N.**, and Garnier, J. *Method and electronic system for predicting value(s) of a quantity relative to a device, related operating method and computer program.* Patent application [US 2024/0211803 A1](https://patents.google.com/patent/US20240211803A1/en), filed May 2021.
 
 ## What I learned
 

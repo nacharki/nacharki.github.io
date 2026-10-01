@@ -34,6 +34,16 @@
     - label: Journal
       url: https://www.sciencedirect.com/science/article/pii/S0167947322001773
 
+- type: Patent application
+  title: Method and electronic system for predicting value(s) of a quantity relative to a device, related operating method and computer program
+  authors: "Antoine Bertoncello, Naoufal Acharki and Josselin Garnier"
+  venue: US patent application US 2024/0211803 A1, filed May 2021, published 2024
+  year: 2024
+  selected: false
+  links:
+    - label: Google Patents
+      url: https://patents.google.com/patent/US20240211803A1/en
+
 - type: MSc thesis
   title: Statistical learning and sensitivity analysis - Application to Oil and Gas production
   authors: "Naoufal Acharki"

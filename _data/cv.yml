@@ -88,7 +88,7 @@ experience:
     summary: Statistical learning and causal inference for energy production.
     highlights:
       - Developed Gaussian-process regression models to predict gas-well production with 80% confidence intervals.
-      - Developed causal-inference models for geothermal wells, leading to a patent filing and three scientific publications.
+      - Developed causal-inference models for geothermal wells, leading to a patent application (US 2024/0211803 A1) and three scientific publications.
       - Presented research advances to Digital Factory stakeholders.
     stack: [Python, R, MATLAB, Gaussian processes, Causal inference, Azure]
 
