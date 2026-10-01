@@ -117,6 +117,63 @@
   }
 }
 
+/* Opening visual and opening scene */
+.case__figure {
+  margin-top: var(--s-7);
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-2);
+    background: #fff;
+  }
+
+  figcaption {
+    margin-top: var(--s-3);
+    font-family: var(--font-mono);
+    font-size: var(--fs-meta);
+    line-height: 1.5;
+    color: var(--ink-3);
+    max-width: 70ch;
+  }
+}
+
+.case__opening {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: unquote("clamp(1.25rem, 1.1rem + 0.6vw, 1.55rem)");
+  line-height: 1.45;
+  color: var(--ink);
+  max-width: 34em;
+  border-left: 2px solid var(--accent);
+  padding-left: var(--s-5);
+  margin-top: var(--s-7);
+}
+
+.case__outcomes {
+  padding-top: var(--s-7);
+}
+
+.figure--chart {
+  padding: var(--s-5) var(--s-5) var(--s-4);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-md);
+  background: var(--bg);
+
+  svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  figcaption {
+    margin-top: var(--s-3);
+  }
+}
+
 .case__scale {
   padding-top: var(--s-6);
 

@@ -22,6 +22,7 @@ outcomes:
     label: "Confidence level of production forecasts"
     basis: "Gaussian-process prediction intervals calibrated by cross-validation"
 description: "PhD research by Naoufal Acharki at TotalEnergies and École Polytechnique: Gaussian-process prediction intervals and meta-learners for multi-valued treatments, published at ICML 2023 and in CSDA."
+opening: "A gas well will produce something next quarter. The question an engineer actually asks isn’t “how much?” but “how sure are you?”, because the decision, invest, wait or re-plan, depends on the range at least as much as on the number. A good part of my PhD was about making that range honest."
 ---
 
 ## The problem
@@ -31,6 +32,8 @@ Energy companies make expensive decisions with very incomplete information. Fore
 ## What the research produced
 
 The first strand was about **prediction intervals for Gaussian-process regression**. Standard fitting by maximum likelihood or cross-validation gives you a model that fits on average and says nothing about whether its 80% interval really covers 80% of outcomes. I developed a way to calibrate the intervals by cross-validation so that it does. That became the paper in *Computational Statistics and Data Analysis*.
+
+{% include fig-gp-interval.html %}
 
 The second strand was **causal inference for geothermal wells**: estimating the effect of operational decisions from observational data. Meta-learners (S-, T-, X- and R-learners) had been studied for binary treatments; I extended them to multi-valued treatments, which is what real operating parameters look like. That became the ICML 2023 paper.
 

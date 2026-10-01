@@ -26,6 +26,19 @@ layout: default
     </dl>
   </header>
 
+  {% if page.lead_figure %}
+  <figure class="container case__figure">
+    <img src="{{ page.lead_figure.src | relative_url }}" alt="{{ page.lead_figure.alt }}" width="{{ page.lead_figure.width | default: 1087 }}" height="{{ page.lead_figure.height | default: 806 }}" loading="eager">
+    {% if page.lead_figure.caption %}<figcaption>{{ page.lead_figure.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+
+  {% if page.opening %}
+  <div class="container">
+    <p class="case__opening">{{ page.opening }}</p>
+  </div>
+  {% endif %}
+
   {% if page.outcomes %}
   <section class="container case__outcomes" aria-label="Outcomes">
     <span class="section__index">Outcomes</span>

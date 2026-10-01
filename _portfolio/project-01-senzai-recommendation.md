@@ -27,6 +27,7 @@ outcomes:
     label: "Time to deploy a new model"
     basis: "Automated CI/CD, containerised training and scoring"
 description: "Uplift-based campaign targeting at Senzai, led by Naoufal Acharki: causal models deciding whom to contact, when and on which channel, with +30% relative conversion for a telecom client and +5–15% monthly for a bank, deployed on AWS with Airflow, MLflow and GitLab CI/CD."
+opening: "Someone stopped opening the newsletters six months ago. The CRM tool would email them again on Thursday, along with everyone else. The engine’s answer is different: for this customer, nothing this week; for the next one in the table, a text message on Saturday morning. Do that three million times and you get the numbers below."
 ---
 
 ## The problem
@@ -40,6 +41,8 @@ Senzai built a re-engagement engine to contact the right customers at the right 
 For a **small telecom operator**, the engine ran re-engagement and newsletter campaigns. It predicts not just who will open a message but who will convert *because* of it, and tunes send time, frequency, content and channel by segment, while leaving alone the "sleeping dogs", the customers who react badly to being contacted at all. Conversion came out 30% higher than with the previous targeting.
 
 For a **bank**, the job was drip campaigns on a stream of 500 to 1,000 new leads a day, about 70,000 visitors over the campaign period. The engine decides who to contact, when (time of day, day of week) and through which channel (email, SMS, ads). Measured against the bank's existing CRM targeting, with the engine switched on versus off, monthly conversion rose by 5 to 15%.
+
+{% include fig-senzai-uplift.html %}
 
 ## What I did
 

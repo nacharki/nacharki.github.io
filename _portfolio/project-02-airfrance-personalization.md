@@ -32,6 +32,13 @@ scale:
     label: "Recommender systems under test"
     basis: "Flight list ranker and branded-fare recommender, each validated by A/B test"
 description: "How Naoufal Acharki supports A/B-tested flight and fare recommenders at Air France-KLM: funnel analysis, metric design and offline/online evaluation, with +0.6% conversion and +0.5% revenue per visitor (relative) on a flow of around 50 million visits a month."
+lead_figure:
+  src: /images/case-afkl-booking.jpg
+  width: 1087
+  height: 806
+  alt: "Air France booking page for a Paris to Los Angeles flight: three fares side by side, Light at 464 euros, Standard at 543 euros marked Conseillé, Flex at 655 euros, with the list of what each fare includes."
+  caption: "The real booking page, Paris to Los Angeles, September 2026. The small ‘Conseillé’ badge on the Standard fare is where the branded-fare recommender shows up; the order of the flights above it is the flight list ranker’s job."
+opening: "Paris to Los Angeles, a morning search. Under the Economy price, three fares wait: Light at €464, Standard at €543 with a small “Recommended” badge, Flex at €655. Most travellers never notice the badge. It’s a model’s decision, and whether it should be there, and on which fare, is settled by an A/B test that I evaluate."
 ---
 
 ## The challenge

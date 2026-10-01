@@ -9,6 +9,7 @@ summary: "Three projects for AI research labs: writing mathematics problems that
 stack: [Probability theory, Statistical inference, Optimisation, Causal reasoning, Agentic evaluation, Data visualisation]
 tags: [LLM evaluation, Mathematics, Statistics, Agents]
 description: "Three LLM evaluation projects by Naoufal Acharki for Mercor and AI research labs: adversarial mathematics problem sets, evaluation of agentic frameworks under constraints, and a STEM data-visualisation review project."
+opening: "A frontier model answers a probability question in three confident paragraphs. The answer is wrong. My job was to write the questions where that happens, and to check, as the domain expert, that the right answer really is the right answer."
 ---
 
 ## The challenge
